@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B6AAFA527C51C330028F332 /* GlovesWeatherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6AAFA427C51C330028F332 /* GlovesWeatherAppApp.swift */; };
+		1B6AAFA727C51C330028F332 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6AAFA627C51C330028F332 /* ContentView.swift */; };
+		1B6AAFA927C51C380028F332 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B6AAFA827C51C380028F332 /* Assets.xcassets */; };
+		1B6AAFAC27C51C380028F332 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B6AAFAB27C51C380028F332 /* Preview Assets.xcassets */; };
+		1B6AAFB727C51C390028F332 /* GlovesWeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6AAFB627C51C390028F332 /* GlovesWeatherAppTests.swift */; };
+		1B6AAFC227C51C390028F332 /* GlovesWeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6AAFC127C51C390028F332 /* GlovesWeatherAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B6AAFB327C51C390028F332 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B6AAF9927C51C320028F332 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B6AAFA027C51C320028F332;
+			remoteInfo = GlovesWeatherApp;
+		};
+		1B6AAFBE27C51C390028F332 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B6AAF9927C51C320028F332 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B6AAFA027C51C320028F332;
+			remoteInfo = GlovesWeatherApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B6AAFA127C51C320028F332 /* GlovesWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlovesWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B6AAFA427C51C330028F332 /* GlovesWeatherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlovesWeatherAppApp.swift; sourceTree = "<group>"; };
+		1B6AAFA627C51C330028F332 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1B6AAFA827C51C380028F332 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1B6AAFAB27C51C380028F332 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1B6AAFAD27C51C380028F332 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B6AAFB227C51C390028F332 /* GlovesWeatherAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlovesWeatherAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B6AAFB627C51C390028F332 /* GlovesWeatherAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlovesWeatherAppTests.swift; sourceTree = "<group>"; };
+		1B6AAFB827C51C390028F332 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B6AAFBD27C51C390028F332 /* GlovesWeatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlovesWeatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B6AAFC127C51C390028F332 /* GlovesWeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlovesWeatherAppUITests.swift; sourceTree = "<group>"; };
+		1B6AAFC327C51C390028F332 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B6AAF9E27C51C320028F332 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B6AAFAF27C51C390028F332 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B6AAFBA27C51C390028F332 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B6AAF9827C51C320028F332 = {
+			isa = PBXGroup;
+			children = (
+				1B6AAFA327C51C320028F332 /* GlovesWeatherApp */,
+				1B6AAFB527C51C390028F332 /* GlovesWeatherAppTests */,
+				1B6AAFC027C51C390028F332 /* GlovesWeatherAppUITests */,
+				1B6AAFA227C51C320028F332 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1B6AAFA227C51C320028F332 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B6AAFA127C51C320028F332 /* GlovesWeatherApp.app */,
+				1B6AAFB227C51C390028F332 /* GlovesWeatherAppTests.xctest */,
+				1B6AAFBD27C51C390028F332 /* GlovesWeatherAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B6AAFA327C51C320028F332 /* GlovesWeatherApp */ = {
+			isa = PBXGroup;
+			children = (
+				1B6AAFA427C51C330028F332 /* GlovesWeatherAppApp.swift */,
+				1B6AAFA627C51C330028F332 /* ContentView.swift */,
+				1B6AAFA827C51C380028F332 /* Assets.xcassets */,
+				1B6AAFAD27C51C380028F332 /* Info.plist */,
+				1B6AAFAA27C51C380028F332 /* Preview Content */,
+			);
+			path = GlovesWeatherApp;
+			sourceTree = "<group>";
+		};
+		1B6AAFAA27C51C380028F332 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1B6AAFAB27C51C380028F332 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1B6AAFB527C51C390028F332 /* GlovesWeatherAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				1B6AAFB627C51C390028F332 /* GlovesWeatherAppTests.swift */,
+				1B6AAFB827C51C390028F332 /* Info.plist */,
+			);
+			path = GlovesWeatherAppTests;
+			sourceTree = "<group>";
+		};
+		1B6AAFC027C51C390028F332 /* GlovesWeatherAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1B6AAFC127C51C390028F332 /* GlovesWeatherAppUITests.swift */,
+				1B6AAFC327C51C390028F332 /* Info.plist */,
+			);
+			path = GlovesWeatherAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B6AAFA027C51C320028F332 /* GlovesWeatherApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B6AAFC627C51C390028F332 /* Build configuration list for PBXNativeTarget "GlovesWeatherApp" */;
+			buildPhases = (
+				1B6AAF9D27C51C320028F332 /* Sources */,
+				1B6AAF9E27C51C320028F332 /* Frameworks */,
+				1B6AAF9F27C51C320028F332 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GlovesWeatherApp;
+			productName = GlovesWeatherApp;
+			productReference = 1B6AAFA127C51C320028F332 /* GlovesWeatherApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1B6AAFB127C51C390028F332 /* GlovesWeatherAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B6AAFC927C51C390028F332 /* Build configuration list for PBXNativeTarget "GlovesWeatherAppTests" */;
+			buildPhases = (
+				1B6AAFAE27C51C390028F332 /* Sources */,
+				1B6AAFAF27C51C390028F332 /* Frameworks */,
+				1B6AAFB027C51C390028F332 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B6AAFB427C51C390028F332 /* PBXTargetDependency */,
+			);
+			name = GlovesWeatherAppTests;
+			productName = GlovesWeatherAppTests;
+			productReference = 1B6AAFB227C51C390028F332 /* GlovesWeatherAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1B6AAFBC27C51C390028F332 /* GlovesWeatherAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B6AAFCC27C51C390028F332 /* Build configuration list for PBXNativeTarget "GlovesWeatherAppUITests" */;
+			buildPhases = (
+				1B6AAFB927C51C390028F332 /* Sources */,
+				1B6AAFBA27C51C390028F332 /* Frameworks */,
+				1B6AAFBB27C51C390028F332 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B6AAFBF27C51C390028F332 /* PBXTargetDependency */,
+			);
+			name = GlovesWeatherAppUITests;
+			productName = GlovesWeatherAppUITests;
+			productReference = 1B6AAFBD27C51C390028F332 /* GlovesWeatherAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B6AAF9927C51C320028F332 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					1B6AAFA027C51C320028F332 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					1B6AAFB127C51C390028F332 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 1B6AAFA027C51C320028F332;
+					};
+					1B6AAFBC27C51C390028F332 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 1B6AAFA027C51C320028F332;
+					};
+				};
+			};
+			buildConfigurationList = 1B6AAF9C27C51C320028F332 /* Build configuration list for PBXProject "GlovesWeatherApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1B6AAF9827C51C320028F332;
+			productRefGroup = 1B6AAFA227C51C320028F332 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B6AAFA027C51C320028F332 /* GlovesWeatherApp */,
+				1B6AAFB127C51C390028F332 /* GlovesWeatherAppTests */,
+				1B6AAFBC27C51C390028F332 /* GlovesWeatherAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B6AAF9F27C51C320028F332 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B6AAFAC27C51C380028F332 /* Preview Assets.xcassets in Resources */,
+				1B6AAFA927C51C380028F332 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B6AAFB027C51C390028F332 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B6AAFBB27C51C390028F332 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B6AAF9D27C51C320028F332 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B6AAFA727C51C330028F332 /* ContentView.swift in Sources */,
+				1B6AAFA527C51C330028F332 /* GlovesWeatherAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B6AAFAE27C51C390028F332 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B6AAFB727C51C390028F332 /* GlovesWeatherAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B6AAFB927C51C390028F332 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B6AAFC227C51C390028F332 /* GlovesWeatherAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B6AAFB427C51C390028F332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B6AAFA027C51C320028F332 /* GlovesWeatherApp */;
+			targetProxy = 1B6AAFB327C51C390028F332 /* PBXContainerItemProxy */;
+		};
+		1B6AAFBF27C51C390028F332 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B6AAFA027C51C320028F332 /* GlovesWeatherApp */;
+			targetProxy = 1B6AAFBE27C51C390028F332 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1B6AAFC427C51C390028F332 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1B6AAFC527C51C390028F332 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B6AAFC727C51C390028F332 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"GlovesWeatherApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GlovesWeatherApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = WeatherApp.GlovesWeatherApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1B6AAFC827C51C390028F332 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"GlovesWeatherApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GlovesWeatherApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = WeatherApp.GlovesWeatherApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1B6AAFCA27C51C390028F332 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GlovesWeatherAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = WeatherApp.GlovesWeatherAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GlovesWeatherApp.app/GlovesWeatherApp";
+			};
+			name = Debug;
+		};
+		1B6AAFCB27C51C390028F332 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GlovesWeatherAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = WeatherApp.GlovesWeatherAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GlovesWeatherApp.app/GlovesWeatherApp";
+			};
+			name = Release;
+		};
+		1B6AAFCD27C51C390028F332 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GlovesWeatherAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = WeatherApp.GlovesWeatherAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GlovesWeatherApp;
+			};
+			name = Debug;
+		};
+		1B6AAFCE27C51C390028F332 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GlovesWeatherAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = WeatherApp.GlovesWeatherAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GlovesWeatherApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B6AAF9C27C51C320028F332 /* Build configuration list for PBXProject "GlovesWeatherApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B6AAFC427C51C390028F332 /* Debug */,
+				1B6AAFC527C51C390028F332 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B6AAFC627C51C390028F332 /* Build configuration list for PBXNativeTarget "GlovesWeatherApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B6AAFC727C51C390028F332 /* Debug */,
+				1B6AAFC827C51C390028F332 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B6AAFC927C51C390028F332 /* Build configuration list for PBXNativeTarget "GlovesWeatherAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B6AAFCA27C51C390028F332 /* Debug */,
+				1B6AAFCB27C51C390028F332 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B6AAFCC27C51C390028F332 /* Build configuration list for PBXNativeTarget "GlovesWeatherAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B6AAFCD27C51C390028F332 /* Debug */,
+				1B6AAFCE27C51C390028F332 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1B6AAF9927C51C320028F332 /* Project object */;
+}
