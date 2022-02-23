@@ -13,6 +13,7 @@
 		1B6AAFAC27C51C380028F332 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B6AAFAB27C51C380028F332 /* Preview Assets.xcassets */; };
 		1B6AAFB727C51C390028F332 /* GlovesWeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6AAFB627C51C390028F332 /* GlovesWeatherAppTests.swift */; };
 		1B6AAFC227C51C390028F332 /* GlovesWeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6AAFC127C51C390028F332 /* GlovesWeatherAppUITests.swift */; };
+		4C1264BE9FAE682036C71AED /* Pods_GlovesWeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD1E2A7D2D8DF0E1532404B /* Pods_GlovesWeatherApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,9 @@
 		1B6AAFBD27C51C390028F332 /* GlovesWeatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlovesWeatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B6AAFC127C51C390028F332 /* GlovesWeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlovesWeatherAppUITests.swift; sourceTree = "<group>"; };
 		1B6AAFC327C51C390028F332 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FD1E2A7D2D8DF0E1532404B /* Pods_GlovesWeatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlovesWeatherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C6483111B6BCF7AC64913DF /* Pods-GlovesWeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlovesWeatherApp.release.xcconfig"; path = "Target Support Files/Pods-GlovesWeatherApp/Pods-GlovesWeatherApp.release.xcconfig"; sourceTree = "<group>"; };
+		EC1FACD57E7E00EC8BBFA1CC /* Pods-GlovesWeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlovesWeatherApp.debug.xcconfig"; path = "Target Support Files/Pods-GlovesWeatherApp/Pods-GlovesWeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1264BE9FAE682036C71AED /* Pods_GlovesWeatherApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +84,8 @@
 				1B6AAFB527C51C390028F332 /* GlovesWeatherAppTests */,
 				1B6AAFC027C51C390028F332 /* GlovesWeatherAppUITests */,
 				1B6AAFA227C51C320028F332 /* Products */,
+				8C6AB8547CCA40638AB4D1C9 /* Pods */,
+				A15E46D5AAF4E7D2160CA272 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +137,24 @@
 			path = GlovesWeatherAppUITests;
 			sourceTree = "<group>";
 		};
+		8C6AB8547CCA40638AB4D1C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC1FACD57E7E00EC8BBFA1CC /* Pods-GlovesWeatherApp.debug.xcconfig */,
+				8C6483111B6BCF7AC64913DF /* Pods-GlovesWeatherApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A15E46D5AAF4E7D2160CA272 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FD1E2A7D2D8DF0E1532404B /* Pods_GlovesWeatherApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +162,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B6AAFC627C51C390028F332 /* Build configuration list for PBXNativeTarget "GlovesWeatherApp" */;
 			buildPhases = (
+				C377D3F508E0B381C19E9DC1 /* [CP] Check Pods Manifest.lock */,
 				1B6AAF9D27C51C320028F332 /* Sources */,
 				1B6AAF9E27C51C320028F332 /* Frameworks */,
 				1B6AAF9F27C51C320028F332 /* Resources */,
+				BEB9F24E45B372C27D089A6C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BEB9F24E45B372C27D089A6C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GlovesWeatherApp/Pods-GlovesWeatherApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GlovesWeatherApp/Pods-GlovesWeatherApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GlovesWeatherApp/Pods-GlovesWeatherApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C377D3F508E0B381C19E9DC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GlovesWeatherApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1B6AAF9D27C51C320028F332 /* Sources */ = {
@@ -414,6 +483,7 @@
 		};
 		1B6AAFC727C51C390028F332 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC1FACD57E7E00EC8BBFA1CC /* Pods-GlovesWeatherApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -435,6 +505,7 @@
 		};
 		1B6AAFC827C51C390028F332 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C6483111B6BCF7AC64913DF /* Pods-GlovesWeatherApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
