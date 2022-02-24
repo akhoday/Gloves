@@ -6,14 +6,15 @@
 //
 
 import Foundation
+import SwiftUI
 
 class FetchData : ObservableObject{
-    
-@Published var forecasts : Forecast = Forecast()
+    @State var cityName : String = "Philadelphia"
+@Published var responses : Response = Response()
 
 init(){
     
-    let url = URL(string: "https://api.weatherbit.io/v2.0/forecast/daily?city=/(city_name)&country=US&state=/(state_code)&units=I&key=b4da1afe1c3b442ab357323b6251da78")!
+    let url = URL(string: "https://api.weatherbit.io/v2.0/forecast/daily?city=\(cityName)&country=US&key=b4da1afe1c3b442ab357323b6251da78")!
     
     URLSession.shared.dataTask(with: url) {(data, response, errors) in
         guard let data = data else {
@@ -23,9 +24,9 @@ init(){
         guard let dataAsString = String(data: data, encoding: .utf8) else {return}
        
         let decoder = JSONDecoder()
-        if let forecast = try? decoder.decode(Forecast.self, from: data) {
+        if let response = try? decoder.decode(Response.self, from: data) {
             DispatchQueue.main.async {
-                self.forecasts = forecast
+                self.responses = response
                 }
             }
         else{
@@ -33,6 +34,10 @@ init(){
         }
         }.resume()
 }
+}
+
+struct Response: Codable {
+    var forecasts : [Forecast] = [Forecast]()
 }
 
 struct Forecast: Codable{
