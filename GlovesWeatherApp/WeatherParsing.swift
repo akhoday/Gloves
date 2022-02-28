@@ -14,7 +14,7 @@ class FetchData : ObservableObject{
 
 init(){
     
-    let url = URL(string: "https://api.weatherbit.io/v2.0/forecast/daily?city=\(cityName)&country=US&key=b4da1afe1c3b442ab357323b6251da78")!
+    let url = URL(string: "https://api.weatherbit.io/v2.0/forecast/daily?city=Philadelphia&country=US&key=b4da1afe1c3b442ab357323b6251da78")!
     
     URLSession.shared.dataTask(with: url) {(data, response, errors) in
         guard let data = data else {
@@ -52,3 +52,5 @@ struct Weather : Codable{
     var code: Int?
     var description: String?
 }
+
+

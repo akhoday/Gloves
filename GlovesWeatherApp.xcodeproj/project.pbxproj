@@ -14,6 +14,7 @@
 		1B6AAFB727C51C390028F332 /* GlovesWeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6AAFB627C51C390028F332 /* GlovesWeatherAppTests.swift */; };
 		1B6AAFC227C51C390028F332 /* GlovesWeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6AAFC127C51C390028F332 /* GlovesWeatherAppUITests.swift */; };
 		1B6AAFD027C678A50028F332 /* WeatherParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6AAFCF27C678A50028F332 /* WeatherParsing.swift */; };
+		32AA3CA427CD00BF0039D679 /* WeatherInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AA3CA327CD00BF0039D679 /* WeatherInfoView.swift */; };
 		4C1264BE9FAE682036C71AED /* Pods_GlovesWeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD1E2A7D2D8DF0E1532404B /* Pods_GlovesWeatherApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		1B6AAFC127C51C390028F332 /* GlovesWeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlovesWeatherAppUITests.swift; sourceTree = "<group>"; };
 		1B6AAFC327C51C390028F332 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B6AAFCF27C678A50028F332 /* WeatherParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherParsing.swift; sourceTree = "<group>"; };
+		32AA3CA327CD00BF0039D679 /* WeatherInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfoView.swift; sourceTree = "<group>"; };
 		3FD1E2A7D2D8DF0E1532404B /* Pods_GlovesWeatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GlovesWeatherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C6483111B6BCF7AC64913DF /* Pods-GlovesWeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlovesWeatherApp.release.xcconfig"; path = "Target Support Files/Pods-GlovesWeatherApp/Pods-GlovesWeatherApp.release.xcconfig"; sourceTree = "<group>"; };
 		EC1FACD57E7E00EC8BBFA1CC /* Pods-GlovesWeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlovesWeatherApp.debug.xcconfig"; path = "Target Support Files/Pods-GlovesWeatherApp/Pods-GlovesWeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				1B6AAFA427C51C330028F332 /* GlovesWeatherAppApp.swift */,
+				32AA3CA327CD00BF0039D679 /* WeatherInfoView.swift */,
 				1B6AAFA627C51C330028F332 /* ContentView.swift */,
 				1B6AAFCF27C678A50028F332 /* WeatherParsing.swift */,
 				1B6AAFA827C51C380028F332 /* Assets.xcassets */,
@@ -333,6 +336,7 @@
 				1B6AAFA727C51C330028F332 /* ContentView.swift in Sources */,
 				1B6AAFD027C678A50028F332 /* WeatherParsing.swift in Sources */,
 				1B6AAFA527C51C330028F332 /* GlovesWeatherAppApp.swift in Sources */,
+				32AA3CA427CD00BF0039D679 /* WeatherInfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

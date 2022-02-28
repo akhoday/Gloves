@@ -9,19 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
    // @StateObject var fetchData = FetchData()
-    var forecast : Forecast
-    var weather : Weather
-    
     var body: some View {
         
-        var cityName = forecast.city_name
-        Text((cityName)!)
-            .padding()
+        Text("Hello. World")
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(forecast: Forecast(), weather: Weather())
+        ContentView()
     }
 }
