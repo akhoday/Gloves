@@ -10,41 +10,70 @@ import SwiftUI
 
 class FetchData : ObservableObject{
     @State var cityName : String = "Philadelphia"
-@Published var responses : Response = Response()
-
-init(){
+    @Published var responses : Response = Response()
     
-    let url = URL(string: "https://api.weatherbit.io/v2.0/forecast/daily?city=Philadelphia&country=US&key=b4da1afe1c3b442ab357323b6251da78")!
-    
-    URLSession.shared.dataTask(with: url) {(data, response, errors) in
-        guard let data = data else {
-            print("error")
-            return
-        }
-        guard let dataAsString = String(data: data, encoding: .utf8) else {return}
-       
-        let decoder = JSONDecoder()
-        if let response = try? decoder.decode(Response.self, from: data) {
-            DispatchQueue.main.async {
-                self.responses = response
+    init(){
+        
+        // creating the URL
+        let url = URL(string: "https://api.weatherbit.io/v2.0/forecast/daily?city=Philadelphia&country=US&days=16&units=I&key=b4da1afe1c3b442ab357323b6251da78")!
+        
+        
+        // dpwnload th data
+        URLSession.shared.dataTask(with: url) {(data, _, errors) in
+            
+            
+            // if data isn't nil then unwrap it, else just leave the function.
+            guard let data = data else {
+                print("error")
+                return
+            }
+            guard let dataAsString = String(data: data, encoding: .utf8) else {return}
+            
+            let decoder = JSONDecoder()
+            if let response = try? decoder.decode(Response.self, from: data) {
+                DispatchQueue.main.async {
+                    self.responses = response
+                    print(self.responses.state_code)
+                    print(self.responses.data[0].high_temp)
                 }
             }
-        else{
-            print("can't decode JSON")
-        }
+            else{
+                print("can't decode JSON")
+            }
         }.resume()
-}
+    }
 }
 
 struct Response: Codable {
-    var forecasts : [Forecast] = [Forecast]()
+    var state_code: String?
+    var city_name: String?
+    var lon: String?
+    var timezone: String?
+    var lat: String?
+    var country_code: String?
+    
+    //access the data array with has the stored weather forecasts
+    var data : [Data] = [Data]()
 }
 
-struct Forecast: Codable{
-    var city_name: String?
-    var state_code: String?
-    var timestamp_local: String?
-    var weathers : [Weather] = [Weather]()
+struct Data: Codable{
+    var high_temp : Double?
+    var wind_gust_spd: Double?
+    var rh : Double?
+    var min_temp : Double?
+    var temp : Double?
+    var uv : Double?
+    var precip : Double?
+    var low_temp : Double?
+    var datetime : String?
+    var snow : Double?
+    var vis : Double?
+    var sunset_ts : Int?
+    var sunrise_ts : Int?
+    
+    
+    //access the weather array with the icon for the weather and a description for the weather
+   // var weather : [Weather] = [Weather]()
 }
 
 struct Weather : Codable{

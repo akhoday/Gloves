@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-   // @StateObject var fetchData = FetchData()
+    @EnvironmentObject var fetchData : FetchData
+    
     var body: some View {
         
-        Text("Hello. World")
+        Text(fetchData.responses.state_code ?? "no data")
     }
 }
 

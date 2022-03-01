@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct GlovesWeatherAppApp: App {
+    
+    @StateObject var fetchData : FetchData = FetchData()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(fetchData)
         }
     }
 }

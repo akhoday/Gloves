@@ -9,19 +9,20 @@ import SwiftUI
 
 struct WeatherInfoView: View {
    // @StateObject var fetchData = FetchData()
-    var forecast : Forecast
+   // var forecast : Forecast
     var weather : Weather
     
     var body: some View {
         
-        var cityName = forecast.city_name
-        Text((cityName)!)
-            .padding()
+        //var cityName = forecast.city_name
+//        Text((cityName)!)
+//            .padding()
+        Text("hello")
     }
 }
 
 struct WeatherInfoView_Previews: PreviewProvider {
     static var previews: some View {
-        WeatherInfoView(forecast: Forecast(), weather: Weather())
+        WeatherInfoView(weather: Weather())
     }
 }
