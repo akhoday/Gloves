@@ -34,7 +34,6 @@ class FetchData : ObservableObject{
                 DispatchQueue.main.async {
                     self.responses = response
                     print(self.responses.state_code)
-                    print(self.responses.data[0].high_temp)
                 }
             }
             else{
