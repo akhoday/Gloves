@@ -70,7 +70,7 @@ struct Data: Codable{
     var sunset_ts : Int?
     var sunrise_ts : Int?
     
-    
+    //maria has the magic touch??
     //access the weather array with the icon for the weather and a description for the weather
    // var weather : [Weather] = [Weather]()
 }
