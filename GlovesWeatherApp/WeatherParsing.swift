@@ -24,7 +24,7 @@ class FetchData : ObservableObject{
             
             // if data isn't nil then unwrap it, else just leave the function.
             guard let data = data else {
-                print("error")
+                print("eror")
                 return
             }
             guard let dataAsString = String(data: data, encoding: .utf8) else {return}
