@@ -15,8 +15,7 @@ class FetchData : ObservableObject{
     init(){
         
         // creating the URL
-        let url = URL(string: "https://api.weatherbit.io/v2.0/forecast/daily?city=Philadelphia&country=US&days=16&units=I&key=b4da1afe1c3b442ab357323b6251da78")!
-        
+        let url = URL(string: "https://api.weatherbit.io/v2.0/forecast/daily?city=\(cityName)&country=US&units=I&key=b4da1afe1c3b442ab357323b6251da78" )!
         
         // dpwnload th data
         URLSession.shared.dataTask(with: url) {(data, _, errors) in
@@ -34,7 +33,7 @@ class FetchData : ObservableObject{
                 DispatchQueue.main.async {
                     self.responses = response
                     print(self.responses.state_code)
-                    print(self.responses.data[0].datetime)
+                  //  print(self.responses.data[0].datetime)
                 }
             }
             else{
@@ -53,23 +52,23 @@ struct Response: Codable {
     var country_code: String?
     
     //access the data array with has the stored weather forecasts
-    var data : [Data] = [Data]()
+  var data : [Data] = [Data]()
 }
 
 struct Data: Codable{
     var high_temp : Double?
-    var wind_gust_spd: Double?
-    var rh : Double?
+   // var wind_gust_spd: Double?
+    //var rh : Double?
     var min_temp : Double?
     var temp : Double?
-    var uv : Double?
-    var precip : Double?
-    var low_temp : Double?
+   // var uv : Double?
+   // var precip : Double?
+   // var low_temp : Double?
     var datetime : String?
-    var snow : Double?
-    var vis : Double?
-    var sunset_ts : Int?
-    var sunrise_ts : Int?
+  //  var snow : Double?
+  //  var vis : Double?
+   // var sunset_ts : Int?
+   // var sunrise_ts : Int?
     
     //var weather : [Weather] = [Weather]()
 }
