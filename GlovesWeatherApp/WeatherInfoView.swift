@@ -17,7 +17,7 @@ struct WeatherInfoView: View {
         //var cityName = forecast.city_name
 //        Text((cityName)!)
 //            .padding()
-        Text("hello")
+        Text("test")
     }
 }
 
