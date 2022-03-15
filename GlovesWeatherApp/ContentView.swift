@@ -11,7 +11,6 @@ struct ContentView: View {
     @EnvironmentObject var fetchData : FetchData
     
     var body: some View {
-        
         Text(fetchData.responses.state_code ?? "no data")
         
        

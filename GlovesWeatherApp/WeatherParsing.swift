@@ -29,9 +29,10 @@ class FetchData : ObservableObject{
             guard let dataAsString = String(data: data, encoding: .utf8) else {return}
             
             let decoder = JSONDecoder()
-            if let response = try? decoder.decode(Response.self, from: data) {
+            if let response = try? decoder.decode(DataResponse.self, from: data) {
                 DispatchQueue.main.async {
-                    self.responses = response
+                    print(response)
+                 // self.responses = response
                     print(self.responses.state_code)
                   //  print(self.responses.data[0].datetime)
                 }
@@ -50,29 +51,29 @@ struct Response: Codable {
     var timezone: String?
     var lat: String?
     var country_code: String?
-    
     //access the data array with has the stored weather forecasts
-  var data : [Data] = [Data]()
+   var datas : [DataResponse] = [DataResponse]()
 }
 
 struct Data: Codable{
     var high_temp : Double?
-   // var wind_gust_spd: Double?
-    //var rh : Double?
+    var wind_gust_spd: Double?
+    var rh : Double?
     var min_temp : Double?
     var temp : Double?
-   // var uv : Double?
-   // var precip : Double?
-   // var low_temp : Double?
+    var uv : Double?
+    var precip : Double?
+    var low_temp : Double?
     var datetime : String?
-  //  var snow : Double?
-  //  var vis : Double?
-   // var sunset_ts : Int?
-   // var sunrise_ts : Int?
-    
+    var snow : Double?
+    var vis : Double?
+    var sunset_ts : Int?
+    var sunrise_ts : Int?
     //var weather : [Weather] = [Weather]()
 }
-
+struct DataResponse: Codable{
+    let data: [Data]
+}
 struct Weather : Codable{
     var icon: String?
     var code: Int?
