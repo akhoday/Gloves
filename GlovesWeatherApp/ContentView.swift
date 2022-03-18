@@ -13,10 +13,10 @@ struct ContentView: View {
     var body: some View {
         
         List(fetchData.responses.data) {data in
-            WeatherInfoView()
+            WeatherInfoView(weather: data.weather, response: fetchData.responses, data: data)
         }
         
-       
+       Text("ur mom")
     }
 }
 
