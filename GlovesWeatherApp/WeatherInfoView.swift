@@ -22,12 +22,13 @@ struct WeatherInfoView: View {
         var timezone = response.timezone
         var temp = data.temp
         var description = weather.description
+        var date = data.datetime
         
         VStack {
-            Text(String(temp ?? 0.0))
+            Text(date ?? "material gorl").foregroundColor(Color.fontColor)
             Text(description ?? "who's to say")
-
-            Text("test")
+            Text("Temp: " + String(temp ?? 0.0))
+            
         }
     }
 }
