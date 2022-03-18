@@ -13,7 +13,7 @@ struct ContentView: View {
     var body: some View {
         
         List(fetchData.responses.data) {data in
-            Text(data.datetime ?? "no data")
+            WeatherInfoView()
         }
         
        
