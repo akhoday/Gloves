@@ -88,7 +88,6 @@
 		1B6AAF9827C51C320028F332 = {
 			isa = PBXGroup;
 			children = (
-				32530CBE27E8BAF40084D251 /* DailyInfoView.swift */,
 				1B6AAFA327C51C320028F332 /* GlovesWeatherApp */,
 				1B6AAFB527C51C390028F332 /* GlovesWeatherAppTests */,
 				1B6AAFC027C51C390028F332 /* GlovesWeatherAppUITests */,
@@ -111,6 +110,7 @@
 		1B6AAFA327C51C320028F332 /* GlovesWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				32530CBE27E8BAF40084D251 /* DailyInfoView.swift */,
 				1B6AAFA427C51C330028F332 /* GlovesWeatherAppApp.swift */,
 				32AA3CA327CD00BF0039D679 /* WeatherInfoView.swift */,
 				1B6AAFA627C51C330028F332 /* ContentView.swift */,

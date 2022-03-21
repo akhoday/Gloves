@@ -12,18 +12,21 @@ struct ContentView: View {
     
     var body: some View {
         
-        List(fetchData.responses.data) {data in
+       List(fetchData.responses.data) {
             
-            
-            
+        data in
             NavigationLink(
                 destination: DailyInfoView(weather: data.weather, response: fetchData.responses, data: data),
-                label: { WeatherInfoView(weather: data.weather, response: fetchData.responses, data: data)})
+                label: {
+                  
+                    DailyInfoView(weather: data.weather, response: fetchData.responses, data: data)
+                    
             
-        }
-        
-       Text("ur mom")
+        })
+            Text("ur mom")
+       
     }
+}
 }
 
 struct ContentView_Previews: PreviewProvider {

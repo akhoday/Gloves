@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct DailyInfoView: View {
+  
     var weather : Weather
     var response : Response
     var data : Data
@@ -15,6 +16,10 @@ struct DailyInfoView: View {
     
     var body: some View {
         
+        ZStack{
+            
+            Rectangle().foregroundColor(Color.background).edgesIgnoringSafeArea(.all)
+            
         var stateCode = response.state_code
         var cityName = response.city_name
         var timezone = response.timezone
@@ -33,6 +38,7 @@ struct DailyInfoView: View {
             
             
         }.foregroundColor(Color.fontColor)
+    }
     }
 }
 
