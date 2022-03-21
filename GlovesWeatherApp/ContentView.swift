@@ -13,7 +13,13 @@ struct ContentView: View {
     var body: some View {
         
         List(fetchData.responses.data) {data in
-            WeatherInfoView(weather: data.weather, response: fetchData.responses, data: data)
+            
+            
+            
+            NavigationLink(
+                destination: DailyInfoView(weather: data.weather, response: fetchData.responses, data: data),
+                label: { WeatherInfoView(weather: data.weather, response: fetchData.responses, data: data)})
+            
         }
         
        Text("ur mom")
