@@ -23,11 +23,15 @@ struct WeatherInfoView: View {
         var temp = data.temp
         var description = weather.description
         var date = data.datetime
+        let icon = URL(string: "https://www.weatherbit.io/static/img/icons/\(weather.icon).png")
+
         
         VStack {
+            
             Text(date ?? "material gorl")
             Text(description ?? "who's to say")
             Text("Temp: " + String(temp ?? 0.0))
+          
             
         }.foregroundColor(Color.fontColor).background(Color.background)
     }

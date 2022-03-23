@@ -12,6 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         
+NavigationView{
        List(fetchData.responses.data) {
             
         data in
@@ -19,12 +20,11 @@ struct ContentView: View {
                 destination: DailyInfoView(weather: data.weather, response: fetchData.responses, data: data),
                 label: {
                   
-                    DailyInfoView(weather: data.weather, response: fetchData.responses, data: data)
+                    WeatherInfoView(weather: data.weather, response: fetchData.responses, data: data)
                     
             
         })
-            Text("ur mom")
-       
+       }
     }
 }
 }
