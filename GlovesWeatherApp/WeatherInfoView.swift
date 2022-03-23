@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WebKit
 
 struct WeatherInfoView: View {
    // @StateObject var fetchData = FetchData()
@@ -23,10 +24,12 @@ struct WeatherInfoView: View {
         var temp = data.temp
         var description = weather.description
         var date = data.datetime
-        let icon = URL(string: "https://www.weatherbit.io/static/img/icons/\(weather.icon).png")
+        //let icon = URL(string: "https://www.weatherbit.io/static/img/icons/\(weather.icon).png")
 
         
         VStack {
+            
+          //  AsyncImage(url: URL(string: "https://www.weatherbit.io/static/img/icons/\(weather.icon).png"))
             
             Text(date ?? "material gorl")
             Text(description ?? "who's to say")
