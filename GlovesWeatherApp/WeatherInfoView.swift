@@ -24,13 +24,13 @@ struct WeatherInfoView: View {
         var temp = data.temp
         var description = weather.description
         var date = data.datetime
+        
         //let icon = URL(string: "https://www.weatherbit.io/static/img/icons/\(weather.icon).png")
 
-        
         VStack {
             
-          //  AsyncImage(url: URL(string: "https://www.weatherbit.io/static/img/icons/\(weather.icon).png"))
-            
+           // AsyncImage(url: URL(string: "www.weatherbit.io/static/img/icons/\(weather.icon).png")!, placeholder: { Text("Loading ...") }, image: { Image(uiImage: $0).resizable() }) .frame(idealHeight: UIScreen.main.bounds.width / 2 * 3)
+          
             Text(date ?? "material gorl")
             Text(description ?? "who's to say")
             Text("Temp: " + String(temp ?? 0.0))
