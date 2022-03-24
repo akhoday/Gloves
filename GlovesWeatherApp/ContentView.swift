@@ -12,20 +12,30 @@ struct ContentView: View {
     
     var body: some View {
         
-NavigationView{
-       List(fetchData.responses.data) {
+        VStack{
+            //heading
+            Image("Gaslight")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
             
-        data in
-            NavigationLink(
-                destination: DailyInfoView(weather: data.weather, response: fetchData.responses, data: data),
-                label: {
-                  
-                    WeatherInfoView(weather: data.weather, response: fetchData.responses, data: data)
-                    
             
-        })
-       }
-    }
+            NavigationView{
+                   List(fetchData.responses.data) {
+                        
+                    data in
+                        NavigationLink(
+                            destination: DailyInfoView(weather: data.weather, response: fetchData.responses, data: data),
+                            label: {
+                              
+                                WeatherInfoView(weather: data.weather, response: fetchData.responses, data: data)
+                                
+                        
+                    })
+                   }
+                }
+        }
+        
+
 }
 }
 
