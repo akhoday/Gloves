@@ -17,14 +17,14 @@ struct ContentView: View {
             
             
             //contains weather currently and weather for next couple of days
-            HStack{
+            VStack{
                 //weather daily
                 
                 
                 
                 
                 //next couple of days
-                VStack{
+                HStack{
                             NavigationView{
                            List(fetchData.responses.data) {
                                 
