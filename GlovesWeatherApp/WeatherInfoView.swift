@@ -32,8 +32,8 @@ struct WeatherInfoView: View {
            // AsyncImage(url: URL(string: "www.weatherbit.io/static/img/icons/\(weather.icon).png")!, placeholder: { Text("Loading ...") }, image: { Image(uiImage: $0).resizable() }) .frame(idealHeight: UIScreen.main.bounds.width / 2 * 3)
           
             Text(date ?? "material gorl")
-            Text(description ?? "who's to say")
-            Text("Temp: " + String(temp ?? 0.0))
+            Text(String(Int(temp ?? 0)) + "°").font(.system(size: 30))
+            Text(description ?? "who's to say").font(.system(size: 14))
           
             
         }.foregroundColor(Color.fontColor).background(Color.background)

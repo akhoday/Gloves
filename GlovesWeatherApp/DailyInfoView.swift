@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DailyInfoView: View {
-  
+    
     var weather : Weather
     var response : Response
     var data : Data
@@ -16,10 +16,6 @@ struct DailyInfoView: View {
     
     var body: some View {
         
-        ZStack{
-            
-            Rectangle().foregroundColor(Color.background).edgesIgnoringSafeArea(.all)
-            
         var stateCode = response.state_code
         var cityName = response.city_name
         var timezone = response.timezone
@@ -30,16 +26,30 @@ struct DailyInfoView: View {
         var low = data.low_temp
         var icon = weather.icon
         
-        VStack {
+        
+        
+        ZStack{
             
-            Text("Temp: " + String(temp ?? 0.0))
-            Text("High: " + String(high ?? 0.0))
-            Text("Low: " + String(low ?? 0))
-            Text(description ?? "who's to say")
+            Rectangle().foregroundColor(Color.background).edgesIgnoringSafeArea(.all)
             
             
-        }.foregroundColor(Color.fontColor)
-    }
+            VStack {
+                
+                Text(date ?? "your mom").frame(width: 300, height: 475, alignment: .topTrailing)
+                
+                
+                Text(String(Int(temp ?? 0)) + "°").font(.system(size: 56))
+                HStack {
+                    Text("Low: " + String(Int(low ?? 0)) + "°").font(.system(size: 20))
+                    Text("High: " + String(Int(high ?? 0)) + "°").font(.system(size: 20))
+                }
+                Text(description ?? "who's to say").font(.system(size: 24))
+                
+                Spacer()
+                Spacer()
+                Spacer()
+            }.foregroundColor(Color.fontColor)
+        }
     }
 }
 
