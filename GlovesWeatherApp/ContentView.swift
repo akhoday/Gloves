@@ -12,27 +12,36 @@ struct ContentView: View {
     
     var body: some View {
         
-        VStack{
-            //heading
-            Image("Gaslight")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
+        //will have the background based on the weather behind all of the info
+        ZStack{
             
             
-            NavigationView{
-                   List(fetchData.responses.data) {
-                        
-                    data in
-                        NavigationLink(
-                            destination: DailyInfoView(weather: data.weather, response: fetchData.responses, data: data),
-                            label: {
-                              
-                                WeatherInfoView(weather: data.weather, response: fetchData.responses, data: data)
+            //contains weather currently and weather for next couple of days
+            HStack{
+                //weather daily
+                
+                
+                
+                
+                //next couple of days
+                VStack{
+                            NavigationView{
+                           List(fetchData.responses.data) {
                                 
-                        
-                    })
-                   }
+                            data in
+                                NavigationLink(
+                                    destination: DailyInfoView(weather: data.weather, response: fetchData.responses, data: data),
+                                    label: {
+                                      
+                                        WeatherInfoView(weather: data.weather, response: fetchData.responses, data: data)
+                                        
+                                
+                            })
+                           }
+                        }
                 }
+            }
+        
         }
         
 

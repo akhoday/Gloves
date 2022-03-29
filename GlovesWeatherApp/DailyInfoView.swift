@@ -36,7 +36,6 @@ struct DailyInfoView: View {
             Text("High: " + String(high ?? 0.0))
             Text("Low: " + String(low ?? 0))
             Text(description ?? "who's to say")
-            Image(icon!)
             
             
         }.foregroundColor(Color.fontColor)
