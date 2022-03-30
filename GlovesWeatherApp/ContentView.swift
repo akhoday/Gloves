@@ -21,9 +21,32 @@ struct ContentView: View {
                 //weather daily
                 
                 
+                //clothing options
+                HStack{
+                    //comfy option
+                    NavigationLink(
+                        destination: ComfyView(),
+                        label: {
+                            Text("Comfy Option")
+                        })
+                    
+                    //trendy option
+                    NavigationLink(
+                        destination: TrendyView(),
+                        label: {
+                            Text("Trendy Option")
+                        })
+                    
+                    //classic option
+                    NavigationLink(
+                        destination: ClassicView(),
+                        label: {
+                            Text("Classic Option")
+                        })
+                }
                 
                 
-                //next couple of days
+                //next couple of days and that array
                 HStack{
                             NavigationView{
                            List(fetchData.responses.data) {
