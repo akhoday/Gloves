@@ -17,6 +17,7 @@
 		1B6AAFB727C51C390028F332 /* GlovesWeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6AAFB627C51C390028F332 /* GlovesWeatherAppTests.swift */; };
 		1B6AAFC227C51C390028F332 /* GlovesWeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6AAFC127C51C390028F332 /* GlovesWeatherAppUITests.swift */; };
 		1B6AAFD027C678A50028F332 /* WeatherParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6AAFCF27C678A50028F332 /* WeatherParsing.swift */; };
+		1BBCB0A427F4908000120387 /* ClothingTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BBCB0A327F4908000120387 /* ClothingTime.swift */; };
 		1BD1DE4727EB4A890027EED3 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1DE4627EB4A890027EED3 /* CustomImageView.swift */; };
 		32530CBF27E8BAF40084D251 /* DailyInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32530CBE27E8BAF40084D251 /* DailyInfoView.swift */; };
 		32A0D58B27E4BF3100430669 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A0D58A27E4BF3100430669 /* Constants.swift */; };
@@ -58,6 +59,7 @@
 		1B6AAFC127C51C390028F332 /* GlovesWeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlovesWeatherAppUITests.swift; sourceTree = "<group>"; };
 		1B6AAFC327C51C390028F332 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B6AAFCF27C678A50028F332 /* WeatherParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherParsing.swift; sourceTree = "<group>"; };
+		1BBCB0A327F4908000120387 /* ClothingTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClothingTime.swift; sourceTree = "<group>"; };
 		1BD1DE4627EB4A890027EED3 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		32530CBE27E8BAF40084D251 /* DailyInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyInfoView.swift; sourceTree = "<group>"; };
 		32A0D58A27E4BF3100430669 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				0AAA594127F48B98000A2EF4 /* ClassicView.swift */,
+				1BBCB0A327F4908000120387 /* ClothingTime.swift */,
 				0AAA593D27F48B6E000A2EF4 /* ComfyView.swift */,
 				32A0D58A27E4BF3100430669 /* Constants.swift */,
 				1BD1DE4627EB4A890027EED3 /* CustomImageView.swift */,
@@ -351,6 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BBCB0A427F4908000120387 /* ClothingTime.swift in Sources */,
 				32A0D58B27E4BF3100430669 /* Constants.swift in Sources */,
 				1BD1DE4727EB4A890027EED3 /* CustomImageView.swift in Sources */,
 				1B6AAFA727C51C330028F332 /* ContentView.swift in Sources */,
