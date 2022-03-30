@@ -33,9 +33,9 @@ struct DailyInfoView: View {
             Rectangle().foregroundColor(Color.background).edgesIgnoringSafeArea(.all)
             
             
-            VStack {
+            VStack(spacing: 0.0) {
                 
-                Text(date ?? "your mom").frame(width: 300, height: 475, alignment: .topTrailing)
+                Text(date ?? "your mom")
                 
                 
                 Text(String(Int(temp ?? 0)) + "°").font(.system(size: 56))
@@ -44,11 +44,8 @@ struct DailyInfoView: View {
                     Text("High: " + String(Int(high ?? 0)) + "°").font(.system(size: 20))
                 }
                 Text(description ?? "who's to say").font(.system(size: 24))
-                
-                Spacer()
-                Spacer()
-                Spacer()
-            }.foregroundColor(Color.fontColor)
+             
+            }.padding().frame(width: /*@START_MENU_TOKEN@*/400.0/*@END_MENU_TOKEN@*/, height: 300.0, alignment: .top).foregroundColor(Color.fontColor)
         }
     }
 }
