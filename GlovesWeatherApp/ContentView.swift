@@ -59,9 +59,10 @@ struct ContentView: View {
                                         WeatherInfoView(weather: data.weather, response: fetchData.responses, data: data)
                                         
                                 
-                            })
+                                    }).listRowBackground(Color.background)
                            }
-                        }
+                           
+                            }
                 }
             }
         
