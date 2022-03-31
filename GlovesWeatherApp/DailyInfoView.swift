@@ -44,6 +44,30 @@ struct DailyInfoView: View {
                     Text("High: " + String(Int(high ?? 0)) + "°").font(.system(size: 20))
                 }
                 Text(description ?? "who's to say").font(.system(size: 24))
+                
+                //Clothing Options
+                HStack{
+                    //comfy option
+                    NavigationLink(
+                        destination: ComfyView(),
+                        label: {
+                            Text("Comfy Option")
+                        })
+                    
+                    //trendy option
+                    NavigationLink(
+                        destination: TrendyView(),
+                        label: {
+                            Text("Trendy Option")
+                        })
+                    
+                    //classic option
+                    NavigationLink(
+                        destination: ClassicView(),
+                        label: {
+                            Text("Classic Option")
+                        })
+                }
              
             }.padding().frame(width: /*@START_MENU_TOKEN@*/400.0/*@END_MENU_TOKEN@*/, height: 300.0, alignment: .top).foregroundColor(Color.fontColor)
         }
