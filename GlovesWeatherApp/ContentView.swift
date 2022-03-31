@@ -55,14 +55,26 @@ struct ContentView: View {
                             List(fetchData.responses.data) {
                                 
                                 data in
-                                NavigationLink(
-                                    destination: DailyInfoView(weather: data.weather, response: fetchData.responses, data: data),
-                                    label: {
-                                        
-                                        WeatherInfoView(weather: data.weather, response: fetchData.responses, data: data)
-                                        
-                                        
-                                    }).listRowBackground(Color.background)
+                                if #available(iOS 15.0, *) {
+                                    NavigationLink(
+                                        destination: DailyInfoView(weather: data.weather, response: fetchData.responses, data: data),
+                                        label: {
+                                            
+                                            WeatherInfoView(weather: data.weather, response: fetchData.responses, data: data)
+                                            
+                                            
+                                        }).listRowBackground(Color.background).listRowSeparatorTint(Color.fontColor)
+                                        .navigationTitle(Text("16 Day Forecast")).accentColor(Color.fontColor)
+                                } else {
+                                    NavigationLink(
+                                        destination: DailyInfoView(weather: data.weather, response: fetchData.responses, data: data),
+                                        label: {
+                                            
+                                            WeatherInfoView(weather: data.weather, response: fetchData.responses, data: data)
+                                            
+                                            
+                                        }).listRowBackground(Color.background)
+                                }
                             }
                             
                         }
