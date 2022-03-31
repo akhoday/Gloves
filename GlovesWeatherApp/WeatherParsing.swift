@@ -10,12 +10,13 @@ import SwiftUI
 
 class FetchData : ObservableObject{
     @State var cityName : String = "Philadelphia"
+    @State var stateName : String = "Pennsylvania"
     @Published var responses : Response = Response()
     
     init(){
         
         // creating the URL
-        let url = URL(string: "https://api.weatherbit.io/v2.0/forecast/daily?city=\(cityName)&country=US&units=I&key=b4da1afe1c3b442ab357323b6251da78" )!
+        let url = URL(string: "https://api.weatherbit.io/v2.0/forecast/daily?city=\(cityName)&country=US&state=\(stateName)&units=I&key=b4da1afe1c3b442ab357323b6251da78" )!
         
         // dpwnload th data
         URLSession.shared.dataTask(with: url) {(data, _, errors) in
