@@ -27,37 +27,37 @@ var extra = ""
 var temp = (data.temp)!
 var snow = (data.snow)!
 
-var coldColdComfy = [shirts: "", pants: "", coats: "", socks: "", shoes: "boots (uggs), sneakers(forces)", gloves: "recommended", scarves: "recommended", hats: "", sunglasses: "optional", extra: ""]
+var coldColdComfy = [shirts: "", pants: "", coats: "", socks: "", shoes: "boots (uggs), sneakers(forces)", gloves: "recommended", scarves: "recommended", hats: "beanie, ear muffs, ski mask, head warmer headbands", sunglasses: "optional", extra: ""]
 
-var coldColdFund = [shirts: "", pants: "", coats: "", socks: "", shoes: "boots (uggs), sneakers(forces)", gloves: "recommended", scarves: "recommended", hats: "", sunglasses: "optional", extra: ""]
+var coldColdFund = [shirts: "", pants: "", coats: "", socks: "", shoes: "boots (uggs), sneakers(forces)", gloves: "recommended", scarves: "recommended", hats: "beanie, ear muffs, ski mask, head warmer headbands", sunglasses: "optional", extra: ""]
 
-var coldComfy = [shirts: "", pants: "", coats: "", socks: "", shoes: "boots(uggs), sneakers(forces, converse, vans)", gloves: "", scarves: "", hats: "", sunglasses: "optional", extra: ""]
+var coldComfy = [shirts: "", pants: "", coats: "", socks: "", shoes: "boots(uggs), sneakers(forces, converse, vans)", gloves: "", scarves: "", hats: "beanie, ear muffs, ski mask, head warmer headbands", sunglasses: "optional", extra: ""]
 
-var coldFund = [shirts: "", pants: "", coats: "", socks: "", shoes: "boots(uggs), sneakers(forces, converse, vans)", gloves: "recommended", scarves: "recommended", hats: "", sunglasses: "optional", extra: ""]
-
-
-var coldishComfy = [shirts: "", pants: "", coats: "", socks: "", shoes: " sneakers(forces, converse, vans, nike, adidas)", gloves: "optional", scarves: "optional", hats: "", sunglasses: "optional", extra: ""]
-
-var coldishFund = [shirts: "", pants: "", coats: "", socks: "", shoes: " sneakers(forces, converse, vans, nike, adidas)", gloves: "optional", scarves: "optional", hats: "", sunglasses: "", extra: ""]
+var coldFund = [shirts: "", pants: "", coats: "", socks: "", shoes: "boots(uggs), sneakers(forces, converse, vans)", gloves: "recommended", scarves: "recommended", hats: "beanie, ear muffs, ski mask, head warmer headbands", sunglasses: "optional", extra: ""]
 
 
-var warmishComfy = [shirts: "", pants: "", coats: "", socks: "", shoes: "sneakers(forces, conserve, vans, nike, adidas)", gloves: "", scarves: "", hats: "", sunglasses: "", extra: ""]
+var coldishComfy = [shirts: "", pants: "", coats: "", socks: "", shoes: " sneakers(forces, converse, vans, nike, adidas)", gloves: "optional", scarves: "optional", hats: "optional winter hat", sunglasses: "optional", extra: ""]
 
-var warmishFund = [shirts: "", pants: "", coats: "", socks: "", shoes: "sneakers(forces, conserve, vans, nike, adidas)", gloves: "", scarves: "", hats: "", sunglasses: "", extra: ""]
-
-
-var warmerComfy = [shirts: "", pants: "", coats: "", socks: "", shoes: " sneakers(forces, conserve, vans, nike, adidas)", gloves: "", scarves: "", hats: "", sunglasses: "", extra: ""]
-
-var warmerFund = [shirts: "", pants: "", coats: "", socks: "", shoes: " sneakers(forces, conserve, vans, nike, adidas)", gloves: "", scarves: "", hats: "", sunglasses: "", extra: ""]
+var coldishFund = [shirts: "", pants: "", coats: "", socks: "", shoes: " sneakers(forces, converse, vans, nike, adidas)", gloves: "optional", scarves: "optional", hats: "optional winter hat", sunglasses: "optional", extra: ""]
 
 
-var hotComfy = [shirts: "", pants: "", coats: "", socks: "", shoes: "", gloves: "", scarves: "", hats: "", sunglasses: "", extra: ""]
+var warmishComfy = [shirts: "", pants: "", coats: "", socks: "", shoes: "sneakers(forces, conserve, vans, nike, adidas)", gloves: "", scarves: "", hats: "", sunglasses: "optional", extra: ""]
 
-var hotFund = [shirts: "", pants: "", coats: "", socks: "", shoes: "sneakers (converse, forces, vans), birkenstocks", gloves: "", scarves: "", hats: "", sunglasses: "", extra: ""]
+var warmishFund = [shirts: "", pants: "", coats: "", socks: "", shoes: "sneakers(forces, conserve, vans, nike, adidas)", gloves: "", scarves: "", hats: "baseball cap", sunglasses: "optional", extra: ""]
 
-var hawtComfy = [shirts: "", pants: "", coats: "", socks: "", shoes: "sneakers (converse, forces, vans), birkenstocks", gloves: "", scarves: "", hats: "", sunglasses: "", extra: ""]
 
-var hawtFund = [shirts: "", pants: "", coats: "", socks: "", shoes: "", gloves: "", scarves: "", hats: "", sunglasses: "", extra: ""]
+var warmerComfy = [shirts: "", pants: "", coats: "", socks: "", shoes: " sneakers(forces, conserve, vans, nike, adidas)", gloves: "", scarves: "", hats: "baseball cap", sunglasses: "optional", extra: ""]
+
+var warmerFund = [shirts: "", pants: "", coats: "", socks: "", shoes: " sneakers(forces, conserve, vans, nike, adidas)", gloves: "", scarves: "", hats: "baseball cap", sunglasses: "optional", extra: ""]
+
+
+var hotComfy = [shirts: "", pants: "", coats: "", socks: "", shoes: "sneakers (converse, forces, vans), birkenstocks", gloves: "", scarves: "", hats: "baseball cap", sunglasses: "optional", extra: ""]
+
+var hotFund = [shirts: "", pants: "", coats: "", socks: "", shoes: "sneakers (converse, forces, vans), birkenstocks", gloves: "", scarves: "", hats: "baseball cap", sunglasses: "optional", extra: ""]
+
+var hawtComfy = [shirts: "", pants: "", coats: "", socks: "", shoes: "flip flops, birkenstocks, sandals, sneakers", gloves: "", scarves: "", hats: "baseball cap", sunglasses: "optional", extra: ""]
+
+var hawtFund = [shirts: "", pants: "", coats: "", socks: "", shoes: "flip flops, birkenstocks, sandals, sneakers", gloves: "", scarves: "", hats: "baseball cap", sunglasses: "optional", extra: ""]
 
 
 
