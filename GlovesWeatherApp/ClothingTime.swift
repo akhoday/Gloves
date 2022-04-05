@@ -27,12 +27,38 @@ var extra = ""
 var temp = (data.temp)!
 var snow = (data.snow)!
 
-//comfy
+var coldColdComfy = [shirts: "", pants: "", coats: "", socks: "", shoes: "", gloves: "", scarves: "", hats: "", sunglasses: "", extra: ""]
 
-var comfy = [String : String]()
+var coldColdFund = [shirts: "", pants: "", coats: "", socks: "", shoes: "", gloves: "", scarves: "", hats: "", sunglasses: "", extra: ""]
 
-//comfy[shoes] = ""
+var coldComfy = [shirts: "", pants: "", coats: "", socks: "", shoes: "", gloves: "", scarves: "", hats: "", sunglasses: "", extra: ""]
 
+var coldFund = [shirts: "", pants: "", coats: "", socks: "", shoes: "", gloves: "", scarves: "", hats: "", sunglasses: "", extra: ""]
+
+
+var coldishComfy = [shirts: "", pants: "", coats: "", socks: "", shoes: "", gloves: "", scarves: "", hats: "", sunglasses: "", extra: ""]
+
+var coldishFund = [shirts: "", pants: "", coats: "", socks: "", shoes: "", gloves: "", scarves: "", hats: "", sunglasses: "", extra: ""]
+
+
+var warmishComfy = [shirts: "", pants: "", coats: "", socks: "", shoes: "", gloves: "", scarves: "", hats: "", sunglasses: "", extra: ""]
+
+var warmishFund = [shirts: "", pants: "", coats: "", socks: "", shoes: "", gloves: "", scarves: "", hats: "", sunglasses: "", extra: ""]
+
+
+var warmerComfy = [shirts: "", pants: "", coats: "", socks: "", shoes: "", gloves: "", scarves: "", hats: "", sunglasses: "", extra: ""]
+
+var warmerFund = [shirts: "", pants: "", coats: "", socks: "", shoes: "", gloves: "", scarves: "", hats: "", sunglasses: "", extra: ""]
+
+
+var hotComfy = [shirts: "", pants: "", coats: "", socks: "", shoes: "", gloves: "", scarves: "", hats: "", sunglasses: "", extra: ""]
+
+var hotFund = [shirts: "", pants: "", coats: "", socks: "", shoes: "", gloves: "", scarves: "", hats: "", sunglasses: "", extra: ""]
+
+
+var hawtComfy = [shirts: "", pants: "", coats: "", socks: "", shoes: "", gloves: "", scarves: "", hats: "", sunglasses: "", extra: ""]
+
+var hawtFund = [shirts: "", pants: "", coats: "", socks: "", shoes: "", gloves: "", scarves: "", hats: "", sunglasses: "", extra: ""]
 
 
 
