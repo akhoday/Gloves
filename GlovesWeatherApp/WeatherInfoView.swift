@@ -7,6 +7,7 @@
 
 import SwiftUI
 import WebKit
+import UIKit
 
 struct WeatherInfoView: View {
    // @StateObject var fetchData = FetchData()
@@ -14,6 +15,29 @@ struct WeatherInfoView: View {
     var weather : Weather
     var response : Response
     var data : Data
+    
+    func getDayOfWeek(_ date:String, format: String) -> String? {
+        
+        let weekDays = [
+            "Sun",
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat"
+        ]
+
+        let formatter  = DateFormatter()
+        formatter.dateFormat = format
+        guard let myDate = formatter.date(from: date) else { return nil }
+        
+        let myCalendar = Calendar(identifier: .gregorian)
+        let weekDay = myCalendar.component(.weekday, from: myDate)
+        
+        
+        return weekDays[weekDay-1]
+    }
     
     
     var body: some View {
@@ -24,14 +48,20 @@ struct WeatherInfoView: View {
         var temp = data.temp
         var description = weather.description
         var date = data.datetime
+        var unwrappedDate = date!
+        var subStringDate = unwrappedDate.suffix(5)
         
         //let icon = URL(string: "https://www.weatherbit.io/static/img/icons/\(weather.icon).png")
+        
 
         VStack {
             
            // AsyncImage(url: URL(string: "www.weatherbit.io/static/img/icons/\(weather.icon).png")!, placeholder: { Text("Loading ...") }, image: { Image(uiImage: $0).resizable() }) .frame(idealHeight: UIScreen.main.bounds.width / 2 * 3)
-          
-            Text(date ?? "material gorl")
+           
+            if let weekday = getDayOfWeek(unwrappedDate, format:"yyyy-MM-dd") {
+                Text(weekday)
+            }
+            Text(subStringDate)
             Text(String(Int(temp ?? 0)) + "°").font(.system(size: 30))
             Text(description ?? "who's to say").font(.system(size: 14))
           
