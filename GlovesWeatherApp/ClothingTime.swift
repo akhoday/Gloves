@@ -14,7 +14,7 @@ var data : Data = Data()
 var choice : String = ""
 
 var isRaining : Bool = false
-var shoes = ""
+var shoes = " "
 var hats = ""
 var sunglasses = ""
 var scarves = ""
