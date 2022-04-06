@@ -28,14 +28,6 @@ struct ComfyView: View {
     var hawtComfy = [shirts: "casual t-shirt, tank tops", pants: "athletic shorts, sweat shorts", coats: "optional jacket", socks: "no socks or socks w/ sneakers", shoes: "flip flops, birkenstocks, sandals, sneakers", gloves: "not recommended", scarves: "not recommended", hats: "baseball cap", sunglasses: "optional", extra: ""]
    
     
-    /*COLD COLD : 20 and below
-     COLD: 32 -20 deg
-     COLDISH : 33-50
-     WARMISH: 51-60
-     WARMER: 61-70
-     HOT: 71-85
-     BURNING UR ASS OFF: 86+
-     */
     var body: some View {
         
         let temp = (data.temp)!
@@ -60,7 +52,7 @@ struct ComfyView: View {
                     print(hotComfy)
                 }
                 else {
-                    Text("ur mom") //hawtComfy
+                    print(hawtComfy) //hawtComfy
                 }
             }
             
