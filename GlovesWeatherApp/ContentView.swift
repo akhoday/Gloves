@@ -25,21 +25,21 @@ struct ContentView: View {
                 HStack{
                     //comfy option
                     NavigationLink(
-                        destination: ComfyView(),
+                        destination: ComfyView(weather: weather, response: response, data: data),
                         label: {
                             Text("Comfy Option")
                         })
                     
                     //trendy option
-                    NavigationLink(
+                 /*   NavigationLink(
                         destination: TrendyView(),
                         label: {
                             Text("Trendy Option")
-                        })
+                        }) */
                     
                     //classic option
                     NavigationLink(
-                        destination: ClassicView(),
+                        destination: ClassicView(weather: weather, response: response, data: data),
                         label: {
                             Text("Classic Option")
                         })

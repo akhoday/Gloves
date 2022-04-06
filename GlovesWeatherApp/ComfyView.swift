@@ -15,6 +15,12 @@ struct ComfyView: View {
     
     
     var body: some View {
+        
+        
+        ZStack{
+            
+            Rectangle().foregroundColor(Color.background).edgesIgnoringSafeArea(.all)
+        }
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }

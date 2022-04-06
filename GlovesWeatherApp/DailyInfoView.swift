@@ -82,11 +82,11 @@ struct DailyInfoView: View {
                         })
                     
                     //trendy option
-                    NavigationLink(
+                   /* NavigationLink(
                         destination: TrendyView(),
                         label: {
                             Text("Trendy Option")
-                        })
+                        }) */
                     
                     //classic option
                     NavigationLink(
