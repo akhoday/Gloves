@@ -54,7 +54,7 @@ struct ClassicView: View {
                 else {
                     Text("ur mom") //hawtComfy
                 }
-            }
+            } //ur mom
             
             }.padding().frame(width: /*@START_MENU_TOKEN@*/400.0/*@END_MENU_TOKEN@*/, height: 300.0, alignment: .top).foregroundColor(Color.fontColor)
         

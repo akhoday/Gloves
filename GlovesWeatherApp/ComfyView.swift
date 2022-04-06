@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+//comfy
 struct ComfyView: View {
     
     var weather : Weather
