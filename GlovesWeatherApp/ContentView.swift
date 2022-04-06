@@ -13,37 +13,7 @@ struct ContentView: View {
     var body: some View {
         
         //will have the background based on the weather behind all of the info
-        ZStack{
-            
-            Rectangle().foregroundColor(Color.background).edgesIgnoringSafeArea(.all)
-            //contains weather currently and weather for next couple of days
-            VStack{
-                //weather daily
-                
-                
-                //clothing options
-                HStack{
-                    //comfy option
-                    NavigationLink(
-                        destination: ComfyView(weather: weather, response: response, data: data),
-                        label: {
-                            Text("Comfy Option")
-                        })
-                    
-                    //trendy option
-                 /*   NavigationLink(
-                        destination: TrendyView(),
-                        label: {
-                            Text("Trendy Option")
-                        }) */
-                    
-                    //classic option
-                    NavigationLink(
-                        destination: ClassicView(weather: weather, response: response, data: data),
-                        label: {
-                            Text("Classic Option")
-                        })
-                }
+      
                 
                 
                 //next couple of days and that array
@@ -85,8 +55,8 @@ struct ContentView: View {
         }
         
         
-    }
-}
+    
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
