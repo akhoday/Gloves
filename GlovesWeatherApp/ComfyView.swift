@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct ComfyView: View {
+    
+    var weather : Weather
+    var response : Response
+    var data : Data
+    
+    
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
@@ -15,6 +21,6 @@ struct ComfyView: View {
 
 struct ComfyView_Previews: PreviewProvider {
     static var previews: some View {
-        ComfyView()
+        ComfyView(weather: Weather(), response : Response(), data : Data())
     }
 }

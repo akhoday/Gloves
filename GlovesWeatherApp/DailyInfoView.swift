@@ -76,7 +76,7 @@ struct DailyInfoView: View {
                 HStack{
                     //comfy option
                     NavigationLink(
-                        destination: ComfyView(),
+                        destination: ComfyView(weather: weather, response: response, data: data),
                         label: {
                             Text("Comfy Option")
                         })
@@ -90,7 +90,7 @@ struct DailyInfoView: View {
                     
                     //classic option
                     NavigationLink(
-                        destination: ClassicView(),
+                        destination: ClassicView(weather: weather, response: response, data: data),
                         label: {
                             Text("Classic Option")
                         })
