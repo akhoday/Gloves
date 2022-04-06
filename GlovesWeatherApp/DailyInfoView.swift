@@ -13,6 +13,29 @@ struct DailyInfoView: View {
     var response : Response
     var data : Data
     
+    func getDayOfWeek(_ date:String, format: String) -> String? {
+        
+        let weekDays = [
+            "Sun",
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat"
+        ]
+
+        let formatter  = DateFormatter()
+        formatter.dateFormat = format
+        guard let myDate = formatter.date(from: date) else { return nil }
+        
+        let myCalendar = Calendar(identifier: .gregorian)
+        let weekDay = myCalendar.component(.weekday, from: myDate)
+        
+        
+        return weekDays[weekDay-1]
+    }
+    
     
     var body: some View {
         
@@ -25,6 +48,8 @@ struct DailyInfoView: View {
         var high = data.high_temp
         var low = data.low_temp
         var icon = weather.icon
+        var unwrappedDate = date!
+        var subStringDate = unwrappedDate.suffix(5)
         
         
         
@@ -34,8 +59,10 @@ struct DailyInfoView: View {
             
             
             VStack(spacing: 0.0) {
-                
-                Text(date ?? "your mom")
+                if let weekday = getDayOfWeek(unwrappedDate, format:"yyyy-MM-dd") {
+                    Text(weekday)
+                }
+                Text(subStringDate)
                 
                 
                 Text(String(Int(temp ?? 0)) + "°").font(.system(size: 56))
