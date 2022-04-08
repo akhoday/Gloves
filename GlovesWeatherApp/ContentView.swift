@@ -27,7 +27,7 @@ struct ContentView: View {
         
 
         //will have the background based on the weather behind all of the info
-
+//
         
 
         var address = fetchData.responses.city_name
