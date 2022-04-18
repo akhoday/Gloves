@@ -57,22 +57,28 @@ struct WeatherInfoView: View {
             
            // AsyncImage(url: URL(string: "www.weatherbit.io/static/img/icons/\(weather.icon).png")!, placeholder: { Text("Loading ...") }, image: { Image(uiImage: $0).resizable() }) .frame(idealHeight: UIScreen.main.bounds.width / 2 * 3)
           
+            
+            
+          
+         
+            
             Text(String(Int(temp ?? 0)) + "°").font(.system(size: 30))
+            Spacer()
+
+            Image(icon).resizable().frame(width: 70, height: 70)
+            Spacer()
             
             VStack {
                 
-              
+                
+            
                 
             if let weekday = getDayOfWeek(unwrappedDate, format:"yyyy-MM-dd") {
                 Text(weekday)
             }
             Text(subStringDate)
             }
-            
-            
-            Image(icon)
-          
-            
+           
         }.foregroundColor(Color.fontColor).background(Color.background)
     }
 }
