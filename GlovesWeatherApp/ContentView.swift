@@ -20,16 +20,13 @@ struct ContentView: View {
 
     @EnvironmentObject var fetchData : FetchData
 
-    
 
     var body: some View {
 
-        
 
         //will have the background based on the weather behind all of the info
 //
-        
-
+    
         var address = fetchData.responses.city_name
 
         var stateCode = fetchData.responses.state_code
@@ -86,9 +83,6 @@ struct ContentView: View {
 
                                     WeatherInfoView(weather: data.weather, response: fetchData.responses, data: data)
 
-                                    
-
-                                    
 
                                 }).listRowBackground(Color.background).listRowSeparatorTint(Color.fontColor)
 
