@@ -50,8 +50,7 @@ struct WeatherInfoView: View {
         var date = data.datetime
         var unwrappedDate = date!
         var subStringDate = unwrappedDate.suffix(5)
-        
-        //let icon = URL(string: "https://www.weatherbit.io/static/img/icons/\(weather.icon).png")
+        var icon = weather.icon!
         
 
         HStack {
@@ -71,7 +70,7 @@ struct WeatherInfoView: View {
             }
             
             
-            Text(description ?? "who's to say").font(.system(size: 20))
+            Image(icon)
           
             
         }.foregroundColor(Color.fontColor).background(Color.background)
