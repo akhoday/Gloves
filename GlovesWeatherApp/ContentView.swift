@@ -19,7 +19,8 @@ import SwiftUI
 struct ContentView: View {
 
     @EnvironmentObject var fetchData : FetchData
-
+    @Binding var stateName : String
+    @Binding var cityName : String
 
     var body: some View {
 
@@ -31,11 +32,10 @@ struct ContentView: View {
 
         var stateCode = fetchData.responses.state_code
         
-        var temp = fetchData.responses.data[0].temp
-
+      
         ZStack{
 
-            Rectangle().frame(width: 400.0, height: 75.0).foregroundColor(Color.background).edgesIgnoringSafeArea(.all)
+            Rectangle().frame(width: 400.0, height: 80.0).foregroundColor(Color.background).edgesIgnoringSafeArea(.horizontal)
 
             VStack {
 
@@ -43,15 +43,13 @@ struct ContentView: View {
 
                 Button("Change location") {
 
-                    
+                    LocationView(stateName: $stateName, cityName: $cityName)
 
                 }.foregroundColor(Color.buttonColor)
 
                 Text((address ?? "no idea sorry man") + ", " + (stateCode ?? "what is even happening")).foregroundColor(Color.fontColor)
                 
                 
-                Text((temp ?? 0.0))
-                    .foregroundColor(Color.fontColor)
 
                 
 
@@ -141,12 +139,12 @@ struct ContentView: View {
 
 
 
-struct ContentView_Previews: PreviewProvider {
-
-    static var previews: some View {
-
-        ContentView()
-
-    }
-
-}
+//struct ContentView_Previews: PreviewProvider {
+//
+//    static var previews: some View {
+//
+//        ContentView()
+//
+//    }
+//
+//}

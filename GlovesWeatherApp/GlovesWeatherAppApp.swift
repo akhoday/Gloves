@@ -10,11 +10,15 @@ import SwiftUI
 @main
 struct GlovesWeatherAppApp: App {
     
+    
+    
     @StateObject var fetchData : FetchData = FetchData()
+    @State var cityName : String = "Philadelphia"
+    @State var stateName : String = "Pennsylvania"
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(stateName: $stateName, cityName: $cityName)
                 .environmentObject(fetchData)
         }
     }
