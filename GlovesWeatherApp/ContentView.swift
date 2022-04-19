@@ -30,6 +30,8 @@ struct ContentView: View {
         var address = fetchData.responses.city_name
 
         var stateCode = fetchData.responses.state_code
+        
+        var temp = fetchData.responses.data[0].temp
 
         ZStack{
 
@@ -46,6 +48,10 @@ struct ContentView: View {
                 }.foregroundColor(Color.buttonColor)
 
                 Text((address ?? "no idea sorry man") + ", " + (stateCode ?? "what is even happening")).foregroundColor(Color.fontColor)
+                
+                
+                Text((temp ?? 0.0))
+                    .foregroundColor(Color.fontColor)
 
                 
 
