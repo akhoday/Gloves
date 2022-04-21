@@ -85,7 +85,25 @@ struct ComfyView: View {
                    VStack{
                        
                        if temp < 21 {
-                        Text("Shoes: " + (coldColdComfy["Shoes"] ?? "ur mom"))
+                        
+                        HStack{
+                            VStack{
+                                Text("Shirts: " + (coldColdComfy["Shirts"] ?? "ur mom"))
+                                Text("Pants: " + (coldColdComfy["Pants"] ?? "ur mom"))
+                                Text("Coats: " + (coldColdComfy["Coats"] ?? "ur mom"))
+                                Text("Socks: " + (coldColdComfy["Socks"] ?? "ur mom"))
+                                Text("Shoes: " + (coldColdComfy["Shoes"] ?? "ur mom"))
+                                                       }
+                        
+                            VStack{
+                                Text("Gloves: " + (coldColdComfy["Gloves"] ?? "ur mom"))
+                                Text("Scarves: " + (coldColdComfy["Scarves"] ?? "ur mom"))
+                                Text("Hats: " + (coldColdComfy["Hats"] ?? "ur mom"))
+                                Text("Sunglasses: " + (coldColdComfy["Sunglasses"] ?? "ur mom"))
+                                Text("Extra: " + (coldColdComfy["Extra"] ?? "ur mom"))
+                        
+                                                       }
+                        
                        }
                        
 //                           shoes = coldColdComfy["Shoes"]!
@@ -320,6 +338,7 @@ struct ComfyView: View {
                            
                        
                  // }
+                   }
                    }
                    }.padding().frame(width: /*@START_MENU_TOKEN@*/400.0/*@END_MENU_TOKEN@*/, height: 300.0, alignment: .top).foregroundColor(Color.fontColor)
        }
