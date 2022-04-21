@@ -242,7 +242,7 @@ struct ComfyView: View {
                            }
                        }
 
-//                   if temp > 60 && temp < 71{
+                   if temp > 60 && temp < 71{
 //                       shoes = warmerComfy["Shoes"]!
 //                       shirts  = warmerComfy["Shirts"]!
 //                       coats = warmerComfy["Coats"]!
@@ -255,25 +255,26 @@ struct ComfyView: View {
 //                       hats = warmerComfy["Hats"]!
 //                       sunglasses = warmerComfy["Sunglasses"]!
 //
-//                       HStack{
-//                           VStack{
-//                               Text("Shirts: " + shirts)
-//                               Text("Pants: " + pants)
-//                               Text("Coats: " + coats)
-//                               Text("Socks: " + socks)
-//                           }
-//
-//                           VStack{
-//                               Text("Gloves: " + gloves)
-//                               Text("Scarves: " + scarves)
-//                               Text("Hats: " + hats)
-//                               Text("Sunglasses: " + sunglasses)
-//                               Text("Extra: " + extra)
-//
-//                           }
-//
-//                       }
-//                   }
+                       HStack{
+                           VStack{
+                                Text("Shirts: " + (warmerComfy["Shirts"] ?? "ur mom"))
+                                Text("Pants: " + (warmerComfy["Pants"] ?? "ur mom"))
+                                Text("Coats: " + (warmerComfy["Coats"] ?? "ur mom"))
+                                Text("Socks: " + (warmerComfy["Socks"] ?? "ur mom"))
+                                Text("Shoes: " + (warmerComfy["Shoes"] ?? "ur mom"))
+                            }
+
+                           VStack{
+                               Text("Gloves: " + (warmerComfy["Gloves"] ?? "ur mom"))
+                               Text("Scarves: " + (warmerComfy["Scarves"] ?? "ur mom"))
+                               Text("Hats: " + (warmerComfy["Hats"] ?? "ur mom"))
+                               Text("Sunglasses: " + (warmerComfy["Sunglasses"] ?? "ur mom"))
+                               Text("Extra: " + (warmerComfy["Extra"] ?? " "))
+
+                           }
+
+                       }
+                   }
 //
 //                   if temp > 60 && temp < 71 {
 //                       shoes = hotComfy["Shoes"]!
