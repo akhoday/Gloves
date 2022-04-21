@@ -33,29 +33,25 @@ struct ContentView: View {
         var stateCode = fetchData.responses.state_code
         
       
-        ZStack{
-
-            Rectangle().frame(width: 400.0, height: 80.0).foregroundColor(Color.background).edgesIgnoringSafeArea(.horizontal)
 
             VStack {
-
                 
+                NavigationLink(
 
-                Button("Change location") {
+                    destination: LocationView(stateName: $stateName, cityName: $cityName),
 
-                    LocationView(stateName: $stateName, cityName: $cityName)
+                    label: {
+                        Text("Change Location")
+                    })
+                    
 
-                }.foregroundColor(Color.buttonColor)
+                     Text((address ?? "no idea sorry man") + ", " + (stateCode ?? "what is even happening")).foregroundColor(Color.fontColor)
 
-                Text((address ?? "no idea sorry man") + ", " + (stateCode ?? "what is even happening")).foregroundColor(Color.fontColor)
-                
-                
+            }.foregroundColor(Color.buttonColor).padding().frame(width: 400.0, height: 100.0, alignment: .top).background(Color.background)
 
-                
+            
 
-            }
-
-        }
+            
 
         //next couple of days and that array
 
@@ -118,7 +114,7 @@ struct ContentView: View {
                     
 
                 }
-
+                
             }
 
         }
