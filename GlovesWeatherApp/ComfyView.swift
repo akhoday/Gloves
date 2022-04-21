@@ -64,47 +64,43 @@ struct ComfyView: View {
         ZStack{
                    
                    Rectangle().foregroundColor(Color.background).edgesIgnoringSafeArea(.all)
-                   
-       //            if (data.precip)! > 2.4 {
-       //                coldColdComfy["Shoes"] = "rain boots, snow boots, waterproof shoes"
-       //                coldComfy["Shoes"] = "rain boots, snow boots, waterproof shoes"
-       //                coldishComfy["Shoes"] = "rain boots"
-       //                warmishComfy["Shoes"] = "rain boots, old sneakers"
-       //                warmerComfy["Shoes"] = "old sneakers"
-       //                hotComfy["Shoes"] = "old sneakers"
-       //                hawtComfy["Shoes"] = "old sneakers"
-       //                coldColdComfy["Extra"] = "Bring an umbrella!"
-       //                coldComfy["Extra"] = "Bring an umbrella!"
-       //                coldishComfy["Extra"] = "Bring an umbrella!"
-       //                warmishComfy["Extra"] = "Bring an umbrella!"
-       //                warmerComfy["Extra"] = "Bring an umbrella!"
-       //                hotComfy["Extra"] = "Bring an umbrella!"
-       //                hawtComfy["Extra"] = "Bring an umbrella!"
-       //            }
-                  
+           
+         
+//                   if (data.precip)! > 2.4 {
+//                       coldColdComfy["Shoes"] = "rain boots, snow boots, waterproof shoes"
+//                       coldComfy["Shoes"] = "rain boots, snow boots, waterproof shoes"
+//                       coldishComfy["Shoes"] = "rain boots"
+//                       warmishComfy["Shoes"] = "rain boots, old sneakers"
+//                       warmerComfy["Shoes"] = "old sneakers"
+//                       hotComfy["Shoes"] = "old sneakers"
+//                       hawtComfy["Shoes"] = "old sneakers"
+//                       coldColdComfy["Extra"] = "Bring an umbrella!"
+//                       coldComfy["Extra"] = "Bring an umbrella!"
+//                       coldishComfy["Extra"] = "Bring an umbrella!"
+//                       warmishComfy["Extra"] = "Bring an umbrella!"
+//                       warmerComfy["Extra"] = "Bring an umbrella!"
+//                       hotComfy["Extra"] = "Bring an umbrella!"
+//                       hawtComfy["Extra"] = "Bring an umbrella!"
+//                  Text("")
+//            }
                    VStack{
                        
                        if temp < 21 {
                         
-                        HStack{
                             VStack{
                                 Text("Shirts: " + (coldColdComfy["Shirts"] ?? "ur mom"))
                                 Text("Pants: " + (coldColdComfy["Pants"] ?? "ur mom"))
                                 Text("Coats: " + (coldColdComfy["Coats"] ?? "ur mom"))
                                 Text("Socks: " + (coldColdComfy["Socks"] ?? "ur mom"))
                                 Text("Shoes: " + (coldColdComfy["Shoes"] ?? "ur mom"))
-                                                       }
-                        
-                            VStack{
                                 Text("Gloves: " + (coldColdComfy["Gloves"] ?? "ur mom"))
                                 Text("Scarves: " + (coldColdComfy["Scarves"] ?? "ur mom"))
                                 Text("Hats: " + (coldColdComfy["Hats"] ?? "ur mom"))
                                 Text("Sunglasses: " + (coldColdComfy["Sunglasses"] ?? "ur mom"))
-                                Text("Extra: " + (coldColdComfy["Extra"] ?? ""))
+                                Text("Extra: " + (coldColdComfy["Extra"] ?? "None"))
                         
                                                        }
                         
-                       }
                        }
 //                           shoes = coldColdComfy["Shoes"]!
 //                           shirts  = coldColdComfy["Shirts"]!
@@ -154,28 +150,20 @@ struct ComfyView: View {
 //                           sunglasses = coldComfy["Sunglasses"]!
                      
                         if temp > 20 && temp < 33{
-                           HStack{
+                          
                                VStack{
                                    Text("Shirts: " + (coldComfy["Shirts"] ?? "ur mom"))
                                    Text("Pants: " + (coldComfy["Pants"] ?? "ur mom"))
                                    Text("Coats: " + (coldComfy["Coats"] ?? "ur mom"))
                                    Text("Socks: " + (coldComfy["Socks"] ?? "ur mom"))
                                    Text("Shoes" + (coldComfy["Shoes"] ?? "ur mom"))
-                                    
-                               }
-
-                               VStack{
                                    Text("Gloves: " + (coldComfy["Gloves"] ?? "ur mom"))
                                    Text("Scarves: " + (coldComfy["Scarves"] ?? "ur mom"))
                                    Text("Hats: " + (coldComfy["Hats"] ?? "ur mom"))
                                    Text("Sunglasses: " + (coldComfy["Sunglasses"] ?? "ur mom"))
-                                   Text("Extra: " + (coldComfy["Extra"] ?? ""))
+                                   Text("Extra: " + (coldComfy["Extra"] ?? "None"))
 
-                               }
-//
-                             }
-//
-                       }
+                               }}
 //
                        if temp > 32 && temp < 51{
 //                           shoes = coldishComfy["Shoes"]!
@@ -190,23 +178,20 @@ struct ComfyView: View {
 //                           hats = coldishComfy["Hats"]!
 //                           sunglasses = coldishComfy["Sunglasses"]!
 
-                           HStack{
+                           
                                VStack{
                                    Text("Shirts: " + (coldishComfy["Shirts"] ?? "ur mom"))
                                    Text("Pants: " + (coldishComfy["Pants"] ?? "ur mom"))
                                    Text("Coats: " + (coldishComfy["Coats"] ?? "ur mom"))
                                    Text("Socks: " + (coldishComfy["Socks"] ?? "ur mom"))
                                    Text("Shoes: " + (coldishComfy["Shoes"] ?? "ur mom"))
-                               }
-
-                               VStack{
                                    Text("Gloves: " + (coldishComfy["Gloves"] ?? "ur mom"))
                                    Text("Scarves: " + (coldishComfy["Scarves"] ?? "ur mom"))
                                    Text("Hats: " + (coldishComfy["Hats"] ?? "ur mom"))
                                    Text("Sunglasses: " + (coldishComfy["Sunglasses"] ?? "ur mom"))
-                                   Text("Extra: " + (coldishComfy["Extra"] ?? " "))
+                                   Text("Extra: " + (coldishComfy["Extra"] ?? "None"))
                                }
-                           }}
+                           }
 //
                        if temp > 50 && temp < 61{
 //                           shoes = warmishComfy["Shoes"]!
@@ -221,25 +206,20 @@ struct ComfyView: View {
 //                           hats = warmishComfy["Hats"]!
 //                           sunglasses = warmishComfy["Sunglasses"]!
 //
-                           HStack{
+                         
                                VStack{
                                    Text("Shirts: " + (warmishComfy["Shirts"] ?? "ur mom"))
                                    Text("Pants: " + (warmishComfy["Pants"] ?? "ur mom"))
                                    Text("Coats: " + (warmishComfy["Coats"] ?? "ur mom"))
                                    Text("Socks: " + (warmishComfy["Socks"] ?? "ur mom"))
                                     Text("Shoes: " + (warmishComfy["Shoes"] ?? "ur mom"))
-                               }
-
-                               VStack{
                                    Text("Gloves: " + (warmishComfy["Gloves"] ?? "ur mom"))
                                    Text("Scarves: " + (warmishComfy["Scarves"] ?? "ur mom"))
                                    Text("Hats: " + (warmishComfy["Hats"] ?? "ur mom"))
                                    Text("Sunglasses: " + (warmishComfy["Sunglasses"] ?? "ur mom"))
-                                   Text("Extra: " + (warmishComfy["Extra"] ?? " "))
+                                   Text("Extra: " + (warmishComfy["Extra"] ?? "None"))
 
                                }
-
-                           }
                        }
 
                    if temp > 60 && temp < 71{
@@ -255,28 +235,25 @@ struct ComfyView: View {
 //                       hats = warmerComfy["Hats"]!
 //                       sunglasses = warmerComfy["Sunglasses"]!
 //
-                       HStack{
+    
                            VStack{
                                 Text("Shirts: " + (warmerComfy["Shirts"] ?? "ur mom"))
                                 Text("Pants: " + (warmerComfy["Pants"] ?? "ur mom"))
                                 Text("Coats: " + (warmerComfy["Coats"] ?? "ur mom"))
                                 Text("Socks: " + (warmerComfy["Socks"] ?? "ur mom"))
                                 Text("Shoes: " + (warmerComfy["Shoes"] ?? "ur mom"))
-                            }
-
-                           VStack{
                                Text("Gloves: " + (warmerComfy["Gloves"] ?? "ur mom"))
                                Text("Scarves: " + (warmerComfy["Scarves"] ?? "ur mom"))
                                Text("Hats: " + (warmerComfy["Hats"] ?? "ur mom"))
                                Text("Sunglasses: " + (warmerComfy["Sunglasses"] ?? "ur mom"))
-                               Text("Extra: " + (warmerComfy["Extra"] ?? " "))
+                               Text("Extra: " + (warmerComfy["Extra"] ?? "None"))
 
                            }
 
                        }
-                   }
+                   
 //
-//                   if temp > 60 && temp < 71 {
+                   if temp > 60 && temp < 71 {
 //                       shoes = hotComfy["Shoes"]!
 //                       shirts  = hotComfy["Shirts"]!
 //                       coats = hotComfy["Coats"]!
@@ -289,27 +266,24 @@ struct ComfyView: View {
 //                       hats = hotComfy["Hats"]!
 //                       sunglasses = hotComfy["Sunglasses"]!
 //
-//                       HStack{
-//                           VStack{
-//                               Text("Shirts: " + shirts)
-//                               Text("Pants: " + pants)
-//                               Text("Coats: " + coats)
-//                               Text("Socks: " + socks)
-//                           }
 //
-//                           VStack{
-//                               Text("Gloves: " + gloves)
-//                               Text("Scarves: " + scarves)
-//                               Text("Hats: " + hats)
-//                               Text("Sunglasses: " + sunglasses)
-//                               Text("Extra: " + extra)
+                           VStack{
+                               Text("Shirts: " + (hotComfy["Shirts"] ?? "ur mom"))
+                               Text("Pants: " + (hotComfy["Pants"] ?? "ur mom"))
+                               Text("Coats: " + (hotComfy["Coats"] ?? "ur mom"))
+                               Text("Socks: " + (hotComfy["Socks"] ?? "ur mom"))
+                                Text("Shoes: " + (hotComfy["Shoes"] ?? "ur mom"))
+                               Text("Gloves: " + (hotComfy["Gloves"] ?? "ur mom"))
+                               Text("Scarves: " + (hotComfy["Scarves"] ?? "ur mom"))
+                               Text("Hats: " + (hotComfy["Hats"] ?? "ur mom"))
+                               Text("Sunglasses: " + (hotComfy["Sunglasses"] ?? "ur mom"))
+                               Text("Extra: " + (hotComfy["Extra"] ?? "None"))
+
+                           }
+
+                   }
 //
-//                           }
-//
-//                       }
-//                   }
-//
-//                   if temp > 70 {
+                   if temp > 70 {
 //                       shoes = hawtComfy["Shoes"]!
 //                       shirts  = hawtComfy["Shirts"]!
 //                       coats = hawtComfy["Coats"]!
@@ -322,31 +296,28 @@ struct ComfyView: View {
 //                       hats = hawtComfy["Hats"]!
 //                       sunglasses = hawtComfy["Sunglasses"]!
 //
-//                       HStack{
-//                           VStack{
-//                               Text("Shirts: " + shirts)
-//                               Text("Pants: " + pants)
-//                               Text("Coats: " + coats)
-//                               Text("Socks: " + socks)
-//                           }
 //
-//                           VStack{
-//                               Text("Gloves: " + gloves)
-//                               Text("Scarves: " + scarves)
-//                               Text("Hats: " + hats)
-//                               Text("Sunglasses: " + sunglasses)
-//                               Text("Extra: " + extra)
-//                           }
-//
-//                       }
-                 //  }
+                           VStack{
+                               Text("Shirts: " + (hawtComfy["Shirts"] ?? "ur mom"))
+                               Text("Pants: " + (hawtComfy["Pants"] ?? "ur mom"))
+                               Text("Coats: " + (hawtComfy["Coats"] ?? "ur mom"))
+                               Text("Socks: " + (hawtComfy["Socks"] ?? "ur mom"))
+                                Text("Shoes: " + (hawtComfy["Shoes"] ?? "ur mom"))
+                               Text("Gloves: " + (hawtComfy["Gloves"] ?? "ur mom"))
+                               Text("Scarves: " + (hawtComfy["Scarves"] ?? "ur mom"))
+                               Text("Hats: " + (hawtComfy["Hats"] ?? "ur mom"))
+                               Text("Sunglasses: " + (hawtComfy["Sunglasses"] ?? "ur mom"))
+                               Text("Extra: " + (hawtComfy["Extra"] ?? "None"))
+                           }
+
+                       }
+
                            
                        
-                 // }
-                   }
+                }
+            
                    }.padding().frame(width: /*@START_MENU_TOKEN@*/400.0/*@END_MENU_TOKEN@*/, height: 300.0, alignment: .top).foregroundColor(Color.fontColor)
-       }
-           }
+}}
            
       
 struct ComfyView_Previews: PreviewProvider {
