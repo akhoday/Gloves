@@ -231,11 +231,11 @@ struct ComfyView: View {
                                }
 
                                VStack{
-                                   Text("Gloves: " + warmishComfy["Gloves"] ?? "ur mom"))
-                                   Text("Scarves: " + warmishComfy["Scarves"] ?? "ur mom"))
-                                   Text("Hats: " + warmishComfy["Hats"] ?? "ur mom"))
-                                   Text("Sunglasses: " + warmishComfy["Sunglasses"] ?? "ur mom"))
-                                   Text("Extra: " + warmishComfy["Extra"] ?? " "))
+                                   Text("Gloves: " + (warmishComfy["Gloves"] ?? "ur mom"))
+                                   Text("Scarves: " + (warmishComfy["Scarves"] ?? "ur mom"))
+                                   Text("Hats: " + (warmishComfy["Hats"] ?? "ur mom"))
+                                   Text("Sunglasses: " + (warmishComfy["Sunglasses"] ?? "ur mom"))
+                                   Text("Extra: " + (warmishComfy["Extra"] ?? " "))
 
                                }
 
