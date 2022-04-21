@@ -233,9 +233,10 @@ struct ClassicView: View {
                         Text("Shoes: " + (hotFund["Shoes"] ?? "ur mom"))
                         Text("Gloves: " + (hotFund["Gloves"] ?? "ur mom"))
                         Text("Scarves: " + (hotFund["Scarves"] ?? "ur mom"))
-                        Text("Hats: " + (hotfund["Hats"] ?? "ur mom"))
+                        Text("Hats: " + (hotFund["Hats"] ?? "ur mom"))
                         Text("Sunglasses: " + (hotFund["Sunglasses"] ?? "ur mom"))
                         Text("Extra: " + (hotFund["Extra"] ?? "None"))
+                        Text("ur mom")
 
                 }
 
