@@ -85,239 +85,242 @@ struct ComfyView: View {
                    VStack{
                        
                        if temp < 21 {
-                           shoes = coldColdComfy["Shoes"]!
-                           shirts  = coldColdComfy["Shirts"]!
-                           coats = coldColdComfy["Coats"]!
-                           gloves  = coldColdComfy["Gloves"]!
-                           extra = coldColdComfy["Extra"]!
-                           pants  = coldColdComfy["Pants"]!
-                           socks  = coldColdComfy["Socks"]!
-                           scarves  = coldColdComfy["Scarves"]!
-                           gloves  = coldColdComfy["Gloves"]!
-                           hats = coldColdComfy["Hats"]!
-                           sunglasses = coldColdComfy["Sunglasses"]!
-                         
-                           HStack{
-                               VStack{
-                                   Text("Shirts: " + shirts)
-                                   Text("Pants: " + pants)
-                                   Text("Coats: " + coats)
-                                   Text("Socks: " + socks)
-                               }
-                               
-                               VStack{
-                                   Text("Gloves: " + gloves)
-                                   Text("Scarves: " + scarves)
-                                   Text("Hats: " + hats)
-                                   Text("Sunglasses: " + sunglasses)
-                                   Text("Extra: " + extra)
-                                   
-                               }
-                               
-                           }
-           
-                       
-                           }
-           
-                       else if temp > 20 && temp < 33{
-                           shoes = coldComfy["Shoes"]!
-                           shirts  = coldComfy["Shirts"]!
-                           coats = coldComfy["Coats"]!
-                           gloves  = coldComfy["Gloves"]!
-                           extra = coldComfy["Extra"]!
-                           pants  = coldComfy["Pants"]!
-                           socks  = coldComfy["Socks"]!
-                           scarves  = coldComfy["Scarves"]!
-                           gloves  = coldComfy["Gloves"]!
-                           hats = coldComfy["Hats"]!
-                           sunglasses = coldComfy["Sunglasses"]!
-                         
-                           HStack{
-                               VStack{
-                                   Text("Shirts: " + shirts)
-                                   Text("Pants: " + pants)
-                                   Text("Coats: " + coats)
-                                   Text("Socks: " + socks)
-                               }
-                               
-                               VStack{
-                                   Text("Gloves: " + gloves)
-                                   Text("Scarves: " + scarves)
-                                   Text("Hats: " + hats)
-                                   Text("Sunglasses: " + sunglasses)
-                                   Text("Extra: " + extra)
-                                   
-                               }
-                               
-                           }
-                           
+                        Text("Shoes: " + (coldColdComfy["Shoes"] ?? "ur mom"))
                        }
                        
-                       else if temp > 32 && temp < 51{
-                           shoes = coldishComfy["Shoes"]!
-                           shirts  = coldishComfy["Shirts"]!
-                           coats = coldishComfy["Coats"]!
-                           gloves  = coldishComfy["Gloves"]!
-                           extra = coldishComfy["Extra"]!
-                           pants  = coldishComfy["Pants"]!
-                           socks  = coldishComfy["Socks"]!
-                           scarves  = coldishComfy["Scarves"]!
-                           gloves  = coldishComfy["Gloves"]!
-                           hats = coldishComfy["Hats"]!
-                           sunglasses = coldishComfy["Sunglasses"]!
-                         
-                           HStack{
-                               VStack{
-                                   Text("Shirts: " + shirts)
-                                   Text("Pants: " + pants)
-                                   Text("Coats: " + coats)
-                                   Text("Socks: " + socks)
-                               }
-                               
-                               VStack{
-                                   Text("Gloves: " + gloves)
-                                   Text("Scarves: " + scarves)
-                                   Text("Hats: " + hats)
-                                   Text("Sunglasses: " + sunglasses)
-                                   Text("Extra: " + extra)
-                               }
-                               
-                           }}
+//                           shoes = coldColdComfy["Shoes"]!
+//                           shirts  = coldColdComfy["Shirts"]!
+//                           coats = coldColdComfy["Coats"]!
+//                           gloves  = coldColdComfy["Gloves"]!
+//                           extra = coldColdComfy["Extra"]!
+//                           pants  = coldColdComfy["Pants"]!
+//                           socks  = coldColdComfy["Socks"]!
+//                           scarves  = coldColdComfy["Scarves"]!
+//                           gloves  = coldColdComfy["Gloves"]!
+//                           hats = coldColdComfy["Hats"]!
+//                           sunglasses = coldColdComfy["Sunglasses"]!
+//
+//                           HStack{
+//                               VStack{
+//                                   Text("Shirts: " + shirts)
+//                                   Text("Pants: " + pants)
+//                                   Text("Coats: " + coats)
+//                                   Text("Socks: " + socks)
+//                               }
+//
+//                               VStack{
+//                                   Text("Gloves: " + gloves)
+//                                   Text("Scarves: " + scarves)
+//                                   Text("Hats: " + hats)
+//                                   Text("Sunglasses: " + sunglasses)
+//                                   Text("Extra: " + extra)
+//
+//                               }
+//
+//                           }
+//
+//                       }
+                           
+//
+//                       if temp > 20 && temp < 33{
+//                           shoes = coldComfy["Shoes"]!
+//                           shirts  = coldComfy["Shirts"]!
+//                           coats = coldComfy["Coats"]!
+//                           gloves  = coldComfy["Gloves"]!
+//                           extra = coldComfy["Extra"]!
+//                           pants  = coldComfy["Pants"]!
+//                           socks  = coldComfy["Socks"]!
+//                           scarves  = coldComfy["Scarves"]!
+//                           gloves  = coldComfy["Gloves"]!
+//                           hats = coldComfy["Hats"]!
+//                           sunglasses = coldComfy["Sunglasses"]!
+//
+//                           HStack{
+//                               VStack{
+//                                   Text("Shirts: " + shirts)
+//                                   Text("Pants: " + pants)
+//                                   Text("Coats: " + coats)
+//                                   Text("Socks: " + socks)
+//                               }
+//
+//                               VStack{
+//                                   Text("Gloves: " + gloves)
+//                                   Text("Scarves: " + scarves)
+//                                   Text("Hats: " + hats)
+//                                   Text("Sunglasses: " + sunglasses)
+//                                   Text("Extra: " + extra)
+//
+//                               }
+//
+//                           }
+//
+//                       }
+//
+//                       if temp > 32 && temp < 51{
+//                           shoes = coldishComfy["Shoes"]!
+//                           shirts  = coldishComfy["Shirts"]!
+//                           coats = coldishComfy["Coats"]!
+//                           gloves  = coldishComfy["Gloves"]!
+//                           extra = coldishComfy["Extra"]!
+//                           pants  = coldishComfy["Pants"]!
+//                           socks  = coldishComfy["Socks"]!
+//                           scarves  = coldishComfy["Scarves"]!
+//                           gloves  = coldishComfy["Gloves"]!
+//                           hats = coldishComfy["Hats"]!
+//                           sunglasses = coldishComfy["Sunglasses"]!
+//
+//                           HStack{
+//                               VStack{
+//                                   Text("Shirts: " + shirts)
+//                                   Text("Pants: " + pants)
+//                                   Text("Coats: " + coats)
+//                                   Text("Socks: " + socks)
+//                               }
+//
+//                               VStack{
+//                                   Text("Gloves: " + gloves)
+//                                   Text("Scarves: " + scarves)
+//                                   Text("Hats: " + hats)
+//                                   Text("Sunglasses: " + sunglasses)
+//                                   Text("Extra: " + extra)
+//                               }
+//
+//                           }}
+//
+//                       if temp > 50 && temp < 61{
+//                           shoes = warmishComfy["Shoes"]!
+//                           shirts  = warmishComfy["Shirts"]!
+//                           coats = warmishComfy["Coats"]!
+//                           gloves  = warmishComfy["Gloves"]!
+//                           extra = warmishComfy["Extra"]!
+//                           pants  = warmishComfy["Pants"]!
+//                           socks  = warmishComfy["Socks"]!
+//                           scarves  = warmishComfy["Scarves"]!
+//                           gloves  = warmishComfy["Gloves"]!
+//                           hats = warmishComfy["Hats"]!
+//                           sunglasses = warmishComfy["Sunglasses"]!
+//
+//                           HStack{
+//                               VStack{
+//                                   Text("Shirts: " + shirts)
+//                                   Text("Pants: " + pants)
+//                                   Text("Coats: " + coats)
+//                                   Text("Socks: " + socks)
+//                               }
+//
+//                               VStack{
+//                                   Text("Gloves: " + gloves)
+//                                   Text("Scarves: " + scarves)
+//                                   Text("Hats: " + hats)
+//                                   Text("Sunglasses: " + sunglasses)
+//                                   Text("Extra: " + extra)
+//
+//                               }
+//
+//                           }
+//                       }
+//
+//                   if temp > 60 && temp < 71{
+//                       shoes = warmerComfy["Shoes"]!
+//                       shirts  = warmerComfy["Shirts"]!
+//                       coats = warmerComfy["Coats"]!
+//                       gloves  = warmerComfy["Gloves"]!
+//                       extra = warmerComfy["Extra"]!
+//                       pants  = warmerComfy["Pants"]!
+//                       socks  = warmerComfy["Socks"]!
+//                       scarves  = warmerComfy["Scarves"]!
+//                       gloves  = warmerComfy["Gloves"]!
+//                       hats = warmerComfy["Hats"]!
+//                       sunglasses = warmerComfy["Sunglasses"]!
+//
+//                       HStack{
+//                           VStack{
+//                               Text("Shirts: " + shirts)
+//                               Text("Pants: " + pants)
+//                               Text("Coats: " + coats)
+//                               Text("Socks: " + socks)
+//                           }
+//
+//                           VStack{
+//                               Text("Gloves: " + gloves)
+//                               Text("Scarves: " + scarves)
+//                               Text("Hats: " + hats)
+//                               Text("Sunglasses: " + sunglasses)
+//                               Text("Extra: " + extra)
+//
+//                           }
+//
+//                       }
+//                   }
+//
+//                   if temp > 60 && temp < 71 {
+//                       shoes = hotComfy["Shoes"]!
+//                       shirts  = hotComfy["Shirts"]!
+//                       coats = hotComfy["Coats"]!
+//                       gloves  = hotComfy["Gloves"]!
+//                       extra = hotComfy["Extra"]!
+//                       pants  = hotComfy["Pants"]!
+//                       socks  = hotComfy["Socks"]!
+//                       scarves  = hotComfy["Scarves"]!
+//                       gloves  = hotComfy["Gloves"]!
+//                       hats = hotComfy["Hats"]!
+//                       sunglasses = hotComfy["Sunglasses"]!
+//
+//                       HStack{
+//                           VStack{
+//                               Text("Shirts: " + shirts)
+//                               Text("Pants: " + pants)
+//                               Text("Coats: " + coats)
+//                               Text("Socks: " + socks)
+//                           }
+//
+//                           VStack{
+//                               Text("Gloves: " + gloves)
+//                               Text("Scarves: " + scarves)
+//                               Text("Hats: " + hats)
+//                               Text("Sunglasses: " + sunglasses)
+//                               Text("Extra: " + extra)
+//
+//                           }
+//
+//                       }
+//                   }
+//
+//                   if temp > 70 {
+//                       shoes = hawtComfy["Shoes"]!
+//                       shirts  = hawtComfy["Shirts"]!
+//                       coats = hawtComfy["Coats"]!
+//                       gloves  = hawtComfy["Gloves"]!
+//                       extra = hawtComfy["Extra"]!
+//                       pants  = hawtComfy["Pants"]!
+//                       socks  = hawtComfy["Socks"]!
+//                       scarves  = hawtComfy["Scarves"]!
+//                       gloves  = hawtComfy["Gloves"]!
+//                       hats = hawtComfy["Hats"]!
+//                       sunglasses = hawtComfy["Sunglasses"]!
+//
+//                       HStack{
+//                           VStack{
+//                               Text("Shirts: " + shirts)
+//                               Text("Pants: " + pants)
+//                               Text("Coats: " + coats)
+//                               Text("Socks: " + socks)
+//                           }
+//
+//                           VStack{
+//                               Text("Gloves: " + gloves)
+//                               Text("Scarves: " + scarves)
+//                               Text("Hats: " + hats)
+//                               Text("Sunglasses: " + sunglasses)
+//                               Text("Extra: " + extra)
+//                           }
+//
+//                       }
+                 //  }
+                           
                        
-                       else if temp > 50 && temp < 61{
-                           shoes = warmishComfy["Shoes"]!
-                           shirts  = warmishComfy["Shirts"]!
-                           coats = warmishComfy["Coats"]!
-                           gloves  = warmishComfy["Gloves"]!
-                           extra = warmishComfy["Extra"]!
-                           pants  = warmishComfy["Pants"]!
-                           socks  = warmishComfy["Socks"]!
-                           scarves  = warmishComfy["Scarves"]!
-                           gloves  = warmishComfy["Gloves"]!
-                           hats = warmishComfy["Hats"]!
-                           sunglasses = warmishComfy["Sunglasses"]!
-                         
-                           HStack{
-                               VStack{
-                                   Text("Shirts: " + shirts)
-                                   Text("Pants: " + pants)
-                                   Text("Coats: " + coats)
-                                   Text("Socks: " + socks)
-                               }
-                               
-                               VStack{
-                                   Text("Gloves: " + gloves)
-                                   Text("Scarves: " + scarves)
-                                   Text("Hats: " + hats)
-                                   Text("Sunglasses: " + sunglasses)
-                                   Text("Extra: " + extra)
-                                   
-                               }
-                               
-                           }
-                       }
-                      
-                   else if temp > 60 && temp < 71{
-                       shoes = warmerComfy["Shoes"]!
-                       shirts  = warmerComfy["Shirts"]!
-                       coats = warmerComfy["Coats"]!
-                       gloves  = warmerComfy["Gloves"]!
-                       extra = warmerComfy["Extra"]!
-                       pants  = warmerComfy["Pants"]!
-                       socks  = warmerComfy["Socks"]!
-                       scarves  = warmerComfy["Scarves"]!
-                       gloves  = warmerComfy["Gloves"]!
-                       hats = warmerComfy["Hats"]!
-                       sunglasses = warmerComfy["Sunglasses"]!
-                     
-                       HStack{
-                           VStack{
-                               Text("Shirts: " + shirts)
-                               Text("Pants: " + pants)
-                               Text("Coats: " + coats)
-                               Text("Socks: " + socks)
-                           }
-                           
-                           VStack{
-                               Text("Gloves: " + gloves)
-                               Text("Scarves: " + scarves)
-                               Text("Hats: " + hats)
-                               Text("Sunglasses: " + sunglasses)
-                               Text("Extra: " + extra)
-                              
-                           }
-                           
-                       }
+                 // }
                    }
-                  
-                   else if (temp > 60 && temp < 71){
-                       shoes = hotComfy["Shoes"]!
-                       shirts  = hotComfy["Shirts"]!
-                       coats = hotComfy["Coats"]!
-                       gloves  = hotComfy["Gloves"]!
-                       extra = hotComfy["Extra"]!
-                       pants  = hotComfy["Pants"]!
-                       socks  = hotComfy["Socks"]!
-                       scarves  = hotComfy["Scarves"]!
-                       gloves  = hotComfy["Gloves"]!
-                       hats = hotComfy["Hats"]!
-                       sunglasses = hotComfy["Sunglasses"]!
-                     
-                       HStack{
-                           VStack{
-                               Text("Shirts: " + shirts)
-                               Text("Pants: " + pants)
-                               Text("Coats: " + coats)
-                               Text("Socks: " + socks)
-                           }
-                           
-                           VStack{
-                               Text("Gloves: " + gloves)
-                               Text("Scarves: " + scarves)
-                               Text("Hats: " + hats)
-                               Text("Sunglasses: " + sunglasses)
-                               Text("Extra: " + extra)
-                               
-                           }
-                           
-                       }
-                   }
-                       
-                   else {
-                       shoes = hawtComfy["Shoes"]!
-                       shirts  = hawtComfy["Shirts"]!
-                       coats = hawtComfy["Coats"]!
-                       gloves  = hawtComfy["Gloves"]!
-                       extra = hawtComfy["Extra"]!
-                       pants  = hawtComfy["Pants"]!
-                       socks  = hawtComfy["Socks"]!
-                       scarves  = hawtComfy["Scarves"]!
-                       gloves  = hawtComfy["Gloves"]!
-                       hats = hawtComfy["Hats"]!
-                       sunglasses = hawtComfy["Sunglasses"]!
-                     
-                       HStack{
-                           VStack{
-                               Text("Shirts: " + shirts)
-                               Text("Pants: " + pants)
-                               Text("Coats: " + coats)
-                               Text("Socks: " + socks)
-                           }
-                           
-                           VStack{
-                               Text("Gloves: " + gloves)
-                               Text("Scarves: " + scarves)
-                               Text("Hats: " + hats)
-                               Text("Sunglasses: " + sunglasses)
-                               Text("Extra: " + extra)
-                           }
-                           
-                       }
-                   }
-                           
-                       
-                   }
-                   
                    }.padding().frame(width: /*@START_MENU_TOKEN@*/400.0/*@END_MENU_TOKEN@*/, height: 300.0, alignment: .top).foregroundColor(Color.fontColor)
        }
            }
