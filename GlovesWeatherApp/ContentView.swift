@@ -45,9 +45,9 @@ struct ContentView: View {
                     })
                     
 
-                     Text((address ?? "no idea sorry man") + ", " + (stateCode ?? "what is even happening")).foregroundColor(Color.fontColor)
+                     Text((address ?? "Loading... Don't stress") + ", " + (stateCode ?? "we're working on it!")).foregroundColor(Color.fontColor)
 
-            }.foregroundColor(Color.buttonColor).padding().frame(width: 400.0, height: 100.0, alignment: .top).background(Color.background)
+            }.foregroundColor(Color.buttonColor).padding().frame(width: 900.0, height: 100.0, alignment: .top).background(Color.background)
 
             
 
