@@ -129,6 +129,7 @@
 				32A0D58A27E4BF3100430669 /* Constants.swift */,
 				1BD1DE4627EB4A890027EED3 /* CustomImageView.swift */,
 				1B6AAFA627C51C330028F332 /* ContentView.swift */,
+				326780B12812DDBC008D896F /* PopUpWindow.swift */,
 				32530CBE27E8BAF40084D251 /* DailyInfoView.swift */,
 				1B6AAFA427C51C330028F332 /* GlovesWeatherAppApp.swift */,
 				0AAA593F27F48B87000A2EF4 /* TrendyView.swift */,
@@ -357,6 +358,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				326780B22812DDBC008D896F /* PopUpWindow.swift in Sources */,
+				1BBCB0A427F4908000120387 /* ClothingTime.swift in Sources */,
 				32B558BC280EF60A00CF570A /* LocationView.swift in Sources */,
 				32A0D58B27E4BF3100430669 /* Constants.swift in Sources */,
 				1BD1DE4727EB4A890027EED3 /* CustomImageView.swift in Sources */,
