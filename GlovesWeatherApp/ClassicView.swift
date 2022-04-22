@@ -187,17 +187,7 @@ struct ClassicView: View {
                         }                }
                     
                   if temp > 60 && temp < 71{
-//                      shoes = warmerFund["shoes"]!
-//                      shirts  = warmerFund["shirts"]!
-//                      coats = warmerFund["coats"]!
-//                      gloves  = warmerFund["gloves"]!
-//      //                extra = warmerFund["extra"]!
-//      //                pants  = warmerFund["pants"]!
-//      //                socks  = warmerFund["socks"]!
-//      //                scarves  = warmerFund["scarves"]!
-//      //                gloves  = warmerFund["gloves"]!
-//      //                hats = warmerFund["hats"]!
-//      //                sunglasses = warmerFund["sunglasses"]!
+
                VStack{
                     Text("Shirts: " + (warmerFund["shirts"] ?? "ur mom"))
                     Text("Pants: " + (warmerFund["pants"] ?? "ur mom"))
@@ -212,19 +202,11 @@ struct ClassicView: View {
 
                } }
 //
-                  if (temp > 60 && temp < 71){
-//      //                shoes = hotFund["shoes"]!
-//      //                shirts  = hotFund["shirts"]!
-//      //                coats = hotFund["coats"]!
-//      //                gloves  = hotFund["gloves"]!
-//      //                extra = hotFund["extra"]!
-//      //                pants  = hotFund["pants"]!
-//      //                socks  = hotFund["socks"]!
-//      //                scarves  = hotFund["scarves"]!
-//      //                gloves  = hotFund["gloves"]!
-//      //                hats = hotFund["hats"]!
-//      //                sunglasses = hotFund["sunglasses"]!
-//
+                  if (temp > 72 && temp < 86){
+//                    if (data.precip)! > 2.4 {
+//                        hawtFund["Shoes"] = "old sneakers"
+//                        hawtFund["Extra"] = "Bring an umbrella!"
+//                    }
                      VStack{
                         Text("Shirts: " + (hotFund["shirts"] ?? "ur mom"))
                         Text("Pants: " + (hotFund["pants"] ?? "ur mom"))
@@ -240,42 +222,28 @@ struct ClassicView: View {
                 }
 
                       }
+                    
+                    if temp > 86 {
+ //                    if (data.precip)! > 2.4 {
+ //                        hawtComfy["Shoes"] = "old sneakers"
+ //                        hawtComfy["Extra"] = "Bring an umbrella!"
+                        VStack{
+                            Text("Shirts: " + (hawtFund["Shirts"] ?? "ur mom"))
+                            Text("Pants: " + (hawtFund["Pants"] ?? "ur mom"))
+                            Text("Coats: " + (hawtFund["Coats"] ?? "Optional"))
+                            Text("Socks: " + (hawtFund["Socks"] ?? "ur mom"))
+                             Text("Shoes: " + (hawtFund["Shoes"] ?? "ur mom"))
+                            Text("Gloves: " + (hawtFund["Gloves"] ?? "Always recommended, but maybe not the best choice"))
+                            Text("Scarves: " + (hawtFund["Scarves"] ?? "Not recommended"))
+                            Text("Hats: " + (hawtFund["Hats"] ?? "Optional"))
+                            Text("Sunglasses: " + (hawtFund["Sunglasses"] ?? "Optional"))
+                            Text("Extra: " + (hawtFund["Extra"] ?? "None"))
+                        }
+                     }
+                 
+                            
 
-//
-//                  else {
-//                      shoes = hawtFund["shoes"]!
-//                      shirts  = hawtFund["shirts"]!
-//                      coats = hawtFund["coats"]!
-//                      gloves  = hawtFund["gloves"]!
-//                      extra = hawtFund["extra"]!
-//                      pants  = hawtFund["pants"]!
-//                      socks  = hawtFund["socks"]!
-//                      scarves  = hawtFund["scarves"]!
-//                      gloves  = hawtFund["gloves"]!
-//                      hats = hawtFund["hats"]!
-//                      sunglasses = hawtFund["sunglasses"]!
-//
-//                      HStack{
-//                          VStack{
-//                              Text("Shirts: " + shirts)
-//                              Text("Pants: " + pants)
-//                              Text("Coats: " + coats)
-//                              Text("Socks: " + socks)
-//                          }
-//
-//                          VStack{
-//                              Text("Gloves: " + gloves)
-//                              Text("Scarves: " + scarves)
-//                              Text("Hats: " + hats)
-//                              Text("Sunglasses: " + sunglasses)
-//                              Text("Extra: " + extra)
-//                          }
-//
-//                      }
-//                  }
-                          
-                      
-                  }
+                        }
                   
                   }.padding().frame(width: /*@START_MENU_TOKEN@*/400.0/*@END_MENU_TOKEN@*/, height: 300.0, alignment: .top).foregroundColor(Color.fontColor)
       }
