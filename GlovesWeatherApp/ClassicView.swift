@@ -71,16 +71,16 @@ struct ClassicView: View {
                       
                       if temp < 21 {
                         VStack{
-                            Text("Shirts: " + (coldColdFund["Shirts"] ?? "ur mom"))
-                            Text("Pants: " + (coldColdFund["Pants"] ?? "ur mom"))
-                            Text("Coats: " + (coldColdFund["Coats"] ?? "ur mom"))
-                            Text("Socks: " + (coldColdFund["Socks"] ?? "ur mom"))
-                            Text("Shoes: " + (coldColdFund["Shoes"] ?? "ur mom"))
-                            Text("Gloves: " + (coldColdFund["Gloves"] ?? "ur mom"))
-                            Text("Scarves: " + (coldColdFund["Scarves"] ?? "ur mom"))
-                            Text("Hats: " + (coldColdFund["Hats"] ?? "ur mom"))
-                            Text("Sunglasses: " + (coldColdFund["Sunglasses"] ?? "ur mom"))
-                            Text("Extra: " + (coldColdFund["Extra"] ?? "None"))
+                            Text("Shirts: " + (coldColdFund["shirts"] ?? "ur mom"))
+                            Text("Pants: " + (coldColdFund["pants"] ?? "ur mom"))
+                            Text("Coats: " + (coldColdFund["coats"] ?? "ur mom"))
+                            Text("Socks: " + (coldColdFund["socks"] ?? "ur mom"))
+                            Text("Shoes: " + (coldColdFund["shoes"] ?? "ur mom"))
+                            Text("Gloves: " + (coldColdFund["gloves"] ?? "ur mom"))
+                            Text("Scarves: " + (coldColdFund["scarves"] ?? "ur mom"))
+                            Text("Hats: " + (coldColdFund["hats"] ?? "ur mom"))
+                            Text("Sunglasses: " + (coldColdFund["sunglasses"] ?? "ur mom"))
+                            Text("Extra: " + (coldColdFund["extra"] ?? "None"))
                     
                                                    }
                       }
@@ -121,16 +121,16 @@ struct ClassicView: View {
 //                          sunglasses = coldFund["sunglasses"]!
                         
                         VStack{
-                            Text("Shirts: " + (coldFund["Shirts"] ?? "ur mom"))
-                            Text("Pants: " + (coldFund["Pants"] ?? "ur mom"))
-                            Text("Coats: " + (coldFund["Coats"] ?? "ur mom"))
-                            Text("Socks: " + (coldFund["Socks"] ?? "ur mom"))
-                            Text("Shoes" + (coldFund["Shoes"] ?? "ur mom"))
-                            Text("Gloves: " + (coldFund["Gloves"] ?? "ur mom"))
-                            Text("Scarves: " + (coldFund["Scarves"] ?? "ur mom"))
-                            Text("Hats: " + (coldFund["Hats"] ?? "ur mom"))
-                            Text("Sunglasses: " + (coldFund["Sunglasses"] ?? "ur mom"))
-                            Text("Extra: " + (coldFund["Extra"] ?? "None"))
+                            Text("Shirts: " + (coldFund["shirts"] ?? "ur mom"))
+                            Text("Pants: " + (coldFund["pants"] ?? "ur mom"))
+                            Text("Coats: " + (coldFund["coats"] ?? "ur mom"))
+                            Text("Socks: " + (coldFund["socks"] ?? "ur mom"))
+                            Text("Shoes" + (coldFund["shoes"] ?? "ur mom"))
+                            Text("Gloves: " + (coldFund["gloves"] ?? "ur mom"))
+                            Text("Scarves: " + (coldFund["scarves"] ?? "ur mom"))
+                            Text("Hats: " + (coldFund["hats"] ?? "ur mom"))
+                            Text("Sunglasses: " + (coldFund["sunglasses"] ?? "ur mom"))
+                            Text("Extra: " + (coldFund["extra"] ?? "None"))
 
                 }}
 
@@ -148,16 +148,16 @@ struct ClassicView: View {
 //                          hats = coldishFund["hats"]!
 //                          sunglasses = coldishFund["sunglasses"]!
                     VStack{
-                        Text("Shirts: " + (coldishFund["Shirts"] ?? "ur mom"))
-                        Text("Pants: " + (coldishFund["Pants"] ?? "ur mom"))
-                        Text("Coats: " + (coldishFund["Coats"] ?? "ur mom"))
-                        Text("Socks: " + (coldishFund["Socks"] ?? "ur mom"))
-                        Text("Shoes: " + (coldishFund["Shoes"] ?? "ur mom"))
-                        Text("Gloves: " + (coldishFund["Gloves"] ?? "ur mom"))
-                        Text("Scarves: " + (coldishFund["Scarves"] ?? "ur mom"))
-                        Text("Hats: " + (coldishFund["Hats"] ?? "ur mom"))
-                        Text("Sunglasses: " + (coldishFund["Sunglasses"] ?? "ur mom"))
-                        Text("Extra: " + (coldishFund["Extra"] ?? "None"))
+                        Text("Shirts: " + (coldishFund["shirts"] ?? "ur mom"))
+                        Text("Pants: " + (coldishFund["pants"] ?? "ur mom"))
+                        Text("Coats: " + (coldishFund["coats"] ?? "ur mom"))
+                        Text("Socks: " + (coldishFund["socks"] ?? "ur mom"))
+                        Text("Shoes: " + (coldishFund["shoes"] ?? "ur mom"))
+                        Text("Gloves: " + (coldishFund["gloves"] ?? "ur mom"))
+                        Text("Scarves: " + (coldishFund["scarves"] ?? "ur mom"))
+                        Text("Hats: " + (coldishFund["hats"] ?? "ur mom"))
+                        Text("Sunglasses: " + (coldishFund["sunglasses"] ?? "ur mom"))
+                        Text("Extra: " + (coldishFund["extra"] ?? "None"))
                           }}
 //
                      if temp > 50 && temp < 61{
@@ -173,16 +173,16 @@ struct ClassicView: View {
 //                          hats = warmishFund["hats"]!
 //                          sunglasses = warmishFund["sunglasses"]!
                         VStack{
-                            Text("Shirts: " + (warmishFund["Shirts"] ?? "ur mom"))
-                            Text("Pants: " + (warmishFund["Pants"] ?? "ur mom"))
-                            Text("Coats: " + (warmishFund["Coats"] ?? "ur mom"))
-                            Text("Socks: " + (warmishFund["Socks"] ?? "ur mom"))
-                            Text("Shoes: " + (warmishFund["Shoes"] ?? "ur mom"))
-                            Text("Gloves: " + (warmishFund["Gloves"] ?? "ur mom"))
-                            Text("Scarves: " + (warmishFund["Scarves"] ?? "ur mom"))
-                            Text("Hats: " + (warmishFund["Hats"] ?? "ur mom"))
-                            Text("Sunglasses: " + (warmishFund["Sunglasses"] ?? "ur mom"))
-                            Text("Extra: " + (warmishFund["Extra"] ?? "None"))
+                            Text("Shirts: " + (warmishFund["shirts"] ?? "ur mom"))
+                            Text("Pants: " + (warmishFund["pants"] ?? "ur mom"))
+                            Text("Coats: " + (warmishFund["coats"] ?? "ur mom"))
+                            Text("Socks: " + (warmishFund["socks"] ?? "ur mom"))
+                            Text("Shoes: " + (warmishFund["shoes"] ?? "ur mom"))
+                            Text("Gloves: " + (warmishFund["gloves"] ?? "ur mom"))
+                            Text("Scarves: " + (warmishFund["scarves"] ?? "ur mom"))
+                            Text("Hats: " + (warmishFund["hats"] ?? "ur mom"))
+                            Text("Sunglasses: " + (warmishFund["sunglasses"] ?? "ur mom"))
+                            Text("Extra: " + (warmishFund["extra"] ?? "None"))
                         
                         }                }
                     
@@ -199,16 +199,16 @@ struct ClassicView: View {
 //      //                hats = warmerFund["hats"]!
 //      //                sunglasses = warmerFund["sunglasses"]!
                VStack{
-                    Text("Shirts: " + (warmerFund["Shirts"] ?? "ur mom"))
-                    Text("Pants: " + (warmerFund["Pants"] ?? "ur mom"))
-                    Text("Coats: " + (warmerFund["Coats"] ?? "ur mom"))
-                    Text("Socks: " + (warmerFund["Socks"] ?? "ur mom"))
-                    Text("Shoes: " + (warmerFund["Shoes"] ?? "ur mom"))
-                   Text("Gloves: " + (warmerFund["Gloves"] ?? "ur mom"))
-                   Text("Scarves: " + (warmerFund["Scarves"] ?? "ur mom"))
-                   Text("Hats: " + (warmerFund["Hats"] ?? "ur mom"))
-                   Text("Sunglasses: " + (warmerFund["Sunglasses"] ?? "ur mom"))
-                   Text("Extra: " + (warmerFund["Extra"] ?? "None"))
+                    Text("Shirts: " + (warmerFund["shirts"] ?? "ur mom"))
+                    Text("Pants: " + (warmerFund["pants"] ?? "ur mom"))
+                    Text("Coats: " + (warmerFund["coats"] ?? "ur mom"))
+                    Text("Socks: " + (warmerFund["socks"] ?? "ur mom"))
+                    Text("Shoes: " + (warmerFund["shoes"] ?? "ur mom"))
+                   Text("Gloves: " + (warmerFund["gloves"] ?? "ur mom"))
+                   Text("Scarves: " + (warmerFund["scarves"] ?? "ur mom"))
+                   Text("Hats: " + (warmerFund["hats"] ?? "ur mom"))
+                   Text("Sunglasses: " + (warmerFund["sunglasses"] ?? "ur mom"))
+                   Text("Extra: " + (warmerFund["extra"] ?? "None"))
 
                } }
 //
@@ -226,16 +226,16 @@ struct ClassicView: View {
 //      //                sunglasses = hotFund["sunglasses"]!
 //
                      VStack{
-                        Text("Shirts: " + (hotFund["Shirts"] ?? "ur mom"))
-                        Text("Pants: " + (hotFund["Pants"] ?? "ur mom"))
-                        Text("Coats: " + (hotFund["Coats"] ?? "ur mom"))
-                        Text("Socks: " + (hotFund["Socks"] ?? "ur mom"))
-                        Text("Shoes: " + (hotFund["Shoes"] ?? "ur mom"))
-                        Text("Gloves: " + (hotFund["Gloves"] ?? "ur mom"))
-                        Text("Scarves: " + (hotFund["Scarves"] ?? "ur mom"))
-                        Text("Hats: " + (hotFund["Hats"] ?? "ur mom"))
-                        Text("Sunglasses: " + (hotFund["Sunglasses"] ?? "ur mom"))
-                        Text("Extra: " + (hotFund["Extra"] ?? "None"))
+                        Text("Shirts: " + (hotFund["shirts"] ?? "ur mom"))
+                        Text("Pants: " + (hotFund["pants"] ?? "ur mom"))
+                        Text("Coats: " + (hotFund["coats"] ?? "ur mom"))
+                        Text("Socks: " + (hotFund["socks"] ?? "ur mom"))
+                        Text("Shoes: " + (hotFund["shoes"] ?? "ur mom"))
+                        Text("Gloves: " + (hotFund["gloves"] ?? "ur mom"))
+                        Text("Scarves: " + (hotFund["scarves"] ?? "ur mom"))
+                        Text("Hats: " + (hotFund["hats"] ?? "ur mom"))
+                        Text("Sunglasses: " + (hotFund["sunglasses"] ?? "ur mom"))
+                        Text("Extra: " + (hotFund["extra"] ?? "None"))
 
                 }
 
@@ -287,4 +287,5 @@ struct ClassicView: View {
               ClassicView(weather: Weather(), response : Response(), data : Data())
           }
       }
+
 
