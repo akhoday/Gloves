@@ -89,17 +89,17 @@ struct ComfyView: View {
                        
                        if temp < 21 {
                         
-                            VStack{
-                                Text("Shirts: " + (coldColdComfy["Shirts"] ?? "ur mom"))
-                                Text("Pants: " + (coldColdComfy["Pants"] ?? "ur mom"))
-                                Text("Coats: " + (coldColdComfy["Coats"] ?? "Optional"))
-                                Text("Socks: " + (coldColdComfy["Socks"] ?? "Optional"))
-                                Text("Shoes: " + (coldColdComfy["Shoes"] ?? "ur mom"))
-                                Text("Gloves: " + (coldColdComfy["Gloves"] ?? "Optional"))
-                                Text("Scarves: " + (coldColdComfy["Scarves"] ?? "Optional"))
-                                Text("Hats: " + (coldColdComfy["Hats"] ?? "Optional"))
-                                Text("Sunglasses: " + (coldColdComfy["Sunglasses"] ?? "Optional"))
-                                Text("Extra: " + (coldColdComfy["Extra"] ?? "None"))
+                            VStack(alignment: .leading){
+                                Text("Shirts: " + (coldColdComfy["Shirts"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                                Text("Pants: " + (coldColdComfy["Pants"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                                Text("Coats: " + (coldColdComfy["Coats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
+                                Text("Socks: " + (coldColdComfy["Socks"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
+                                Text("Shoes: " + (coldColdComfy["Shoes"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                                Text("Gloves: " + (coldColdComfy["Gloves"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
+                                Text("Scarves: " + (coldColdComfy["Scarves"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
+                                Text("Hats: " + (coldColdComfy["Hats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
+                                Text("Sunglasses: " + (coldColdComfy["Sunglasses"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
+                                Text("Extra: " + (coldColdComfy["Extra"] ?? "None")).alignmentGuide(.leading) { d in d[.leading] }
                         
                                                        }
                         
@@ -114,17 +114,17 @@ struct ComfyView: View {
 //
 //                            }
                           
-                               VStack{
-                                   Text("Shirts: " + (coldComfy["Shirts"] ?? "ur mom"))
-                                   Text("Pants: " + (coldComfy["Pants"] ?? "ur mom"))
-                                   Text("Coats: " + (coldComfy["Coats"] ?? "Recommended"))
-                                   Text("Socks: " + (coldComfy["Socks"] ?? "ur mom"))
-                                   Text("Shoes" + (coldComfy["Shoes"] ?? "ur mom"))
-                                   Text("Gloves: " + (coldComfy["Gloves"] ?? "Recommended"))
-                                   Text("Scarves: " + (coldComfy["Scarves"] ?? "Recommended"))
-                                   Text("Hats: " + (coldComfy["Hats"] ?? "Optional"))
-                                   Text("Sunglasses: " + (coldComfy["Sunglasses"] ?? "Optional"))
-                                   Text("Extra: " + (coldComfy["Extra"] ?? "None"))
+                               VStack(alignment: .leading){
+                                Text("Shirts: " + (coldComfy["Shirts"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                                Text("Pants: " + (coldComfy["Pants"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                                Text("Coats: " + (coldComfy["Coats"] ?? "Recommended")).alignmentGuide(.leading) { d in d[.leading] }
+                                Text("Socks: " + (coldComfy["Socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                                Text("Shoes" + (coldComfy["Shoes"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                                Text("Gloves: " + (coldComfy["Gloves"] ?? "Recommended")).alignmentGuide(.leading) { d in d[.leading] }
+                                Text("Scarves: " + (coldComfy["Scarves"] ?? "Recommended")).alignmentGuide(.leading) { d in d[.leading] }
+                                Text("Hats: " + (coldComfy["Hats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
+                                Text("Sunglasses: " + (coldComfy["Sunglasses"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
+                                Text("Extra: " + (coldComfy["Extra"] ?? "None")).alignmentGuide(.leading) { d in d[.leading] }
 
                                }}
 //
@@ -135,17 +135,26 @@ struct ComfyView: View {
 //                            coldishComfy["Extra"] = "Bring an umbrella!"
 //                        }
                         
-                               VStack{
-                                   Text("Shirts: " + (coldishComfy["Shirts"] ?? "ur mom"))
-                                   Text("Pants: " + (coldishComfy["Pants"] ?? "ur mom"))
-                                   Text("Coats: " + (coldishComfy["Coats"] ?? "Recommended"))
-                                   Text("Socks: " + (coldishComfy["Socks"] ?? "ur mom"))
-                                   Text("Shoes: " + (coldishComfy["Shoes"] ?? "ur mom"))
-                                   Text("Gloves: " + (coldishComfy["Gloves"] ?? "Always recommended, but maybe not the best choice!"))
-                                   Text("Scarves: " + (coldishComfy["Scarves"] ?? "Optional"))
-                                   Text("Hats: " + (coldishComfy["Hats"] ?? "Optional"))
-                                   Text("Sunglasses: " + (coldishComfy["Sunglasses"] ?? "Optional"))
-                                   Text("Extra: " + (coldishComfy["Extra"] ?? "None"))
+                               VStack(alignment: .leading){
+                                Text("Shirts: " + (coldishComfy["Shirts"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                                
+                                Text("Pants: " + (coldishComfy["Pants"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                                
+                                Text("Coats: " + (coldishComfy["Coats"] ?? "Recommended")).alignmentGuide(.leading) { d in d[.leading] }
+                                
+                                Text("Socks: " + (coldishComfy["Socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                                
+                                Text("Shoes: " + (coldishComfy["Shoes"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                                
+                                Text("Gloves: " + (coldishComfy["Gloves"] ?? "Always recommended, but maybe not the best choice!")).alignmentGuide(.leading) { d in d[.leading] }
+                                
+                                Text("Scarves: " + (coldishComfy["Scarves"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
+                                
+                                Text("Hats: " + (coldishComfy["Hats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
+                                
+                                Text("Sunglasses: " + (coldishComfy["Sunglasses"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
+                                
+                                Text("Extra: " + (coldishComfy["Extra"] ?? "None")).alignmentGuide(.leading) { d in d[.leading] }
                                }
                            }
 //
@@ -156,17 +165,26 @@ struct ComfyView: View {
 //                            warmishComfy["Extra"] = "Bring an umbrella!"
 //                        }
                          
-                               VStack{
-                                   Text("Shirts: " + (warmishComfy["Shirts"] ?? "ur mom"))
-                                   Text("Pants: " + (warmishComfy["Pants"] ?? "ur mom"))
-                                   Text("Coats: " + (warmishComfy["Coats"] ?? "Optional"))
-                                   Text("Socks: " + (warmishComfy["Socks"] ?? "ur mom"))
-                                    Text("Shoes: " + (warmishComfy["Shoes"] ?? "ur mom"))
-                                   Text("Gloves: " + (warmishComfy["Gloves"] ?? "Always recommended, but maybe not the best choice!"))
-                                   Text("Scarves: " + (warmishComfy["Scarves"] ?? "Optional"))
-                                   Text("Hats: " + (warmishComfy["Hats"] ?? "Optional"))
-                                   Text("Sunglasses: " + (warmishComfy["Sunglasses"] ?? "Optional"))
-                                   Text("Extra: " + (warmishComfy["Extra"] ?? "None"))
+                               VStack(alignment: .leading){
+                                Text("Shirts: " + (warmishComfy["Shirts"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                                
+                                Text("Pants: " + (warmishComfy["Pants"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                                
+                                Text("Coats: " + (warmishComfy["Coats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
+                                
+                                Text("Socks: " + (warmishComfy["Socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                                
+                                Text("Shoes: " + (warmishComfy["Shoes"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                                
+                                Text("Gloves: " + (warmishComfy["Gloves"] ?? "Always recommended, but maybe not the best choice!")).alignmentGuide(.leading) { d in d[.leading] }
+                                
+                                Text("Scarves: " + (warmishComfy["Scarves"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
+                                
+                                Text("Hats: " + (warmishComfy["Hats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
+                                
+                                Text("Sunglasses: " + (warmishComfy["Sunglasses"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
+                                
+                                Text("Extra: " + (warmishComfy["Extra"] ?? "None")).alignmentGuide(.leading) { d in d[.leading] }
 
                                }
                        }
@@ -177,17 +195,17 @@ struct ComfyView: View {
 //                        warmerComfy["Shoes"] = "old sneakers"
 //                        warmerComfy["Extra"] = "Bring an umbrella!"
 //                    }
-                           VStack{
-                                Text("Shirts: " + (warmerComfy["Shirts"] ?? "ur mom"))
-                                Text("Pants: " + (warmerComfy["Pants"] ?? "ur mom"))
-                                Text("Coats: " + (warmerComfy["Coats"] ?? "Optional"))
-                                Text("Socks: " + (warmerComfy["Socks"] ?? "ur mom"))
-                                Text("Shoes: " + (warmerComfy["Shoes"] ?? "ur mom"))
-                               Text("Gloves: " + (warmerComfy["Gloves"] ?? "Always recommended, but maybe not the best choice!"))
-                               Text("Scarves: " + (warmerComfy["Scarves"] ?? "Optional"))
-                               Text("Hats: " + (warmerComfy["Hats"] ?? "Optional"))
-                               Text("Sunglasses: " + (warmerComfy["Sunglasses"] ?? "Optional"))
-                               Text("Extra: " + (warmerComfy["Extra"] ?? "None"))
+                           VStack(alignment: .leading){
+                            Text("Shirts: " + (warmerComfy["Shirts"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Pants: " + (warmerComfy["Pants"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Coats: " + (warmerComfy["Coats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Socks: " + (warmerComfy["Socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Shoes: " + (warmerComfy["Shoes"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Gloves: " + (warmerComfy["Gloves"] ?? "Always recommended, but maybe not the best choice!")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Scarves: " + (warmerComfy["Scarves"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Hats: " + (warmerComfy["Hats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Sunglasses: " + (warmerComfy["Sunglasses"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Extra: " + (warmerComfy["Extra"] ?? "None")).alignmentGuide(.leading) { d in d[.leading] }
 
                            }
 
@@ -199,17 +217,17 @@ struct ComfyView: View {
 //                        hotComfy["Shoes"] = "old sneakers"
 //                        hotComfy["Extra"] = "Bring an umbrella!"
 //                    }
-                           VStack{
-                               Text("Shirts: " + (hotComfy["Shirts"] ?? "ur mom"))
-                               Text("Pants: " + (hotComfy["Pants"] ?? "ur mom"))
-                               Text("Coats: " + (hotComfy["Coats"] ?? "Optional"))
-                               Text("Socks: " + (hotComfy["Socks"] ?? "ur mom"))
-                                Text("Shoes: " + (hotComfy["Shoes"] ?? "ur mom"))
-                               Text("Gloves: " + (hotComfy["Gloves"] ?? "Always recommended, but maybe not the best choice!"))
-                               Text("Scarves: " + (hotComfy["Scarves"] ?? "Optional"))
-                               Text("Hats: " + (hotComfy["Hats"] ?? "Optional"))
-                               Text("Sunglasses: " + (hotComfy["Sunglasses"] ?? "Optional"))
-                               Text("Extra: " + (hotComfy["Extra"] ?? "None"))
+                           VStack(alignment: .leading){
+                            Text("Shirts: " + (hotComfy["Shirts"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Pants: " + (hotComfy["Pants"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Coats: " + (hotComfy["Coats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Socks: " + (hotComfy["Socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Shoes: " + (hotComfy["Shoes"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Gloves: " + (hotComfy["Gloves"] ?? "Always recommended, but maybe not the best choice!")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Scarves: " + (hotComfy["Scarves"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Hats: " + (hotComfy["Hats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Sunglasses: " + (hotComfy["Sunglasses"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Extra: " + (hotComfy["Extra"] ?? "None")).alignmentGuide(.leading) { d in d[.leading] }
 
                            }
 
@@ -219,17 +237,17 @@ struct ComfyView: View {
 //                    if (data.precip)! > 2.4 {
 //                        hawtComfy["Shoes"] = "old sneakers"
 //                        hawtComfy["Extra"] = "Bring an umbrella!"
-                    VStack{
-                        Text("Shirts: " + (hawtComfy["Shirts"] ?? "ur mom"))
-                        Text("Pants: " + (hawtComfy["Pants"] ?? "ur mom"))
-                        Text("Coats: " + (hawtComfy["Coats"] ?? "Optional"))
-                        Text("Socks: " + (hawtComfy["Socks"] ?? "ur mom"))
-                         Text("Shoes: " + (hawtComfy["Shoes"] ?? "ur mom"))
-                        Text("Gloves: " + (hawtComfy["Gloves"] ?? "Always recommended, but maybe not the best choice"))
-                        Text("Scarves: " + (hawtComfy["Scarves"] ?? "Not recommended"))
-                        Text("Hats: " + (hawtComfy["Hats"] ?? "Optional"))
-                        Text("Sunglasses: " + (hawtComfy["Sunglasses"] ?? "Optional"))
-                        Text("Extra: " + (hawtComfy["Extra"] ?? "None"))
+                    VStack(alignment: .leading){
+                        Text("Shirts: " + (hawtComfy["Shirts"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Pants: " + (hawtComfy["Pants"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Coats: " + (hawtComfy["Coats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Socks: " + (hawtComfy["Socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Shoes: " + (hawtComfy["Shoes"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Gloves: " + (hawtComfy["Gloves"] ?? "Always recommended, but maybe not the best choice")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Scarves: " + (hawtComfy["Scarves"] ?? "Not recommended")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Hats: " + (hawtComfy["Hats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Sunglasses: " + (hawtComfy["Sunglasses"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Extra: " + (hawtComfy["Extra"] ?? "None")).alignmentGuide(.leading) { d in d[.leading] }
                     }
                     }
                       
@@ -245,7 +263,3 @@ struct ComfyView_Previews: PreviewProvider {
                ComfyView(weather: Weather(), response : Response(), data : Data())
            }
        }
-
-
-
-
