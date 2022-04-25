@@ -48,6 +48,8 @@ struct DailyInfoView: View {
         var high = data.high_temp
         var low = data.low_temp
         var icon = weather.icon
+        var unwrappedIcon = weather.icon!
+        var bk = unwrappedIcon + "bk"
         var unwrappedDate = date!
         var subStringDate = unwrappedDate.suffix(5)
         
@@ -55,7 +57,8 @@ struct DailyInfoView: View {
         
         ZStack{
             
-            Rectangle().foregroundColor(Color.background).edgesIgnoringSafeArea(.all)
+            
+            Image(bk).edgesIgnoringSafeArea(.all)
             
             
             VStack(spacing: 0.0) {
