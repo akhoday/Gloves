@@ -17,10 +17,12 @@ struct LocationView: View {
             
             Rectangle().foregroundColor(Color.background).edgesIgnoringSafeArea(.all)
             
-            
-            TextField("Enter City: ", text: $cityName)
-            TextField("Enter State: ", text: $stateName)
-        }
+            VStack {
+                
+                TextField("Enter City: ", text: $cityName)
+                TextField("Enter State: ", text: $stateName)
+            }
+        }.foregroundColor(Color.buttonColor).padding().frame(width: 500.0, height: 100.0, alignment: .top).background(Color.background)
     }
 }
 

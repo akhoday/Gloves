@@ -32,25 +32,23 @@ struct ContentView: View {
 
         var stateCode = fetchData.responses.state_code
         
-      
+        NavigationView {
 
-            VStack {
-                
+              
                 NavigationLink(
 
-                    destination: LocationView(stateName: $stateName, cityName: $cityName),
+                    destination: 
+                        LocationView(stateName: $stateName, cityName: $cityName)
+                    ,
 
                     label: {
-                        Text("Change Location")
+                       ChangeOfferView()
                     })
-                    
-
-                     Text((address ?? "Loading... Don't stress") + ", " + (stateCode ?? "we're working on it!")).foregroundColor(Color.fontColor)
-
-            }.foregroundColor(Color.buttonColor).padding().frame(width: 900.0, height: 100.0, alignment: .top).background(Color.background)
+                
 
             
-
+        }
+        .frame(width: 500.0, height: 125.0, alignment: .top)
             
 
         //next couple of days and that array
@@ -84,7 +82,8 @@ struct ContentView: View {
                                     WeatherInfoView(weather: data.weather, response: fetchData.responses, data: data)
 
 
-                                }).listRowBackground(Color.background).listRowSeparatorTint(Color.fontColor)
+                                }).listRowBackground(Color.background)
+                                //.listRowSeparatorTint(Color.fontColor)
 
                                 .navigationTitle(Text("16 Day Forecast")).accentColor(Color.fontColor)
 
