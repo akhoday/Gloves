@@ -71,135 +71,83 @@ struct ClassicView: View {
                   VStack{
                       
                       if temp < 21 {
-                        VStack{
-                            Text("Shirts: " + (coldColdFund["shirts"] ?? "ur mom"))
-                            Text("Pants: " + (coldColdFund["pants"] ?? "ur mom"))
-                            Text("Coats: " + (coldColdFund["coats"] ?? "ur mom"))
-                            Text("Socks: " + (coldColdFund["socks"] ?? "ur mom"))
-                            Text("Shoes: " + (coldColdFund["shoes"] ?? "ur mom"))
-                            Text("Gloves: " + (coldColdFund["gloves"] ?? "ur mom"))
-                            Text("Scarves: " + (coldColdFund["scarves"] ?? "ur mom"))
-                            Text("Hats: " + (coldColdFund["hats"] ?? "ur mom"))
-                            Text("Sunglasses: " + (coldColdFund["sunglasses"] ?? "ur mom"))
-                            Text("Extra: " + (coldColdFund["extra"] ?? "None"))
+                        VStack(alignment: .leading){
+                            Text("Shirts: " + (coldColdFund["shirts"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Pants: " + (coldColdFund["pants"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Coats: " + (coldColdFund["coats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Socks: " + (coldColdFund["socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Shoes: " + (coldColdFund["shoes"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Gloves: " + (coldColdFund["gloves"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Scarves: " + (coldColdFund["scarves"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Hats: " + (coldColdFund["hats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Sunglasses: " + (coldColdFund["sunglasses"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Extra: " + (coldColdFund["extra"] ?? "None")).alignmentGuide(.leading) { d in d[.leading] }
                     
                                                    }
                       }
-//                          shoes = coldColdFund["shoes"]!
-//                          shirts  = coldColdFund["shirts"]!
-//                          coats = coldColdFund["coats"]!
-//                          gloves  = coldColdFund["gloves"]!
-//                          extra = coldColdFund["extra"]!
-//                          pants  = coldColdFund["pants"]!
-//                          socks  = coldColdFund["socks"]!
-//                          scarves  = coldColdFund["scarves"]!
-//                          gloves  = coldColdFund["gloves"]!
-//                          hats = coldColdFund["hats"]!
-//                          sunglasses = coldColdFund["sunglasses"]!
-//
-//
-//
-//                          }
-//
-//
-//                          }
-//
-//                      else  {
-//                        Text("Ur Mom")
-//                      }
+
           
                      if temp > 20 && temp < 33{
-//                          shoes = coldFund["shoes"]!
-//                          shirts  = coldFund["shirts"]!
-//                          coats = coldFund["coats"]!
-//                          gloves  = coldFund["gloves"]!
-//                          extra = coldFund["extra"]!
-//                          pants  = coldFund["eants"]!
-//                          socks  = coldFund["socks"]!
-//                          scarves  = coldFund["scarves"]!
-//                          gloves  = coldFund["gloves"]!
-//                          hats = coldFund["hats"]!
-//                          sunglasses = coldFund["sunglasses"]!
-                        
-                        VStack{
-                            Text("Shirts: " + (coldFund["shirts"] ?? "ur mom"))
-                            Text("Pants: " + (coldFund["pants"] ?? "ur mom"))
-                            Text("Coats: " + (coldFund["coats"] ?? "ur mom"))
-                            Text("Socks: " + (coldFund["socks"] ?? "ur mom"))
-                            Text("Shoes" + (coldFund["shoes"] ?? "ur mom"))
-                            Text("Gloves: " + (coldFund["gloves"] ?? "ur mom"))
-                            Text("Scarves: " + (coldFund["scarves"] ?? "ur mom"))
-                            Text("Hats: " + (coldFund["hats"] ?? "ur mom"))
-                            Text("Sunglasses: " + (coldFund["sunglasses"] ?? "ur mom"))
-                            Text("Extra: " + (coldFund["extra"] ?? "None"))
+//
+                        VStack(alignment: .leading){
+                            Text("Shirts: " + (coldFund["shirts"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Pants: " + (coldFund["pants"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Coats: " + (coldFund["coats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Socks: " + (coldFund["socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Shoes" + (coldFund["shoes"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Gloves: " + (coldFund["gloves"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Scarves: " + (coldFund["scarves"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Hats: " + (coldFund["hats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Sunglasses: " + (coldFund["sunglasses"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Extra: " + (coldFund["extra"] ?? "None")).alignmentGuide(.leading) { d in d[.leading] }
 
                 }}
 
 //
                     if temp > 32 && temp < 51{
-//                          shoes = coldishFund["shoes"]!
-//                          shirts  = coldishFund["shirts"]!
-//                          coats = coldishFund["coats"]!
-//                          gloves  = coldishFund["gloves"]!
-//                          extra = coldishFund["extra"]!
-//                          pants  = coldishFund["pants"]!
-//                          socks  = coldishFund["socks"]!
-//                          scarves  = coldishFund["scarves"]!
-//                          gloves  = coldishFund["gloves"]!
-//                          hats = coldishFund["hats"]!
-//                          sunglasses = coldishFund["sunglasses"]!
-                    VStack{
-                        Text("Shirts: " + (coldishFund["shirts"] ?? "ur mom"))
-                        Text("Pants: " + (coldishFund["pants"] ?? "ur mom"))
-                        Text("Coats: " + (coldishFund["coats"] ?? "ur mom"))
-                        Text("Socks: " + (coldishFund["socks"] ?? "ur mom"))
-                        Text("Shoes: " + (coldishFund["shoes"] ?? "ur mom"))
-                        Text("Gloves: " + (coldishFund["gloves"] ?? "ur mom"))
-                        Text("Scarves: " + (coldishFund["scarves"] ?? "ur mom"))
-                        Text("Hats: " + (coldishFund["hats"] ?? "ur mom"))
-                        Text("Sunglasses: " + (coldishFund["sunglasses"] ?? "ur mom"))
-                        Text("Extra: " + (coldishFund["extra"] ?? "None"))
+//
+                    VStack(alignment: .leading){
+                        Text("Shirts: " + (coldishFund["shirts"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Pants: " + (coldishFund["pants"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Coats: " + (coldishFund["coats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Socks: " + (coldishFund["socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Shoes: " + (coldishFund["shoes"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Gloves: " + (coldishFund["gloves"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Scarves: " + (coldishFund["scarves"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Hats: " + (coldishFund["hats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Sunglasses: " + (coldishFund["sunglasses"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Extra: " + (coldishFund["extra"] ?? "None")).alignmentGuide(.leading) { d in d[.leading] }
                           }}
 //
                      if temp > 50 && temp < 61{
-//                          shoes = warmishFund["shoes"]!
-//                          shirts  = warmishFund["shirts"]!
-//                          coats = warmishFund["coats"]!
-//                          gloves  = warmishFund["gloves"]!
-//                          extra = warmishFund["extra"]!
-//                          pants  = warmishFund["pants"]!
-//                          socks  = warmishFund["socks"]!
-//                          scarves  = warmishFund["scarves"]!
-//                          gloves  = warmishFund["gloves"]!
-//                          hats = warmishFund["hats"]!
-//                          sunglasses = warmishFund["sunglasses"]!
-                        VStack{
-                            Text("Shirts: " + (warmishFund["shirts"] ?? "ur mom"))
-                            Text("Pants: " + (warmishFund["pants"] ?? "ur mom"))
-                            Text("Coats: " + (warmishFund["coats"] ?? "ur mom"))
-                            Text("Socks: " + (warmishFund["socks"] ?? "ur mom"))
-                            Text("Shoes: " + (warmishFund["shoes"] ?? "ur mom"))
-                            Text("Gloves: " + (warmishFund["gloves"] ?? "ur mom"))
-                            Text("Scarves: " + (warmishFund["scarves"] ?? "ur mom"))
-                            Text("Hats: " + (warmishFund["hats"] ?? "ur mom"))
-                            Text("Sunglasses: " + (warmishFund["sunglasses"] ?? "ur mom"))
-                            Text("Extra: " + (warmishFund["extra"] ?? "None"))
+                        
+                        VStack(alignment: .leading){
+                            Text("Shirts: " + (warmishFund["shirts"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Pants: " + (warmishFund["pants"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Coats: " + (warmishFund["coats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Socks: " + (warmishFund["socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Shoes: " + (warmishFund["shoes"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Gloves: " + (warmishFund["gloves"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Scarves: " + (warmishFund["scarves"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Hats: " + (warmishFund["hats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Sunglasses: " + (warmishFund["sunglasses"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Extra: " + (warmishFund["extra"] ?? "None")).alignmentGuide(.leading) { d in d[.leading] }
                         
                         }                }
                     
                   if temp > 60 && temp < 71{
 
-               VStack{
-                    Text("Shirts: " + (warmerFund["shirts"] ?? "ur mom"))
-                    Text("Pants: " + (warmerFund["pants"] ?? "ur mom"))
-                    Text("Coats: " + (warmerFund["coats"] ?? "ur mom"))
-                    Text("Socks: " + (warmerFund["socks"] ?? "ur mom"))
-                    Text("Shoes: " + (warmerFund["shoes"] ?? "ur mom"))
-                   Text("Gloves: " + (warmerFund["gloves"] ?? "ur mom"))
-                   Text("Scarves: " + (warmerFund["scarves"] ?? "ur mom"))
-                   Text("Hats: " + (warmerFund["hats"] ?? "ur mom"))
-                   Text("Sunglasses: " + (warmerFund["sunglasses"] ?? "ur mom"))
-                   Text("Extra: " + (warmerFund["extra"] ?? "None"))
+               VStack(alignment: .leading){
+                Text("Shirts: " + (warmerFund["shirts"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                Text("Pants: " + (warmerFund["pants"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                Text("Coats: " + (warmerFund["coats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                Text("Socks: " + (warmerFund["socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                Text("Shoes: " + (warmerFund["shoes"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                Text("Gloves: " + (warmerFund["gloves"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                Text("Scarves: " + (warmerFund["scarves"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                Text("Hats: " + (warmerFund["hats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                Text("Sunglasses: " + (warmerFund["sunglasses"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                Text("Extra: " + (warmerFund["extra"] ?? "None")).alignmentGuide(.leading) { d in d[.leading] }
 
                } }
 //
@@ -208,17 +156,17 @@ struct ClassicView: View {
 //                        hawtFund["Shoes"] = "old sneakers"
 //                        hawtFund["Extra"] = "Bring an umbrella!"
 //                    }
-                     VStack{
-                        Text("Shirts: " + (hotFund["shirts"] ?? "ur mom"))
-                        Text("Pants: " + (hotFund["pants"] ?? "ur mom"))
-                        Text("Coats: " + (hotFund["coats"] ?? "ur mom"))
-                        Text("Socks: " + (hotFund["socks"] ?? "ur mom"))
-                        Text("Shoes: " + (hotFund["shoes"] ?? "ur mom"))
-                        Text("Gloves: " + (hotFund["gloves"] ?? "ur mom"))
-                        Text("Scarves: " + (hotFund["scarves"] ?? "ur mom"))
-                        Text("Hats: " + (hotFund["hats"] ?? "ur mom"))
-                        Text("Sunglasses: " + (hotFund["sunglasses"] ?? "ur mom"))
-                        Text("Extra: " + (hotFund["extra"] ?? "None"))
+                     VStack(alignment: .leading){
+                        Text("Shirts: " + (hotFund["shirts"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Pants: " + (hotFund["pants"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Coats: " + (hotFund["coats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Socks: " + (hotFund["socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Shoes: " + (hotFund["shoes"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Gloves: " + (hotFund["gloves"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Scarves: " + (hotFund["scarves"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Hats: " + (hotFund["hats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Sunglasses: " + (hotFund["sunglasses"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Extra: " + (hotFund["extra"] ?? "None")).alignmentGuide(.leading) { d in d[.leading] }
 
                 }
 
@@ -228,17 +176,17 @@ struct ClassicView: View {
  //                    if (data.precip)! > 2.4 {
  //                        hawtComfy["Shoes"] = "old sneakers"
  //                        hawtComfy["Extra"] = "Bring an umbrella!"
-                        VStack{
-                            Text("Shirts: " + (hawtFund["Shirts"] ?? "ur mom"))
-                            Text("Pants: " + (hawtFund["Pants"] ?? "ur mom"))
-                            Text("Coats: " + (hawtFund["Coats"] ?? "Optional"))
-                            Text("Socks: " + (hawtFund["Socks"] ?? "ur mom"))
-                             Text("Shoes: " + (hawtFund["Shoes"] ?? "ur mom"))
-                            Text("Gloves: " + (hawtFund["Gloves"] ?? "Always recommended, but maybe not the best choice"))
-                            Text("Scarves: " + (hawtFund["Scarves"] ?? "Not recommended"))
-                            Text("Hats: " + (hawtFund["Hats"] ?? "Optional"))
-                            Text("Sunglasses: " + (hawtFund["Sunglasses"] ?? "Optional"))
-                            Text("Extra: " + (hawtFund["Extra"] ?? "None"))
+                        VStack(alignment: .leading){
+                            Text("Shirts: " + (hawtFund["Shirts"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Pants: " + (hawtFund["Pants"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Coats: " + (hawtFund["Coats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Socks: " + (hawtFund["Socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Shoes: " + (hawtFund["Shoes"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Gloves: " + (hawtFund["Gloves"] ?? "Always recommended, but maybe not the best choice")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Scarves: " + (hawtFund["Scarves"] ?? "Not recommended")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Hats: " + (hawtFund["Hats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Sunglasses: " + (hawtFund["Sunglasses"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Extra: " + (hawtFund["Extra"] ?? "None")).alignmentGuide(.leading) { d in d[.leading] }
                         }
                      }
                  
