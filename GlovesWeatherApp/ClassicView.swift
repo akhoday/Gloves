@@ -31,7 +31,8 @@ struct ClassicView: View {
     var body: some View {
  
         let temp = (data.temp)!
-       
+        var unwrappedIcon = weather.icon!
+        var bk = unwrappedIcon + "bk"
         var shoes  = " "
         var shirts  = ""
         var coats = ""
@@ -48,7 +49,7 @@ struct ClassicView: View {
  
         ZStack{
                   
-                  Rectangle().foregroundColor(Color.background).edgesIgnoringSafeArea(.all)
+            Image(bk).edgesIgnoringSafeArea(.all)
                   
       //            if (data.precip)! > 2.4 {
       //                coldColdComfy["Shoes"] = "rain boots, snow boots, waterproof shoes"

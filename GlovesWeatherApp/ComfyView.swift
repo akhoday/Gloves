@@ -48,6 +48,8 @@ struct ComfyView: View {
     var body: some View {
         
         let temp = (data.temp)!
+        var unwrappedIcon = weather.icon!
+        var bk = unwrappedIcon + "bk"
         var shoes  = ""
         var shirts  = ""
         var coats = ""
@@ -63,7 +65,7 @@ struct ComfyView: View {
 
         ZStack{
                    
-                   Rectangle().foregroundColor(Color.background).edgesIgnoringSafeArea(.all)
+            Image(bk).edgesIgnoringSafeArea(.all)
            
          
 //                   if (data.precip)! > 2.4 {
