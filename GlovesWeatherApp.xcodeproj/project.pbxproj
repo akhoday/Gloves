@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A9D1F5B28183DDA0042D5A0 /* DailyForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9D1F5A28183DDA0042D5A0 /* DailyForecastView.swift */; };
 		0AAA593E27F48B6E000A2EF4 /* ComfyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA593D27F48B6E000A2EF4 /* ComfyView.swift */; };
 		0AAA594027F48B87000A2EF4 /* TrendyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA593F27F48B87000A2EF4 /* TrendyView.swift */; };
 		0AAA594227F48B98000A2EF4 /* ClassicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA594127F48B98000A2EF4 /* ClassicView.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A9D1F5A28183DDA0042D5A0 /* DailyForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecastView.swift; sourceTree = "<group>"; };
 		0AAA593D27F48B6E000A2EF4 /* ComfyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComfyView.swift; sourceTree = "<group>"; };
 		0AAA593F27F48B87000A2EF4 /* TrendyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendyView.swift; sourceTree = "<group>"; };
 		0AAA594127F48B98000A2EF4 /* ClassicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicView.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				1B6AAFA827C51C380028F332 /* Assets.xcassets */,
 				1B6AAFAD27C51C380028F332 /* Info.plist */,
 				1B6AAFAA27C51C380028F332 /* Preview Content */,
+				0A9D1F5A28183DDA0042D5A0 /* DailyForecastView.swift */,
 			);
 			path = GlovesWeatherApp;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BBCB0A427F4908000120387 /* ClothingTime.swift in Sources */,
+				0A9D1F5B28183DDA0042D5A0 /* DailyForecastView.swift in Sources */,
 				32B558BC280EF60A00CF570A /* LocationView.swift in Sources */,
 				32A0D58B27E4BF3100430669 /* Constants.swift in Sources */,
 				1BD1DE4727EB4A890027EED3 /* CustomImageView.swift in Sources */,
