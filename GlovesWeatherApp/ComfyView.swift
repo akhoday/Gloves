@@ -73,7 +73,7 @@ struct ComfyView: View {
                                 Text("Coats: " + (coldColdComfy["Coats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
                                 Text("Socks: " + (coldColdComfy["Socks"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
                               
-                                if (data.precip)! > 2.4 {
+                                if (data.precip)! > 0.09 {
                                     let shoes = "rain boots, snow boots, waterproof shoes"
                                     Text("Shoes: " + shoes).alignmentGuide(.leading) { d in d[.leading] }
                                 }
@@ -85,7 +85,7 @@ struct ComfyView: View {
                                 Text("Hats: " + (coldColdComfy["Hats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
                                 Text("Sunglasses: " + (coldColdComfy["Sunglasses"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
                                
-                                if (data.precip)! > 2.4 {
+                                if (data.precip)! > 0.09 {
                                    let extra = "Bring an umbrella!"
                                     Text("Extra: " + extra)
                                 }
@@ -104,7 +104,8 @@ struct ComfyView: View {
                                 Text("Pants: " + (coldComfy["Pants"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
                                 Text("Coats: " + (coldComfy["Coats"] ?? "Recommended")).alignmentGuide(.leading) { d in d[.leading] }
                                 Text("Socks: " + (coldComfy["Socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                                if (data.precip)! > 2.4 {
+                                
+                                if (data.precip)! > 0.09 {
                                     let shoes = "rain boots, snow boots, waterproof shoes"
                                     Text("Shoes: " + shoes).alignmentGuide(.leading) { d in d[.leading] }
                                 }
@@ -115,7 +116,7 @@ struct ComfyView: View {
                                 Text("Hats: " + (coldComfy["Hats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
                                 Text("Sunglasses: " + (coldComfy["Sunglasses"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
                                
-                                if (data.precip)! > 2.4 {
+                                if (data.precip)! > 0.09 {
                                    let extra = "Bring an umbrella!"
                                     Text("Extra: " + extra)
                                 }
@@ -126,11 +127,6 @@ struct ComfyView: View {
 //
                        if temp > 32 && temp < 51{
                      
-//                        if (data.precip)! > 2.4 {
-//                            coldishComfy["Shoes"] = "rain boots"
-//                            coldishComfy["Extra"] = "Bring an umbrella!"
-//                        }
-                        
                                VStack(alignment: .leading){
                                 Text("Shirts: " + (coldishComfy["Shirts"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
                                 
@@ -140,7 +136,7 @@ struct ComfyView: View {
                                 
                                 Text("Socks: " + (coldishComfy["Socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
                                 
-                                if (data.precip)! > 2.4 {
+                                if (data.precip)! > 0.09 {
                                    let shoes = "rain boots"
                                     Text("Shoes: " + shoes)
                                 }
@@ -154,7 +150,7 @@ struct ComfyView: View {
                                 
                                 Text("Sunglasses: " + (coldishComfy["Sunglasses"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
                                
-                                if (data.precip)! > 2.4 {
+                                if (data.precip)! > 0.09 {
                                    let extra = "Bring an umbrella!"
                                     Text("Extra: " + extra)
                                 }
@@ -174,7 +170,7 @@ struct ComfyView: View {
                                 
                                 Text("Socks: " + (warmishComfy["Socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
                                 
-                                if (data.precip)! > 2.4 {
+                                if (data.precip)! > 0.09 {
                                    let shoes = "rain boots, old sneakers"
                                     Text("Shoes: " + shoes).alignmentGuide(.leading) { d in d[.leading] }
                                     
@@ -189,7 +185,7 @@ struct ComfyView: View {
                                 
                                 Text("Sunglasses: " + (warmishComfy["Sunglasses"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
                                
-                                if (data.precip)! > 2.4 {
+                                if (data.precip)! > 0.09 {
                                     let extra  = "Bring an umbrella!"
                                     Text("Extra: " + extra).alignmentGuide(.leading) { d in d[.leading] }
                                 }
@@ -211,7 +207,7 @@ struct ComfyView: View {
                             Text("Coats: " + (warmerComfy["Coats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
                             Text("Socks: " + (warmerComfy["Socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
                             
-                            if (data.precip)! > 2.4 {
+                            if (data.precip)! > 0.09 {
                                let shoes =  "old sneakers"
                                 Text("Shoes: " + shoes).alignmentGuide(.leading) { d in d[.leading] }
                             }
@@ -223,7 +219,7 @@ struct ComfyView: View {
                             Text("Hats: " + (warmerComfy["Hats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
                             Text("Sunglasses: " + (warmerComfy["Sunglasses"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
                            
-                            if (data.precip)! > 2.4 {
+                            if (data.precip)! > 0.09 {
                                let extra = "Bring an umbrella!"
                                 Text("Extra: " + extra).alignmentGuide(.leading) { d in d[.leading] }
                             }
@@ -248,7 +244,7 @@ struct ComfyView: View {
                             Text("Coats: " + (hotComfy["Coats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
                             Text("Socks: " + (hotComfy["Socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
                            
-                            if (data.precip)! > 2.4 {
+                            if (data.precip)! > 0.09 {
                                let shoes = "old sneakers"
                                 Text("Shoes: " + shoes).alignmentGuide(.leading) { d in d[.leading] }
                                 
@@ -260,7 +256,7 @@ struct ComfyView: View {
                             Text("Hats: " + (hotComfy["Hats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
                             Text("Sunglasses: " + (hotComfy["Sunglasses"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
                            
-                            if (data.precip)! > 2.4 {
+                            if (data.precip)! > 0.09 {
                                 let extra = "Bring an umbrella!"
                                  Text("Extra: " + extra).alignmentGuide(.leading) { d in d[.leading] }
                             }
@@ -281,7 +277,7 @@ struct ComfyView: View {
                         Text("Pants: " + (hawtComfy["Pants"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
                         Text("Coats: " + (hawtComfy["Coats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
                        
-                        if (data.precip)! > 2.4 {
+                        if (data.precip)! > 0.09 {
                            let shoes = "old sneakers"
                             Text("Socks: " + shoes).alignmentGuide(.leading) { d in d[.leading] }
                         }
@@ -293,7 +289,7 @@ struct ComfyView: View {
                         Text("Hats: " + (hawtComfy["Hats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
                         Text("Sunglasses: " + (hawtComfy["Sunglasses"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
                        
-                        if (data.precip)! > 2.4 {
+                        if (data.precip)! > 0.09 {
                             let extra = "Bring an umbrella!"
                              Text("Extra: " + extra).alignmentGuide(.leading) { d in d[.leading] }
                         }
