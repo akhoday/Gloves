@@ -63,7 +63,7 @@ struct ClassicView: View {
                             Text("Coats: " + (coldColdFund["coats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
                             Text("Socks: " + (coldColdFund["socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
                            
-                            if (data.precip)! > 2.4 {
+                            if (data.precip)! > 0.04 {
                                 let shoes = "rain boots, snow boots, waterproof shoes"
                                 Text("Shoes: " + shoes).alignmentGuide(.leading) { d in d[.leading] }
                             }
@@ -75,7 +75,7 @@ struct ClassicView: View {
                             Text("Hats: " + (coldColdFund["hats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
                             Text("Sunglasses: " + (coldColdFund["sunglasses"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
                            
-                            if (data.precip)! > 2.4 {
+                            if (data.precip)! > 0.04 {
                                 let extra = "Bring an umbrella!"
                                 Text("Extra: " + extra).alignmentGuide(.leading) { d in d[.leading] }
                             }
@@ -93,7 +93,7 @@ struct ClassicView: View {
                             Text("Coats: " + (coldFund["coats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
                             Text("Socks: " + (coldFund["socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
                            
-                            if (data.precip)! > 2.4 {
+                            if (data.precip)! > 0.04 {
                                 let shoes = "rain boots, snow boots, waterproof shoes"
                                 Text("Shoes: " + shoes).alignmentGuide(.leading) { d in d[.leading] }
                             }
@@ -103,7 +103,7 @@ struct ClassicView: View {
                             Text("Scarves: " + (coldFund["scarves"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
                             Text("Hats: " + (coldFund["hats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
                             Text("Sunglasses: " + (coldFund["sunglasses"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                            if (data.precip)! > 2.4 {
+                            if (data.precip)! > 0.04 {
                                 let extra = "Bring an umbrella!"
                                 Text("Extra: " + extra).alignmentGuide(.leading) { d in d[.leading] }
                             }
@@ -120,7 +120,7 @@ struct ClassicView: View {
                         Text("Pants: " + (coldishFund["pants"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
                         Text("Coats: " + (coldishFund["coats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
                         Text("Socks: " + (coldishFund["socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        if (data.precip)! > 2.4 {
+                        if (data.precip)! > 0.04 {
                             let shoes = "rain boots"
                             Text("Shoes: " + shoes).alignmentGuide(.leading) { d in d[.leading] }
                         }
@@ -131,7 +131,7 @@ struct ClassicView: View {
                         Text("Hats: " + (coldishFund["hats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
                         Text("Sunglasses: " + (coldishFund["sunglasses"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
                       
-                        if (data.precip)! > 2.4 {
+                        if (data.precip)! > 0.04 {
                             let extra = "Bring an umbrella!"
                             Text("Extra: " + extra).alignmentGuide(.leading) { d in d[.leading] }
                         }
@@ -147,7 +147,7 @@ struct ClassicView: View {
                             Text("Coats: " + (warmishFund["coats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
                             Text("Socks: " + (warmishFund["socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
                            
-                            if (data.precip)! > 2.4 {
+                            if (data.precip)! > 0.04 {
                                 let shoes = "rain boots, old sneakers"
                                 Text("Shoes: " + shoes).alignmentGuide(.leading) { d in d[.leading] }
                             }
@@ -156,7 +156,8 @@ struct ClassicView: View {
                             Text("Scarves: " + (warmishFund["scarves"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
                             Text("Hats: " + (warmishFund["hats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
                             Text("Sunglasses: " + (warmishFund["sunglasses"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                            if (data.precip)! > 2.4 {
+                           
+                            if (data.precip)! > 0.04 {
                                 let extra = "Bring an umbrella!"
                                 Text("Extra: " + extra).alignmentGuide(.leading) { d in d[.leading] }
                             }
@@ -174,7 +175,7 @@ struct ClassicView: View {
                 Text("Coats: " + (warmerFund["coats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
                 Text("Socks: " + (warmerFund["socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
                 
-                if (data.precip)! > 2.4 {
+                if (data.precip)! > 0.04 {
                     let shoes = "old sneakers"
                     Text("Shoes: " + shoes).alignmentGuide(.leading) { d in d[.leading] }
                 }
@@ -186,7 +187,7 @@ struct ClassicView: View {
               
                 Text("Sunglasses: " + (warmerFund["sunglasses"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
                
-                if (data.precip)! > 2.4 {
+                if (data.precip)! > 0.04 {
                     let extra = "Bring an umbrella!"
                     Text("Extra: " + extra).alignmentGuide(.leading) { d in d[.leading] }
                 }
@@ -205,7 +206,7 @@ struct ClassicView: View {
                         Text("Coats: " + (hotFund["coats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
                         Text("Socks: " + (hotFund["socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
                        
-                        if (data.precip)! > 2.4 {
+                        if (data.precip)! > 0.04 {
                             let shoes = "old sneakers"
                             Text("Shoes: " + shoes).alignmentGuide(.leading) { d in d[.leading] }
                         }
@@ -216,7 +217,7 @@ struct ClassicView: View {
                         Text("Hats: " + (hotFund["hats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
                         Text("Sunglasses: " + (hotFund["sunglasses"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
                        
-                        if (data.precip)! > 2.4 {
+                        if (data.precip)! > 0.04 {
                             let extra = "Bring an umbrella!"
                             Text("Extra: " + extra).alignmentGuide(.leading) { d in d[.leading] }
                         }
@@ -237,7 +238,7 @@ struct ClassicView: View {
                             Text("Coats: " + (hawtFund["Coats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
                             Text("Socks: " + (hawtFund["Socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
                           
-                            if (data.precip)! > 2.4 {
+                            if (data.precip)! > 0.04 {
                                 let shoes = "old sneakers"
                                 Text("Shoes: " + shoes).alignmentGuide(.leading) { d in d[.leading] }
                             }
@@ -247,7 +248,7 @@ struct ClassicView: View {
                             Text("Hats: " + (hawtFund["Hats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
                             Text("Sunglasses: " + (hawtFund["Sunglasses"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
                            
-                            if (data.precip)! > 2.4 {
+                            if (data.precip)! > 0.04 {
                                 let extra = "Bring an umbrella!"
                                 Text("Extra: " + extra).alignmentGuide(.leading) { d in d[.leading] }
                             }
