@@ -56,6 +56,7 @@ struct ComfyView: View {
         let temp = (data.temp)!
         var unwrappedIcon = weather.icon!
         var bk = unwrappedIcon + "bk"
+        var imageNum = Int.random(in: 0 ... 10)
     
                
 
