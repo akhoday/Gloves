@@ -33,9 +33,6 @@ struct ClassicView: View {
         let temp = (data.temp)!
         var unwrappedIcon = weather.icon!
         var bk = unwrappedIcon + "bk"
-        var imageNum = Int.random(in: 0 ... 10)
-        
-
  
         ZStack{
                   
@@ -73,6 +70,11 @@ struct ClassicView: View {
                               else { Text("Extra: " + (coldColdFund["extra"] ?? "None")).alignmentGuide(.leading) { d in d[.leading] }}
                         
                                                      }
+                            HStack {
+                                Image("coldFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                                Image("coldAcess").resizable().frame(width: 50, height: 100)
+                                Image("coldmFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                        }
                                 
                         
                     }
@@ -107,6 +109,11 @@ struct ClassicView: View {
                             
 
                         }
+                        HStack {
+                            Image("coldFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                            Image("coldAcess").resizable().frame(width: 50, height: 100)
+                            Image("coldmFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                    }
                            
                         }
 
@@ -139,6 +146,10 @@ struct ClassicView: View {
                         
                    
                     }
+                        HStack {
+                            Image("coldishFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                            Image("coldishmFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                    }
                         }
 
                      if temp > 50 && temp < 61{
@@ -167,6 +178,10 @@ struct ClassicView: View {
                             else { Text("Extra: " + (warmishFund["extra"] ?? "None")).alignmentGuide(.leading) { d in d[.leading] }}
                        
                         }
+                        HStack {
+                            Image("warmishFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                            Image("warmishmFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                    }
                         
                                      }
                     
@@ -200,6 +215,11 @@ struct ClassicView: View {
             
 
                }
+                    HStack {
+                        Image("warmerFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                        Image("warmermFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                }
+
                        
                     }
 
@@ -232,9 +252,10 @@ struct ClassicView: View {
                        
                         
                 }
-                    
-                    
-
+                    HStack {
+                        Image("hotFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                        Image("hotFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                }
                       }
                     
                     
@@ -265,6 +286,11 @@ struct ClassicView: View {
                                 
                                 
                             }
+                            HStack {
+                                Image("hotFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                                Image("hotmFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                        }
+
                             
                     }
                  

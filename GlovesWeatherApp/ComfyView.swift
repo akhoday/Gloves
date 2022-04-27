@@ -59,8 +59,7 @@ struct ComfyView: View {
         let temp = (data.temp)!
         var unwrappedIcon = weather.icon!
         var bk = unwrappedIcon + "bk"
-        var imageNum = Int.random(in: 0 ... 10)
-
+        
         ZStack{
                    
             Image(bk).resizable().edgesIgnoringSafeArea(.all)
@@ -95,6 +94,11 @@ struct ComfyView: View {
                                 else { Text("Extra: " + (coldColdComfy["Extra"] ?? "None")).alignmentGuide(.leading) { d in d[.leading] }}
                         
                                                        }
+                        HStack {
+                            Image("coldComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                            Image("coldAcess").resizable().frame(width: 50, height: 100)
+                            Image("coldmComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                    }
                        }
                         
                      
@@ -125,7 +129,13 @@ struct ComfyView: View {
                                 
                                 else { Text("Extra: " + (coldComfy["Extra"] ?? "None")).alignmentGuide(.leading) { d in d[.leading] }}
 
-                               }}
+                               }
+                            HStack {
+                                Image("coldComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                                Image("coldAcces").resizable().frame(width: 50, height: 100)
+                                Image("coldmComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                        }
+                        }
 //
                        if temp > 32 && temp < 51{
                      
@@ -159,6 +169,11 @@ struct ComfyView: View {
                                 
                                 else { Text("Extra: " + (coldishComfy["Extra"] ?? "None")).alignmentGuide(.leading) { d in d[.leading] }}
                                }
+                        
+                        HStack {
+                            Image("coldishComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                            Image("coldishmComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                    }
                            }
 //
                        if temp > 50 && temp < 61{
@@ -197,9 +212,8 @@ struct ComfyView: View {
                         
     
                             HStack {
-                                Image("warmishFund0").resizable().frame(width: 50, height: 100)
-                                Image("warmishFund0").resizable().frame(width: 50, height: 100)
-                                Image("warmishFund0").resizable().frame(width: 50, height: 100)
+                                Image("warmishComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                                Image("warmishmComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
                         }
                        
                        }
@@ -235,6 +249,10 @@ struct ComfyView: View {
                             }
 
                            }
+                    HStack {
+                        Image("warmerComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                        Image("warmermComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                }
 
                        }
                    
@@ -270,6 +288,10 @@ struct ComfyView: View {
                             
 
                            }
+                    HStack {
+                        Image("hotComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                        Image("hotmComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                }
 
                    }
 // trying to get this to push
@@ -300,6 +322,10 @@ struct ComfyView: View {
                         else {
                             Text("Extra: " + (hawtComfy["Extra"] ?? "None")).alignmentGuide(.leading) { d in d[.leading] }}
                     }
+                    HStack {
+                        Image("hotComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                        Image("hotmComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                }
                     }
                       
                        
