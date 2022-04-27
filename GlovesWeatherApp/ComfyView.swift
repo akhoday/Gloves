@@ -12,8 +12,10 @@ struct ComfyView: View {
     var response : Response
     var data : Data
     
+    //dictionaries that hold all the clothing suggestions for a comfy aesthetic. Separated based on the temperature outside
     
-    var coldColdComfy = ["Shirts": "long sleeve thick shirt or a short sleeve that is a good to layer w/ sweatshirt/jacket(zip up)",
+    //20 and below
+    var coldColdComfy = ["Shirts": "long sleeve thick shirt or a short sleeve shirt that is good to layer w/ sweatshirts/jackets(zip up)",
         "Pants": "sweatpants, thick leggings",
         "Coats" : "heavy winter coat (canada goose, puffer jacket)",
         "Socks": " 2 pairs of socks or thick socks",
@@ -23,31 +25,32 @@ struct ComfyView: View {
         "Hats" : "beanie, ear muffs, ski mask, head warmer headbands",
         "Sunglasses" : "optional",
         "Extra" : "none"]
-//
-    var coldComfy = ["Shirts" : "long sleeve thick shirt or a short sleeve that is a good to layer w/ sweatshirt/jacket(zip up)",
+//21-32
+    var coldComfy = ["Shirts" : "long sleeve thick shirt or a short sleeve shirt that is good to layer w/ sweatshirts/jackets(zip up)",
                      "Pants" : "sweatpants, leggings",
                      "Coats" : "heavy winter coat (canada goose, puffer jacket)",
                      "Socks" : "a good pair of socks",
                      "Shoes": "boots(uggs), sneakers(forces, converse, vans)",
-                     "Gloves" : "",
+                     "Gloves" : "recommended",
                      "Scarves" : "recommended",
                      "Hats": "beanie, ear muffs, ski mask, head warmer headbands",
                      "Sunglasses" : "optional",
                      "Extra" : "none"]
-//
-   var coldishComfy = ["Shirts": "long sleeve shirt or a short sleeve that is a good to layer w/ sweatshirt/jacket(zip up)",
+
+    //32-51
+   var coldishComfy = ["Shirts": "long sleeve shirt or a short sleeve shirt that is good to layer w/ a sweatshirt/jacket(zip up)",
                        "Pants": "sweatpants, leggings",
                        "Coats": "basic winter coat (north face)",
                        "Socks": "normal socks",
                        "Shoes": "sneakers(forces, converse, vans, nike, adidas)",
                        "Gloves": "always recommended, but maybe not the best choice!", "Scarves": "optional", "Hats" : "optional winter hat", "Sunglasses" : "optional", "Extra" : "none"]
-//
+//52-60
     var warmishComfy = ["Shirts": "short sleeve w/ jacket, or long sleeve shirt", "Pants": " sweatpants, leggings, potentially shorts", "Coats" : "lighter/fleece jacket", "Socks": "normal socks", "Shoes": "sneakers(forces, conserve, vans, nike, adidas)", "Gloves" : "always recommended, but maybe not the best choice!", "Scarves" : "not recommended", "Hats" : "baseball cap, optional" , "Sunglasses" : "optional", "Extra" : "none"]
-//
+//61-71
     var warmerComfy = ["Shirts": "casual t-shirt, long sleeve ", "Pants": "athletic shorts, sweat shorts", "Coats": "optional jacket", "Socks": "normal socks", "Shoes": "sneakers(forces, conserve, vans, nike, adidas)", "Gloves": "always recommended, but maybe not the best choice!", "Scarves": "not recommended", "Hats": "baseball cap", "Sunglasses": "optional", "Extra" : "none"]
-
+//72-86
     var hotComfy = ["Shirts": "casual t-shirt, tank tops", "Pants": "athletic shorts, sweat shorts", "Coats" : "optional jacket", "Socks": "athletic socks, cotton socks", "Shoes": "sneakers (converse, forces, vans), birkenstocks", "Gloves": "always recommended, but maybe not the best choice!", "Scarves": "not recommended", "Hats" : "baseball cap", "Sunglasses" : "optional", "Extra" : "none"]
-
+//86+
     var hawtComfy = ["Shirts" : "casual t-shirt, tank tops", "Pants" : "athletic shorts, sweat shorts", "Coats" : "optional jacket", "Socks": "no socks or socks w/ sneakers", "Shoes": "flip flops, birkenstocks, sandals, sneakers", "Gloves" : "always recommended, but maybe not the best choice!", "Scarves": "not recommended", "Hats" : "baseball cap", "Sunglasses": "optional", "Extra" : "none"]
 
     
@@ -57,14 +60,12 @@ struct ComfyView: View {
         var unwrappedIcon = weather.icon!
         var bk = unwrappedIcon + "bk"
         var imageNum = Int.random(in: 0 ... 10)
-    
-               
 
         ZStack{
                    
             Image(bk).resizable().edgesIgnoringSafeArea(.all)
 
-       
+       //chooses which dictionary to present based on the temperature
                    VStack{
                        
                        if temp < 21 {
@@ -74,7 +75,7 @@ struct ComfyView: View {
                                 Text("Pants: " + (coldColdComfy["Pants"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
                                 Text("Coats: " + (coldColdComfy["Coats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
                                 Text("Socks: " + (coldColdComfy["Socks"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
-                              
+                              //checks if the API says it is raining, if it is it tells the user to wear the appropriate shoes.
                                 if (data.precip)! > 0.04 {
                                     let shoes = "rain boots, snow boots, waterproof shoes"
                                     Text("Shoes: " + shoes).alignmentGuide(.leading) { d in d[.leading] }
@@ -86,7 +87,7 @@ struct ComfyView: View {
                                 Text("Scarves: " + (coldColdComfy["Scarves"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
                                 Text("Hats: " + (coldColdComfy["Hats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
                                 Text("Sunglasses: " + (coldColdComfy["Sunglasses"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
-                               
+                                //checks if the API says it is raining, if it is it tells the user to bring an umbrella.
                                 if (data.precip)! > 0.04 {
                                    let extra = "Bring an umbrella!"
                                     Text("Extra: " + extra)
@@ -94,7 +95,6 @@ struct ComfyView: View {
                                 else { Text("Extra: " + (coldColdComfy["Extra"] ?? "None")).alignmentGuide(.leading) { d in d[.leading] }}
                         
                                                        }
-                        
                        }
                         
                      
@@ -192,21 +192,20 @@ struct ComfyView: View {
                                     Text("Extra: " + extra).alignmentGuide(.leading) { d in d[.leading] }
                                 }
                                 else {Text("Extra: " + (warmishComfy["Extra"] ?? "None")).alignmentGuide(.leading) { d in d[.leading] } }
-                                     
                                }
-                           
-                           HStack {
-                               Image("warmishFund0").resizable().frame(width: 50, height: 100)
                            }
-                           }
+                        
+    
+                            HStack {
+                                Image("warmishFund0").resizable().frame(width: 50, height: 100)
+                                Image("warmishFund0").resizable().frame(width: 50, height: 100)
+                                Image("warmishFund0").resizable().frame(width: 50, height: 100)
+                        }
+                       
                        }
 
                    if temp > 60 && temp < 71{
-                    
-//                    if (data.precip)! > 2.4 {
-//                        warmerComfy["Shoes"] = "old sneakers"
-//                        warmerComfy["Extra"] = "Bring an umbrella!"
-//                    }
+                                    
                            VStack(alignment: .leading){
                             
                             Text("Shirts: " + (warmerComfy["Shirts"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
@@ -239,12 +238,9 @@ struct ComfyView: View {
 
                        }
                    
-//
+
                    if temp > 72 && temp < 86 {
-//                    if (data.precip)! > 2.4 {
-//                        hotComfy["Shoes"] = "old sneakers"
-//                        hotComfy["Extra"] = "Bring an umbrella!"
-//                    }
+
                            VStack(alignment: .leading){
                             Text("Shirts: " + (hotComfy["Shirts"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
                             Text("Pants: " + (hotComfy["Pants"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
