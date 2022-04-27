@@ -58,7 +58,7 @@ struct DailyInfoView: View {
         ZStack{
             
             
-            Image(bk).edgesIgnoringSafeArea(.all)
+            Image(bk).resizable().edgesIgnoringSafeArea(.all)
             
             
             VStack(spacing: 0.0) {

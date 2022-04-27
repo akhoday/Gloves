@@ -62,8 +62,8 @@ struct ComfyView: View {
 
         ZStack{
                    
-            Image(bk).edgesIgnoringSafeArea(.all)
-           
+            Image(bk).resizable().edgesIgnoringSafeArea(.all)
+
        
                    VStack{
                        
@@ -162,7 +162,7 @@ struct ComfyView: View {
                            }
 //
                        if temp > 50 && temp < 61{
-                        
+                           VStack {
                                VStack(alignment: .leading){
                                 Text("Shirts: " + (warmishComfy["Shirts"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
                                 
@@ -192,8 +192,13 @@ struct ComfyView: View {
                                     Text("Extra: " + extra).alignmentGuide(.leading) { d in d[.leading] }
                                 }
                                 else {Text("Extra: " + (warmishComfy["Extra"] ?? "None")).alignmentGuide(.leading) { d in d[.leading] } }
-
+                                     
                                }
+                           
+                           HStack {
+                               Image("warmishFund0").resizable().frame(width: 50, height: 100)
+                           }
+                           }
                        }
 
                    if temp > 60 && temp < 71{
@@ -304,7 +309,7 @@ struct ComfyView: View {
                        
                 }
             
-                   }.padding().frame(width: /*@START_MENU_TOKEN@*/400.0/*@END_MENU_TOKEN@*/, height: 300.0, alignment: .top).foregroundColor(Color.fontColor)
+        }.padding().foregroundColor(Color.fontColor).edgesIgnoringSafeArea(.all)
 }}
            
       

@@ -22,7 +22,7 @@ struct LocationView: View {
                 TextField("Enter City: ", text: $cityName)
                 TextField("Enter State: ", text: $stateName)
             }
-        }.foregroundColor(Color.buttonColor).padding().frame(width: 500.0, height: 100.0, alignment: .top).background(Color.background)
+        }.foregroundColor(Color.buttonColor).padding().frame(width: 1000.0, height: 100.0, alignment: .top).background(Color.background)
     }
 }
 

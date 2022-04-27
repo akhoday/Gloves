@@ -39,8 +39,8 @@ struct ClassicView: View {
  
         ZStack{
                   
-            Image(bk).edgesIgnoringSafeArea(.all)
-                  
+            Image(bk).resizable().edgesIgnoringSafeArea(.all)
+
      
                  
                   VStack{
