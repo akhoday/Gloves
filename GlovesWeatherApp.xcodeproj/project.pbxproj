@@ -10,6 +10,7 @@
 		0AAA593E27F48B6E000A2EF4 /* ComfyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA593D27F48B6E000A2EF4 /* ComfyView.swift */; };
 		0AAA594027F48B87000A2EF4 /* TrendyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA593F27F48B87000A2EF4 /* TrendyView.swift */; };
 		0AAA594227F48B98000A2EF4 /* ClassicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AAA594127F48B98000A2EF4 /* ClassicView.swift */; };
+		0AFC014C2819C905003C4AFA /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC014B2819C905003C4AFA /* OptionsView.swift */; };
 		1B6AAFA527C51C330028F332 /* GlovesWeatherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6AAFA427C51C330028F332 /* GlovesWeatherAppApp.swift */; };
 		1B6AAFA727C51C330028F332 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6AAFA627C51C330028F332 /* ContentView.swift */; };
 		1B6AAFA927C51C380028F332 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B6AAFA827C51C380028F332 /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 		0AAA593D27F48B6E000A2EF4 /* ComfyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComfyView.swift; sourceTree = "<group>"; };
 		0AAA593F27F48B87000A2EF4 /* TrendyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendyView.swift; sourceTree = "<group>"; };
 		0AAA594127F48B98000A2EF4 /* ClassicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicView.swift; sourceTree = "<group>"; };
+		0AFC014B2819C905003C4AFA /* OptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsView.swift; sourceTree = "<group>"; };
 		1B6AAFA127C51C320028F332 /* GlovesWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlovesWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B6AAFA427C51C330028F332 /* GlovesWeatherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlovesWeatherAppApp.swift; sourceTree = "<group>"; };
 		1B6AAFA627C51C330028F332 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -129,10 +131,10 @@
 				32A0D58A27E4BF3100430669 /* Constants.swift */,
 				1BD1DE4627EB4A890027EED3 /* CustomImageView.swift */,
 				1B6AAFA627C51C330028F332 /* ContentView.swift */,
-				326780B12812DDBC008D896F /* PopUpWindow.swift */,
 				32530CBE27E8BAF40084D251 /* DailyInfoView.swift */,
 				1B6AAFA427C51C330028F332 /* GlovesWeatherAppApp.swift */,
 				0AAA593F27F48B87000A2EF4 /* TrendyView.swift */,
+				0AFC014B2819C905003C4AFA /* OptionsView.swift */,
 				32AA3CA327CD00BF0039D679 /* WeatherInfoView.swift */,
 				1B6AAFCF27C678A50028F332 /* WeatherParsing.swift */,
 				1B6AAFA827C51C380028F332 /* Assets.xcassets */,
@@ -358,8 +360,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				326780B22812DDBC008D896F /* PopUpWindow.swift in Sources */,
-				1BBCB0A427F4908000120387 /* ClothingTime.swift in Sources */,
 				32B558BC280EF60A00CF570A /* LocationView.swift in Sources */,
 				32A0D58B27E4BF3100430669 /* Constants.swift in Sources */,
 				1BD1DE4727EB4A890027EED3 /* CustomImageView.swift in Sources */,
@@ -368,6 +368,7 @@
 				32530CBF27E8BAF40084D251 /* DailyInfoView.swift in Sources */,
 				0AAA594227F48B98000A2EF4 /* ClassicView.swift in Sources */,
 				1B6AAFD027C678A50028F332 /* WeatherParsing.swift in Sources */,
+				0AFC014C2819C905003C4AFA /* OptionsView.swift in Sources */,
 				327A746B281638C60039C548 /* ChangeOfferView.swift in Sources */,
 				0AAA594027F48B87000A2EF4 /* TrendyView.swift in Sources */,
 				1B6AAFA527C51C330028F332 /* GlovesWeatherAppApp.swift in Sources */,

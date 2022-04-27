@@ -97,6 +97,12 @@ struct DailyInfoView: View {
                         label: {
                             Text("Classic Option")
                         })
+                    //other option
+                    NavigationLink(
+                        destination: OptionsView(weather: weather, response: response, data: data),
+                        label: {
+                            Text("Other Options")
+                        })
                 }
              
             }.padding().frame(width: /*@START_MENU_TOKEN@*/400.0/*@END_MENU_TOKEN@*/, height: 300.0, alignment: .top).foregroundColor(Color.fontColor)
