@@ -18,11 +18,15 @@ struct LocationView: View {
             Rectangle().foregroundColor(Color.background).edgesIgnoringSafeArea(.all)
             
             VStack {
+                Text("Enter City: ")
+                TextField("Enter City: ", text: $cityName).textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding().background(Color.background)
                 
-                TextField("Enter City: ", text: $cityName)
-                TextField("Enter State: ", text: $stateName)
+                Text("Enter State: ")
+                TextField("Enter State: ", text: $stateName).textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding().background(Color.background)
             }
-        }.foregroundColor(Color.buttonColor).padding().frame(width: 1000.0, height: 100.0, alignment: .top).background(Color.background)
+        }.foregroundColor(Color.fontColor).background(Color.background).edgesIgnoringSafeArea(.all)
     }
 }
 

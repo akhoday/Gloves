@@ -25,7 +25,7 @@ struct ChangeOfferView: View {
             Text((address ?? "Loading... Don't stress") + ", " + (stateCode ?? "we're working on it!")).foregroundColor(Color.fontColor)
             Text("Change Location")
             
-        }.foregroundColor(Color.buttonColor).padding().frame(width: 500.0, height: 100.0, alignment: .top).background(Color.background)
+        }.foregroundColor(Color.buttonColor).background(Color.background)
     }
     }
 }

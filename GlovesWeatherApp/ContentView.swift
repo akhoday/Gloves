@@ -26,26 +26,26 @@ struct ContentView: View {
         //will have the background based on the weather behind all of the info
         var address = fetchData.responses.city_name
         var stateCode = fetchData.responses.state_code
-//        NavigationView {
-//                NavigationLink(
-//                    destination:
-//                        LocationView(stateName: $stateName, cityName: $cityName)
-//                    ,
-//                    label: {
-//                       ChangeOfferView()
-//                    })
-//        }
-//        .frame(width: 500.0, height: 125.0, alignment: .top)
+
+               
+
+       
 //        HStack{
 //            //current weather
 //
-            
-            
-            
+        
         
         ZStack{
             NavigationView{
-                ZStack{
+                VStack{
+                    NavigationLink(
+                        destination:
+                            LocationView(stateName: $stateName, cityName: $cityName).edgesIgnoringSafeArea(.all)
+                        ,
+                        label: {
+                           ChangeOfferView()
+                        }).frame(height: 50.0)
+                    
                     List(fetchData.responses.data) {
                         data in
                         if #available(iOS 15.0, *) {
