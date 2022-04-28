@@ -13,21 +13,50 @@ struct ClassicView: View {
     var response : Response
     var data : Data
     
-    var coldColdFund = ["shirts" : "long sleeve thick shirt, sweater or a short sleeve that is a good to layer w/ a jacket", "pants" : "thick leggings, thick jeans, thick corduroy pants", "coats": "heavy winter coat (canada goose, puffer jacket)", "socks": " 2 pairs of socks or thick socks", "shoes" : "boots (uggs, docs), sneakers(forces)", "gloves" : "recommended", "scarves" : "recommended", "hats" : "beanie, ear muffs, ski mask, head warmer headbands", "sunglasses" : "optional", "extra" : "none"]
+    //dictionaries that hold all the clothing suggestions for a classic/fundamental aesthetic. Separated based on the temperature outside.
     
+    // less than 20
+    var coldColdFund = ["shirts" : "long sleeve thick shirt, sweater, or a short sleeve that is good to layer with a jacket",
+                        "pants" : "thick leggings, thick jeans, thick corduroy pants",
+                        "coats": "heavy winter coat (canada goose, puffer jacket)",
+                        "socks": " 2 pairs of socks or thick socks",
+                        "shoes" : "boots (uggs, docs), sneakers(forces)",
+                        "gloves" : "recommended",
+                        "scarves" : "recommended",
+                        "hats" : "beanie, ear muffs, ski mask, head warmer headbands",
+                        "sunglasses" : "optional",
+                        "extra" : "remember to apply sunscreen!"]
     
-    var coldFund = ["shirts" : "long sleeve thick shirt, sweater or a short sleeve that is a good to layer w/ a jacket", "pants": "leggings, jeans, corduroy", "coats" : "heavy winter coat (canada goose, puffer jacket)", "socks": "a good pair of socks", "shoes" : "boots(uggs, docs), sneakers(forces, converse, vans)", "gloves" : "recommended", "scarves" : "recommended", "hats" : "beanie, ear muffs, ski mask, head warmer headbands", "sunglasses" : "optional", "extra" : "none"]
-    
-    var coldishFund = ["shirts" : "long sleeve shirt, sweater or a short sleeve that is a good to layer w/ a jacket", "pants" : "leggings, jeans, corduroy", "coats" : "basic winter coat (north face)", "socks" : "normal socks", "shoes" : "sneakers(forces, converse, vans, nike, adidas), docs", "gloves" : "always recommended, but maybe not the best choice!", "scarves" : "optional", "hats" : "optional winter hat", "sunglasses": "optional","extra" : "none"]
-    
-    var warmishFund = ["shirts" : "Long sleeve shirt, sweater, or short sleeve shirt layered over long sleeve", "pants" : "jeans, leggings, optional shorts", "coats" : "lighter/fleece jacket", "socks" : "normal socks", "shoes" : "sneakers(forces, conserve, vans, nike, adidas)", "gloves" : "always recommended, but maybe not the best choice!", "scarves" : "not recommended","hats" : "baseball cap", "sunglasses" : "optional", "extra" : "none"]
-    
-    var warmerFund = ["shirts": "oversized t-shirt, casual long sleeve","pants" : "jean shorts", "coats" : "optional jacket", "socks" : "normal socks", "shoes" : "sneakers(forces, conserve, vans, nike, adidas)", "gloves" : "always recommended, but maybe not the best choice!", "scarves" : "not recommended", "hats" : "baseball cap", "sunglasses" : "optional", "extra" : "none"]
-    
-    var hotFund = ["shirts": "oversized t-shirt, tank tops", "pants" : " jean shorts, skirt", "coats" : "optional jacket", "socks" : "athletic socks, cotton socks", "shoes" : "sneakers (converse, forces, vans), birkenstocks", "gloves" : "always recommended, but maybe not the best choice!", "scarves" : "not recommended", "hats" : "baseball cap", "sunglasses" : "optional", "extra" : "none"]
-    
-    var hawtFund = ["shirts" : "oversized t-shirt, tank tops", "pants" : " jean shorts, skirt", "coats" : "optional jacket", "socks" : "no socks or socks w/ sneakers", "shoes" : "flip flops, birkenstocks, sandals, sneakers", "gloves" : "always recommended, but maybe not the best choice!", "scarves" : "not recommended", "hats" : "baseball cap", "sunglasses" : "optional", "extra" : "none"]
-    
+    //21-32
+    var coldFund = ["shirts" : "long sleeve thick shirt, sweater or a short sleeve that is good to layer with a jacket",
+                    "pants": "leggings, jeans, corduroy pants",
+                    "coats" : "heavy winter coat (canada goose, puffer jacket)",
+                    "socks": "a good pair of socks",
+                    "shoes" : "boots(uggs, docs), sneakers(forces, converse, vans)",
+                    "gloves" : "recommended",
+                    "scarves" : "recommended",
+                    "hats" : "beanie, ear muffs, ski mask, head warmer headbands",
+                    "sunglasses" : "optional",
+                    "extra" : "remember to apply sunscreen!"]
+    //32-51
+    var coldishFund = ["shirts" : "long sleeve shirt, sweater or a short sleeve that is good to layer with a jacket",
+                       "pants" : "leggings, jeans, corduroy pants",
+                       "coats" : "basic winter coat (north face)",
+                       "socks" : "normal socks",
+                       "shoes" : "sneakers(forces, converse, vans, nike, adidas), docs", "gloves" : "always recommended, but maybe not the best choice!", "scarves" : "optional", "hats" : "optional winter hat", "sunglasses": "optional","extra" : "remember to apply sunscreen!"]
+    //52-60
+    var warmishFund = ["shirts" : "long sleeve shirt, sweater, or a short sleeve shirt layered over a long sleeve",
+                       "pants" : "jeans, leggings, optional shorts",
+                       "coats" : "lighter material/fleece jacket",
+                       "socks" : "normal socks",
+                       "shoes" : "sneakers(forces, conserve, vans, nike, adidas)", "gloves" : "always recommended, but maybe not the best choice!", "scarves" : "not recommended","hats" : "baseball cap", "sunglasses" : "optional", "extra" : "remember to apply sunscreen!"]
+    //61-71
+    var warmerFund = ["shirts": "oversized t-shirt, casual long sleeve","pants" : "jean shorts", "coats" : "optional jacket", "socks" : "normal socks", "shoes" : "sneakers(forces, conserve, vans, nike, adidas)", "gloves" : "always recommended, but maybe not the best choice!", "scarves" : "not recommended", "hats" : "baseball cap", "sunglasses" : "optional", "extra" : "remember to apply sunscreen!"]
+    //61-71
+    var hotFund = ["shirts": "oversized t-shirt, tank tops", "pants" : " jean shorts, skirt", "coats" : "optional jacket", "socks" : "athletic socks, cotton socks", "shoes" : "sneakers (converse, forces, vans), birkenstocks", "gloves" : "always recommended, but maybe not the best choice!", "scarves" : "not recommended", "hats" : "baseball cap", "sunglasses" : "optional", "extra" : "remember to apply sunscreen!"]
+    //72-86
+    var hawtFund = ["shirts" : "oversized t-shirt, tank tops", "pants" : " jean shorts, skirt", "coats" : "optional jacket", "socks" : "no socks or socks w/ sneakers", "shoes" : "flip flops, birkenstocks, sandals, sneakers", "gloves" : "always recommended, but maybe not the best choice!", "scarves" : "not recommended", "hats" : "baseball cap", "sunglasses" : "optional", "extra" : "remember to apply sunscreen!"]
+    //86+
     var body: some View {
         
         let temp = (data.temp)!
