@@ -16,6 +16,7 @@ struct WeatherInfoView: View {
     var response : Response
     var data : Data
     
+    //finds weekday and returns
     func getDayOfWeek(_ date:String, format: String) -> String? {
         
         let weekDays = [
@@ -53,26 +54,20 @@ struct WeatherInfoView: View {
         var icon = weather.icon!
         
 
+        //displays important basic daily weather info so that user knows at a glance what to expect
         HStack {
-            
-           // AsyncImage(url: URL(string: "www.weatherbit.io/static/img/icons/\(weather.icon).png")!, placeholder: { Text("Loading ...") }, image: { Image(uiImage: $0).resizable() }) .frame(idealHeight: UIScreen.main.bounds.width / 2 * 3)
           
-            
-            
-          
-         
-            
+            //forecasted temperature
             Text(String(Int(temp ?? 0)) + "°").font(.system(size: 30))
             Spacer()
 
+            //descriptive icon
             Image(icon).resizable().frame(width: 70, height: 70)
             Spacer()
             
             VStack {
-                
-                
             
-                
+             //date
             if let weekday = getDayOfWeek(unwrappedDate, format:"yyyy-MM-dd") {
                 Text(weekday)
             }

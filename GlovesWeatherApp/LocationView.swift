@@ -17,6 +17,7 @@ struct LocationView: View {
             
             Rectangle().foregroundColor(Color.background).edgesIgnoringSafeArea(.all)
             
+            //text fields which allow for the editing of the location of the weather data
             VStack {
                 Text("Enter City: ")
                 TextField("Enter City: ", text: $cityName).textFieldStyle(RoundedBorderTextFieldStyle())

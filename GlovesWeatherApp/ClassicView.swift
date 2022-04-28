@@ -67,7 +67,9 @@ struct ClassicView: View {
             
             Image(bk).resizable().edgesIgnoringSafeArea(.all)
             
-            
+            Rectangle()
+                .edgesIgnoringSafeArea(.all)
+                            .foregroundColor(Color.gray.opacity(0.4))
             
             VStack{
                 
@@ -75,22 +77,22 @@ struct ClassicView: View {
                 if temp <= 21 {
                     
                     VStack(alignment: .leading){
-                        Text("Shirts: " + (coldColdFund["shirts"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Pants: " + (coldColdFund["pants"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Coats: " + (coldColdFund["coats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Socks: " + (coldColdFund["socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Shirts: " + (coldColdFund["shirts"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Pants: " + (coldColdFund["pants"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Coats: " + (coldColdFund["coats"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Socks: " + (coldColdFund["socks"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
                         
                         if (data.precip)! > 0.04 {
                             let shoes = "rain boots, snow boots, waterproof shoes"
                             Text("Shoes: " + shoes).alignmentGuide(.leading) { d in d[.leading] }
                         }
                         
-                        else { Text("Shoes: " + (coldColdFund["shoes"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }}
+                        else { Text("Shoes: " + (coldColdFund["shoes"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }}
                         
-                        Text("Gloves: " + (coldColdFund["gloves"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Scarves: " + (coldColdFund["scarves"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Hats: " + (coldColdFund["hats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Sunglasses: " + (coldColdFund["sunglasses"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Gloves: " + (coldColdFund["gloves"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Scarves: " + (coldColdFund["scarves"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Hats: " + (coldColdFund["hats"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Sunglasses: " + (coldColdFund["sunglasses"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
                         
                         if (data.precip)! > 0.04 {
                             let extra = "Bring an umbrella!"
@@ -100,9 +102,9 @@ struct ClassicView: View {
                         
                     }
                     HStack {
-                        Image("coldFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
-                        Image("coldAcess").resizable().frame(width: 50, height: 100)
-                        Image("coldmFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                        Image("coldFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
+                        Image("coldAcess").resizable().frame(width: 100, height: 200)
+                        Image("coldmFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
                     }
                     
                     
@@ -114,21 +116,21 @@ struct ClassicView: View {
                     
                     
                     VStack(alignment: .leading){
-                        Text("Shirts: " + (coldFund["shirts"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Pants: " + (coldFund["pants"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Coats: " + (coldFund["coats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Socks: " + (coldFund["socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Shirts: " + (coldFund["shirts"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Pants: " + (coldFund["pants"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Coats: " + (coldFund["coats"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Socks: " + (coldFund["socks"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
                         
                         if (data.precip)! > 0.04 {
                             let shoes = "rain boots, snow boots, waterproof shoes"
                             Text("Shoes: " + shoes).alignmentGuide(.leading) { d in d[.leading] }
                         }
-                        else { Text("Shoes" + (coldFund["shoes"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }}
+                        else { Text("Shoes" + (coldFund["shoes"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }}
                         
-                        Text("Gloves: " + (coldFund["gloves"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Scarves: " + (coldFund["scarves"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Hats: " + (coldFund["hats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Sunglasses: " + (coldFund["sunglasses"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Gloves: " + (coldFund["gloves"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Scarves: " + (coldFund["scarves"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Hats: " + (coldFund["hats"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Sunglasses: " + (coldFund["sunglasses"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
                         if (data.precip)! > 0.04 {
                             let extra = "Bring an umbrella!"
                             Text("Extra: " + extra).alignmentGuide(.leading) { d in d[.leading] }
@@ -139,9 +141,9 @@ struct ClassicView: View {
                         
                     }
                     HStack {
-                        Image("coldFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
-                        Image("coldAcess").resizable().frame(width: 50, height: 100)
-                        Image("coldmFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                        Image("coldFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
+                        Image("coldAcess").resizable().frame(width: 100, height: 200)
+                        Image("coldmFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
                     }
                     
                 }
@@ -151,20 +153,20 @@ struct ClassicView: View {
                     
                     
                     VStack(alignment: .leading){
-                        Text("Shirts: " + (coldishFund["shirts"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Pants: " + (coldishFund["pants"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Coats: " + (coldishFund["coats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Socks: " + (coldishFund["socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Shirts: " + (coldishFund["shirts"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Pants: " + (coldishFund["pants"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Coats: " + (coldishFund["coats"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Socks: " + (coldishFund["socks"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
                         if (data.precip)! > 0.04 {
                             let shoes = "rain boots"
                             Text("Shoes: " + shoes).alignmentGuide(.leading) { d in d[.leading] }
                         }
-                        else { Text("Shoes: " + (coldishFund["shoes"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }}
+                        else { Text("Shoes: " + (coldishFund["shoes"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }}
                         
-                        Text("Gloves: " + (coldishFund["gloves"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Scarves: " + (coldishFund["scarves"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Hats: " + (coldishFund["hats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Sunglasses: " + (coldishFund["sunglasses"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Gloves: " + (coldishFund["gloves"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Scarves: " + (coldishFund["scarves"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Hats: " + (coldishFund["hats"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Sunglasses: " + (coldishFund["sunglasses"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
                         
                         if (data.precip)! > 0.04 {
                             let extra = "Bring an umbrella!"
@@ -176,28 +178,28 @@ struct ClassicView: View {
                         
                     }
                     HStack {
-                        Image("coldishFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
-                        Image("coldishmFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                        Image("coldishFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
+                        Image("coldishmFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
                     }
                 }
                 
                 if temp > 50 && temp <= 61{
                     
                     VStack(alignment: .leading){
-                        Text("Shirts: " + (warmishFund["shirts"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Pants: " + (warmishFund["pants"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Coats: " + (warmishFund["coats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Socks: " + (warmishFund["socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Shirts: " + (warmishFund["shirts"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Pants: " + (warmishFund["pants"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Coats: " + (warmishFund["coats"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Socks: " + (warmishFund["socks"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
                         
                         if (data.precip)! > 0.04 {
                             let shoes = "rain boots, old sneakers"
                             Text("Shoes: " + shoes).alignmentGuide(.leading) { d in d[.leading] }
                         }
-                        else { Text("Shoes: " + (warmishFund["shoes"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }}
-                        Text("Gloves: " + (warmishFund["gloves"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Scarves: " + (warmishFund["scarves"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Hats: " + (warmishFund["hats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Sunglasses: " + (warmishFund["sunglasses"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        else { Text("Shoes: " + (warmishFund["shoes"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }}
+                        Text("Gloves: " + (warmishFund["gloves"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Scarves: " + (warmishFund["scarves"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Hats: " + (warmishFund["hats"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Sunglasses: " + (warmishFund["sunglasses"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
                         
                         if (data.precip)! > 0.04 {
                             let extra = "Bring an umbrella!"
@@ -208,8 +210,8 @@ struct ClassicView: View {
                         
                     }
                     HStack {
-                        Image("warmishFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
-                        Image("warmishmFund\(Int.random(in: 0 ... 4))").resizable().frame(width: 50, height: 100)
+                        Image("warmishFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
+                        Image("warmishmFund\(Int.random(in: 0 ... 4))").resizable().frame(width: 100, height: 200)
                     }
                     
                 }
@@ -218,23 +220,23 @@ struct ClassicView: View {
                     
                     
                     VStack(alignment: .leading){
-                        Text("Shirts: " + (warmerFund["shirts"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Shirts: " + (warmerFund["shirts"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
                         
-                        Text("Pants: " + (warmerFund["pants"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Coats: " + (warmerFund["coats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Socks: " + (warmerFund["socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Pants: " + (warmerFund["pants"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Coats: " + (warmerFund["coats"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Socks: " + (warmerFund["socks"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
                         
                         if (data.precip)! > 0.04 {
                             let shoes = "old sneakers"
                             Text("Shoes: " + shoes).alignmentGuide(.leading) { d in d[.leading] }
                         }
-                        else { Text("Shoes: " + (warmerFund["shoes"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }}
+                        else { Text("Shoes: " + (warmerFund["shoes"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }}
                         
-                        Text("Gloves: " + (warmerFund["gloves"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Scarves: " + (warmerFund["scarves"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Hats: " + (warmerFund["hats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Gloves: " + (warmerFund["gloves"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Scarves: " + (warmerFund["scarves"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Hats: " + (warmerFund["hats"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
                         
-                        Text("Sunglasses: " + (warmerFund["sunglasses"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Sunglasses: " + (warmerFund["sunglasses"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
                         
                         if (data.precip)! > 0.04 {
                             let extra = "Bring an umbrella!"
@@ -245,8 +247,8 @@ struct ClassicView: View {
                         
                     }
                     HStack {
-                        Image("warmerFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
-                        Image("warmermFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                        Image("warmerFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
+                        Image("warmermFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
                     }
                     
                     
@@ -256,21 +258,21 @@ struct ClassicView: View {
                     
                     
                     VStack(alignment: .leading){
-                        Text("Shirts: " + (hotFund["shirts"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Pants: " + (hotFund["pants"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Coats: " + (hotFund["coats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Socks: " + (hotFund["socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Shirts: " + (hotFund["shirts"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Pants: " + (hotFund["pants"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Coats: " + (hotFund["coats"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Socks: " + (hotFund["socks"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
                         
                         if (data.precip)! > 0.04 {
                             let shoes = "old sneakers"
                             Text("Shoes: " + shoes).alignmentGuide(.leading) { d in d[.leading] }
                         }
-                        else {Text("Shoes: " + (hotFund["shoes"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }}
+                        else {Text("Shoes: " + (hotFund["shoes"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }}
                         
-                        Text("Gloves: " + (hotFund["gloves"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Scarves: " + (hotFund["scarves"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Hats: " + (hotFund["hats"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Sunglasses: " + (hotFund["sunglasses"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Gloves: " + (hotFund["gloves"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Scarves: " + (hotFund["scarves"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Hats: " + (hotFund["hats"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Sunglasses: " + (hotFund["sunglasses"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
                         
                         if (data.precip)! > 0.04 {
                             let extra = "Bring an umbrella!"
@@ -282,8 +284,8 @@ struct ClassicView: View {
                         
                     }
                     HStack {
-                        Image("hotFund\(Int.random(in: 0 ... 4))").resizable().frame(width: 50, height: 100)
-                        Image("hotFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                        Image("hotFund\(Int.random(in: 0 ... 4))").resizable().frame(width: 100, height: 200)
+                        Image("hotFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
                     }
                 }
                 
@@ -292,16 +294,16 @@ struct ClassicView: View {
                     
                     
                     VStack(alignment: .leading){
-                        Text("Shirts: " + (hawtFund["Shirts"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Pants: " + (hawtFund["Pants"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Shirts: " + (hawtFund["Shirts"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Pants: " + (hawtFund["Pants"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
                         Text("Coats: " + (hawtFund["Coats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Socks: " + (hawtFund["Socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Socks: " + (hawtFund["Socks"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
                         
                         if (data.precip)! > 0.04 {
                             let shoes = "old sneakers"
                             Text("Shoes: " + shoes).alignmentGuide(.leading) { d in d[.leading] }
                         }
-                        else { Text("Shoes: " + (hawtFund["Shoes"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }}
+                        else { Text("Shoes: " + (hawtFund["Shoes"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }}
                         Text("Gloves: " + (hawtFund["Gloves"] ?? "Always recommended, but maybe not the best choice")).alignmentGuide(.leading) { d in d[.leading] }
                         Text("Scarves: " + (hawtFund["Scarves"] ?? "Not recommended")).alignmentGuide(.leading) { d in d[.leading] }
                         Text("Hats: " + (hawtFund["Hats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
@@ -316,8 +318,8 @@ struct ClassicView: View {
                         
                     }
                     HStack {
-                        Image("hotFund\(Int.random(in: 0 ... 4))").resizable().frame(width: 50, height: 100)
-                        Image("hotmFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                        Image("hotFund\(Int.random(in: 0 ... 4))").resizable().frame(width: 100, height: 200)
+                        Image("hotmFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
                     }
                     
                     
