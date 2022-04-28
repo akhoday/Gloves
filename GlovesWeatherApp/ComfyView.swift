@@ -141,9 +141,9 @@ struct ComfyView: View {
                     }
                    
                     HStack {
-                        Image("coldComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
+                        Image("coldComfy\(Int.random(in: 0 ... 4))").resizable().frame(width: 100, height: 200)
                         Image("coldAcess").resizable().frame(width: 100, height: 200)
-                        Image("coldmComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
+                        Image("coldmComfy\(Int.random(in: 0 ... 4))").resizable().frame(width: 100, height: 200)
                     }
                 }
                 
@@ -177,9 +177,9 @@ struct ComfyView: View {
                         
                     }
                     HStack {
-                        Image("coldComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
+                        Image("coldComfy\(Int.random(in: 0 ... 4))").resizable().frame(width: 100, height: 200)
                         Image("coldAcces").resizable().frame(width: 100, height: 200)
-                        Image("coldmComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
+                        Image("coldmComfy\(Int.random(in: 0 ... 4))").resizable().frame(width: 100, height: 200)
                     }
                 }
                 //
@@ -217,8 +217,8 @@ struct ComfyView: View {
                     }
                     
                     HStack {
-                        Image("coldishComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
-                        Image("coldishmComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
+                        Image("coldishComfy\(Int.random(in: 0 ... 4))").resizable().frame(width: 100, height: 200)
+                        Image("coldishmComfy\(Int.random(in: 0 ... 4))").resizable().frame(width: 100, height: 200)
                     }
                 }
                 //
@@ -258,8 +258,8 @@ struct ComfyView: View {
                     
                     
                     HStack {
-                        Image("warmishComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
-                        Image("warmishmComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
+                        Image("warmishComfy\(Int.random(in: 0 ... 4))").resizable().frame(width: 100, height: 200)
+                        Image("warmishmComfy\(Int.random(in: 0 ... 4))").resizable().frame(width: 100, height: 200)
                     }
                     
                 }
@@ -296,8 +296,8 @@ struct ComfyView: View {
                         
                     }
                     HStack {
-                        Image("warmerComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
-                        Image("warmermComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
+                        Image("warmerComfy\(Int.random(in: 0 ... 4))").resizable().frame(width: 100, height: 200)
+                        Image("warmermComfy\(Int.random(in: 0 ... 4))").resizable().frame(width: 100, height: 200)
                     }
                     
                 }
@@ -335,8 +335,8 @@ struct ComfyView: View {
                         
                     }
                     HStack {
-                        Image("hotComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
-                        Image("hotmComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
+                        Image("hotComfy\(Int.random(in: 0 ... 4))").resizable().frame(width: 100, height: 200)
+                        Image("hotmComfy\(Int.random(in: 0 ... 4))").resizable().frame(width: 100, height: 200)
                     }
                     
                 }
@@ -371,8 +371,8 @@ struct ComfyView: View {
                             Text("Extra: " + (hawtComfy["Extra"] ?? "None")).alignmentGuide(.leading) { d in d[.leading] }}
                     }
                     HStack {
-                        Image("hotComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
-                        Image("hotmComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
+                        Image("hotComfy\(Int.random(in: 0 ... 4))").resizable().frame(width: 100, height: 200)
+                        Image("hotmComfy\(Int.random(in: 0 ... 4))").resizable().frame(width: 100, height: 200)
                     }
                 }
                 
