@@ -209,7 +209,7 @@ struct ClassicView: View {
                     }
                     HStack {
                         Image("warmishFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
-                        Image("warmishmFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                        Image("warmishmFund\(Int.random(in: 0 ... 4))").resizable().frame(width: 50, height: 100)
                     }
                     
                 }
@@ -282,7 +282,7 @@ struct ClassicView: View {
                         
                     }
                     HStack {
-                        Image("hotFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                        Image("hotFund\(Int.random(in: 0 ... 4))").resizable().frame(width: 50, height: 100)
                         Image("hotFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
                     }
                 }
@@ -316,7 +316,7 @@ struct ClassicView: View {
                         
                     }
                     HStack {
-                        Image("hotFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                        Image("hotFund\(Int.random(in: 0 ... 4))").resizable().frame(width: 50, height: 100)
                         Image("hotmFund\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
                     }
                     
