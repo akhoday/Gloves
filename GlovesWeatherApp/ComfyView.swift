@@ -101,6 +101,10 @@ struct ComfyView: View {
             
             Image(bk).resizable().edgesIgnoringSafeArea(.all)
             
+            Rectangle()
+                .edgesIgnoringSafeArea(.all)
+                            .foregroundColor(Color.gray.opacity(0.4))
+            
             //chooses which dictionary to present based on the temperature
             VStack{
                 
@@ -108,8 +112,8 @@ struct ComfyView: View {
                    
                     VStack(alignment: .leading){
                        
-                        Text("Shirts: " + (coldColdComfy["Shirts"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Pants: " + (coldColdComfy["Pants"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Shirts: " + (coldColdComfy["Shirts"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Pants: " + (coldColdComfy["Pants"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
                         Text("Coats: " + (coldColdComfy["Coats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
                         Text("Socks: " + (coldColdComfy["Socks"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
                         //checks if the API says it is raining, if it is it tells the user to wear the appropriate shoes.
@@ -117,7 +121,7 @@ struct ComfyView: View {
                             let shoes = "rain boots, snow boots, waterproof shoes"
                             Text("Shoes: " + shoes).alignmentGuide(.leading) { d in d[.leading] }
                         }
-                        else { Text("Shoes: " + (coldColdComfy["Shoes"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }}
+                        else { Text("Shoes: " + (coldColdComfy["Shoes"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }}
                         
                         
                         Text("Gloves: " + (coldColdComfy["Gloves"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
@@ -137,9 +141,9 @@ struct ComfyView: View {
                     }
                    
                     HStack {
-                        Image("coldComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
-                        Image("coldAcess").resizable().frame(width: 50, height: 100)
-                        Image("coldmComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                        Image("coldComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
+                        Image("coldAcess").resizable().frame(width: 100, height: 200)
+                        Image("coldmComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
                     }
                 }
                 
@@ -148,16 +152,16 @@ struct ComfyView: View {
                     
                     
                     VStack(alignment: .leading){
-                        Text("Shirts: " + (coldComfy["Shirts"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Pants: " + (coldComfy["Pants"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Shirts: " + (coldComfy["Shirts"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Pants: " + (coldComfy["Pants"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
                         Text("Coats: " + (coldComfy["Coats"] ?? "Recommended")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Socks: " + (coldComfy["Socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Socks: " + (coldComfy["Socks"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
                         
                         if (data.precip)! > 0.04 {
                             let shoes = "rain boots, snow boots, waterproof shoes"
                             Text("Shoes: " + shoes).alignmentGuide(.leading) { d in d[.leading] }
                         }
-                        else { Text("Shoes" + (coldComfy["Shoes"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] } }
+                        else { Text("Shoes" + (coldComfy["Shoes"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] } }
                         
                         Text("Gloves: " + (coldComfy["Gloves"] ?? "Recommended")).alignmentGuide(.leading) { d in d[.leading] }
                         Text("Scarves: " + (coldComfy["Scarves"] ?? "Recommended")).alignmentGuide(.leading) { d in d[.leading] }
@@ -173,28 +177,28 @@ struct ComfyView: View {
                         
                     }
                     HStack {
-                        Image("coldComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
-                        Image("coldAcces").resizable().frame(width: 50, height: 100)
-                        Image("coldmComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                        Image("coldComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
+                        Image("coldAcces").resizable().frame(width: 100, height: 200)
+                        Image("coldmComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
                     }
                 }
                 //
                 if temp > 32 && temp <= 50{
                     
                     VStack(alignment: .leading){
-                        Text("Shirts: " + (coldishComfy["Shirts"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Shirts: " + (coldishComfy["Shirts"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
                         
-                        Text("Pants: " + (coldishComfy["Pants"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Pants: " + (coldishComfy["Pants"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
                         
                         Text("Coats: " + (coldishComfy["Coats"] ?? "Recommended")).alignmentGuide(.leading) { d in d[.leading] }
                         
-                        Text("Socks: " + (coldishComfy["Socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Socks: " + (coldishComfy["Socks"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
                         
                         if (data.precip)! > 0.04 {
                             let shoes = "rain boots"
                             Text("Shoes: " + shoes)
                         }
-                        else { Text("Shoes: " + (coldishComfy["Shoes"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }}
+                        else { Text("Shoes: " + (coldishComfy["Shoes"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }}
                         
                         Text("Gloves: " + (coldishComfy["Gloves"] ?? "Always recommended, but maybe not the best choice!")).alignmentGuide(.leading) { d in d[.leading] }
                         
@@ -213,28 +217,28 @@ struct ComfyView: View {
                     }
                     
                     HStack {
-                        Image("coldishComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
-                        Image("coldishmComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                        Image("coldishComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
+                        Image("coldishmComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
                     }
                 }
                 //
                 if temp > 50 && temp <= 61{
                     VStack {
                         VStack(alignment: .leading){
-                            Text("Shirts: " + (warmishComfy["Shirts"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Shirts: " + (warmishComfy["Shirts"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
                             
-                            Text("Pants: " + (warmishComfy["Pants"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Pants: " + (warmishComfy["Pants"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
                             
                             Text("Coats: " + (warmishComfy["Coats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
                             
-                            Text("Socks: " + (warmishComfy["Socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                            Text("Socks: " + (warmishComfy["Socks"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
                             
                             if (data.precip)! > 0.04 {
                                 let shoes = "rain boots, old sneakers"
                                 Text("Shoes: " + shoes).alignmentGuide(.leading) { d in d[.leading] }
                                 
                             }
-                            else { Text("Shoes: " + (warmishComfy["Shoes"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] } }
+                            else { Text("Shoes: " + (warmishComfy["Shoes"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] } }
                             
                             Text("Gloves: " + (warmishComfy["Gloves"] ?? "Always recommended, but maybe not the best choice!")).alignmentGuide(.leading) { d in d[.leading] }
                             
@@ -254,8 +258,8 @@ struct ComfyView: View {
                     
                     
                     HStack {
-                        Image("warmishComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
-                        Image("warmishmComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                        Image("warmishComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
+                        Image("warmishmComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
                     }
                     
                 }
@@ -264,17 +268,17 @@ struct ComfyView: View {
                     
                     VStack(alignment: .leading){
                         
-                        Text("Shirts: " + (warmerComfy["Shirts"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Pants: " + (warmerComfy["Pants"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Shirts: " + (warmerComfy["Shirts"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Pants: " + (warmerComfy["Pants"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
                         Text("Coats: " + (warmerComfy["Coats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Socks: " + (warmerComfy["Socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Socks: " + (warmerComfy["Socks"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
                         
                         if (data.precip)! > 0.04 {
                             let shoes =  "old sneakers"
                             Text("Shoes: " + shoes).alignmentGuide(.leading) { d in d[.leading] }
                         }
                         
-                        else { Text("Shoes: " + (warmerComfy["Shoes"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }}
+                        else { Text("Shoes: " + (warmerComfy["Shoes"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }}
                         
                         Text("Gloves: " + (warmerComfy["Gloves"] ?? "Always recommended, but maybe not the best choice!")).alignmentGuide(.leading) { d in d[.leading] }
                         Text("Scarves: " + (warmerComfy["Scarves"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
@@ -292,8 +296,8 @@ struct ComfyView: View {
                         
                     }
                     HStack {
-                        Image("warmerComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
-                        Image("warmermComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                        Image("warmerComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
+                        Image("warmermComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
                     }
                     
                 }
@@ -302,17 +306,17 @@ struct ComfyView: View {
                 if temp > 71 && temp <= 86 {
                     
                     VStack(alignment: .leading){
-                        Text("Shirts: " + (hotComfy["Shirts"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Pants: " + (hotComfy["Pants"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Shirts: " + (hotComfy["Shirts"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Pants: " + (hotComfy["Pants"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
                         Text("Coats: " + (hotComfy["Coats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Socks: " + (hotComfy["Socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Socks: " + (hotComfy["Socks"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
                         
                         if (data.precip)! > 0.04 {
                             let shoes = "old sneakers"
                             Text("Shoes: " + shoes).alignmentGuide(.leading) { d in d[.leading] }
                             
                         }
-                        else { Text("Shoes: " + (hotComfy["Shoes"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }}
+                        else { Text("Shoes: " + (hotComfy["Shoes"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }}
                         
                         Text("Gloves: " + (hotComfy["Gloves"] ?? "Always recommended, but maybe not the best choice!")).alignmentGuide(.leading) { d in d[.leading] }
                         Text("Scarves: " + (hotComfy["Scarves"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
@@ -331,8 +335,8 @@ struct ComfyView: View {
                         
                     }
                     HStack {
-                        Image("hotComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
-                        Image("hotmComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                        Image("hotComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
+                        Image("hotmComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
                     }
                     
                 }
@@ -340,8 +344,8 @@ struct ComfyView: View {
                 if temp > 86 {
                     
                     VStack(alignment: .leading){
-                        Text("Shirts: " + (hawtComfy["Shirts"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
-                        Text("Pants: " + (hawtComfy["Pants"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Shirts: " + (hawtComfy["Shirts"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Pants: " + (hawtComfy["Pants"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
                         Text("Coats: " + (hawtComfy["Coats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
                         
                         if (data.precip)! > 0.04 {
@@ -349,9 +353,9 @@ struct ComfyView: View {
                             Text("Socks: " + shoes).alignmentGuide(.leading) { d in d[.leading] }
                         }
                         
-                        else { Text("Socks: " + (hawtComfy["Socks"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }}
+                        else { Text("Socks: " + (hawtComfy["Socks"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }}
                         
-                        Text("Shoes: " + (hawtComfy["Shoes"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
+                        Text("Shoes: " + (hawtComfy["Shoes"] ?? "Loading...")).alignmentGuide(.leading) { d in d[.leading] }
                         Text("Gloves: " + (hawtComfy["Gloves"] ?? "Always recommended, but maybe not the best choice")).alignmentGuide(.leading) { d in d[.leading] }
                         Text("Scarves: " + (hawtComfy["Scarves"] ?? "Not recommended")).alignmentGuide(.leading) { d in d[.leading] }
                         Text("Hats: " + (hawtComfy["Hats"] ?? "Optional")).alignmentGuide(.leading) { d in d[.leading] }
@@ -367,8 +371,8 @@ struct ComfyView: View {
                             Text("Extra: " + (hawtComfy["Extra"] ?? "None")).alignmentGuide(.leading) { d in d[.leading] }}
                     }
                     HStack {
-                        Image("hotComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
-                        Image("hotmComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 50, height: 100)
+                        Image("hotComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
+                        Image("hotmComfy\(Int.random(in: 0 ... 5))").resizable().frame(width: 100, height: 200)
                     }
                 }
                 

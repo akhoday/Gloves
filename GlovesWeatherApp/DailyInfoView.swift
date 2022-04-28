@@ -13,6 +13,7 @@ struct DailyInfoView: View {
     var response : Response
     var data : Data
     
+    //formats day of week
     func getDayOfWeek(_ date:String, format: String) -> String? {
         
         let weekDays = [
@@ -57,10 +58,10 @@ struct DailyInfoView: View {
         
         ZStack{
             
-            
+            //custom background depending on weather
             Image(bk).resizable().edgesIgnoringSafeArea(.all)
             
-            
+            //shows basic daily weather information
             VStack(spacing: 0.0) {
                 if let weekday = getDayOfWeek(unwrappedDate, format:"yyyy-MM-dd") {
                     Text(weekday)
@@ -73,35 +74,29 @@ struct DailyInfoView: View {
                     Text("Low: " + String(Int(low ?? 0)) + "°").font(.system(size: 20))
                     Text("High: " + String(Int(high ?? 0)) + "°").font(.system(size: 20))
                 }
-                Text(description ?? "who's to say").font(.system(size: 24))
+                Text(description ?? "Loading... hang tight, we're working on it!").font(.system(size: 24))
                 
-                //Clothing Options
+                //Navigation to Clothing Options
                 HStack{
                     //comfy option
                     NavigationLink(
                         destination: ComfyView(weather: weather, response: response, data: data),
                         label: {
-                            Text("Comfy Option")
+                            Text("Comfy")
                         })
                     
-                    //trendy option
-                   /* NavigationLink(
-                        destination: TrendyView(),
-                        label: {
-                            Text("Trendy Option")
-                        }) */
                     
                     //classic option
                     NavigationLink(
                         destination: ClassicView(weather: weather, response: response, data: data),
                         label: {
-                            Text("Classic Option")
+                            Text("Classic")
                         })
-                    //other option
+                    //assorted option
                     NavigationLink(
                         destination: OptionsView(weather: weather, response: response, data: data),
                         label: {
-                            Text("Other Options")
+                            Text("Other")
                         })
                 }
              
