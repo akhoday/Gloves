@@ -43,7 +43,7 @@ struct ClassicView: View {
             VStack{
                 
                 
-                if temp < 21 {
+                if temp <= 21 {
                     
                     VStack(alignment: .leading){
                         Text("Shirts: " + (coldColdFund["shirts"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
@@ -81,7 +81,7 @@ struct ClassicView: View {
                 
                 
                 
-                if temp > 20 && temp < 33{
+                if temp > 21 && temp <= 32{
                     
                     
                     VStack(alignment: .leading){
@@ -118,7 +118,7 @@ struct ClassicView: View {
                 }
                 
                 
-                if temp > 32 && temp < 51{
+                if temp > 32 && temp <= 50{
                     
                     
                     VStack(alignment: .leading){
@@ -152,7 +152,7 @@ struct ClassicView: View {
                     }
                 }
                 
-                if temp > 50 && temp < 61{
+                if temp > 50 && temp <= 61{
                     
                     VStack(alignment: .leading){
                         Text("Shirts: " + (warmishFund["shirts"] ?? "ur mom")).alignmentGuide(.leading) { d in d[.leading] }
@@ -185,7 +185,7 @@ struct ClassicView: View {
                     
                 }
                 
-                if temp > 60 && temp < 71{
+                if temp > 61 && temp <= 71{
                     
                     
                     VStack(alignment: .leading){
@@ -223,7 +223,7 @@ struct ClassicView: View {
                     
                 }
                 
-                if (temp > 72 && temp < 86){
+                if (temp > 71 && temp <= 86){
                     
                     
                     VStack(alignment: .leading){
@@ -298,7 +298,7 @@ struct ClassicView: View {
                 
             }
             
-        }.padding().frame(width: /*@START_MENU_TOKEN@*/400.0/*@END_MENU_TOKEN@*/, height: 300.0, alignment: .top).foregroundColor(Color.fontColor)
+        }.foregroundColor(Color.black).edgesIgnoringSafeArea(.all)
     }
 }
 
